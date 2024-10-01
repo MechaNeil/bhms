@@ -19,7 +19,6 @@
         "bootstrap-icons": "^1.11.3",
         "overlayscrollbars": "^2.10.0",
         "poppers": "^0.1.2",
-        "sass": "^1.79.4",
         "sortablejs": "^1.15.3"
     }
 }
