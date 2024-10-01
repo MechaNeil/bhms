@@ -1,0 +1,16 @@
+@import 'admin-lte/dist/css/adminlte.min.css';
+
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'overlayscrollbars/overlayscrollbars.css';
+
+/* Custom Tooltip color */
+/* 
+.custom-tooltip .tooltip-inner {
+    background-color: #343a40 !important; 
+    color: #fff !important;             
+    opacity: 0.9;                        
+  }
+  
+  .custom-tooltip .tooltip-arrow {
+    border-top-color: #343a40 !important; 
+  } */

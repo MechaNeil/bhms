@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@types/bootstrap": "^5.2.10",
+        "axios": "^1.7.4",
+        "laravel-vite-plugin": "^1.0.5",
+        "vite": "^5.4.8"
+    },
+    "dependencies": {
+        "@floating-ui/core": "^1.6.8",
+        "@popperjs/core": "^2.11.8",
+        "admin-lte": "^4.0.0-beta2",
+        "bootstrap": "^5.3.3",
+        "bootstrap-icons": "^1.11.3",
+        "overlayscrollbars": "^2.10.0",
+        "poppers": "^0.1.2",
+        "sass": "^1.79.4",
+        "sortablejs": "^1.15.3"
+    }
+}
