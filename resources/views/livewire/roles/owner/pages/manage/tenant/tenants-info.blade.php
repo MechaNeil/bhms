@@ -302,49 +302,80 @@
                                     </div>
                                 </div>
 
-
+                                <!-- Delete Modal -->
+                                <div class="modal fade" id="deleteTenantModal" tabindex="-1"
+                                    aria-labelledby="deleteTenantModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="deleteTenantModalLabel">Delete Tenant</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Are you sure you want to delete this tenant?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-danger"
+                                                    id="deleteTenantButton">Delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 {{-- Edit Profile Picture --}}
-                                <div class="modal fade" id="editProfilePictureModal" tabindex="-1" aria-labelledby="editProfilePictureLabel" aria-hidden="true">
+                                <div class="modal fade" id="editProfilePictureModal" tabindex="-1"
+                                    aria-labelledby="editProfilePictureLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title" id="editProfilePictureLabel">Update Profile Picture for <span id="user-name-placeholder">Person</span></h5>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                          <form id="profilePictureForm">
-                                            <div class="mb-3">
-                                              <label for="profilePictureInput" class="form-label">Select Profile Picture</label>
-                                              <input type="file" class="form-control" id="profilePictureInput" accept="image/*">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="editProfilePictureLabel">Update Profile
+                                                    Picture for <span id="user-name-placeholder">Person</span></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Save</button>
-                                          </form>
+                                            <div class="modal-body">
+                                                <form id="profilePictureForm">
+                                                    <div class="mb-3">
+                                                        <label for="profilePictureInput" class="form-label">Select
+                                                            Profile Picture</label>
+                                                        <input type="file" class="form-control" id="profilePictureInput"
+                                                            accept="image/*">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                </form>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
-                                  </div>
+                                </div>
 
                                 {{-- Edit Profile Identity --}}
-                                <div class="modal fade" id="editProfileIdentityModal" tabindex="-1" aria-labelledby="editProfileIdentityLabel" aria-hidden="true">
+                                <div class="modal fade" id="editProfileIdentityModal" tabindex="-1"
+                                    aria-labelledby="editProfileIdentityLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title" id="editProfileIdentityLabel">Update Profile Identity for <span id="user-name-placeholder">Person</span></h5>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                          <form id="profileIdentityForm">
-                                            <div class="mb-3">
-                                              <label for="profileIdentityInput" class="form-label">Select Profile Identity</label>
-                                              <input type="file" class="form-control" id="profileIdentityInput" accept="image/*">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="editProfileIdentityLabel">Update Profile
+                                                    Identity for <span id="user-name-placeholder">Person</span></h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Save</button>
-                                          </form>
+                                            <div class="modal-body">
+                                                <form id="profileIdentityForm">
+                                                    <div class="mb-3">
+                                                        <label for="profileIdentityInput" class="form-label">Select
+                                                            Profile Identity</label>
+                                                        <input type="file" class="form-control"
+                                                            id="profileIdentityInput" accept="image/*">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                </form>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
-                                  </div>
+                                </div>
 
 
 
@@ -378,7 +409,8 @@
                                                                 class="img-thumbnail mx-auto d-block img-size-120"
                                                                 alt="Room Image" />
                                                             <button class="btn btn-warning btn-sm m-1 mt-1"
-                                                                type="button" data-bs-toggle="modal" data-bs-target="#editProfilePictureModal">
+                                                                type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#editProfilePictureModal">
                                                                 <i class="bi bi-pencil-fill"></i> &nbsp;Edit
                                                             </button>
                                                         </td>
@@ -397,15 +429,18 @@
                                                                 class="img-thumbnail mx-auto d-block img-size-120"
                                                                 alt="Room Image" />
                                                             <button class="btn btn-warning btn-sm m-1 mt-1"
-                                                                type="button" data-bs-toggle="modal" data-bs-target="#editProfileIdentityModal">
+                                                                type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#editProfileIdentityModal">
                                                                 <i class="bi bi-pencil-fill"></i> &nbsp;Edit
                                                             </button>
                                                         </td>
                                                         <td class=" text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button" data-bs-toggle="modal" data-bs-target="#editTenantModal">
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#editTenantModal">
                                                                 <i class="bi bi-pencil-fill"></i>
                                                             </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button">
+                                                            <button class="btn btn-danger btn-sm m-1" type="button" data-bs-toggle="modal" data-bs-target="#deleteTenantModal">
                                                                 <i class="bi bi-trash-fill"></i>
                                                             </button>
                                                         </td>

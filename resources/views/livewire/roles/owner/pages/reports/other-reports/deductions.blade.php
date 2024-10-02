@@ -26,7 +26,7 @@
                                     <ol class="breadcrumb float-sm-end">
                                         <li class="breadcrumb-item"><a href="#">Manage</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">
-                                            Collectibles
+                                            Bills
                                         </li>
                                     </ol>
                                 </div>
@@ -41,77 +41,68 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12">
-    
+                                    <button type="button" class="btn btn-primary mb-3">
+                                        <i class="bi bi-person-fill-add" style="font-size: 18px;"></i> Add New
+                                    </button>
                                     <div class="card mb-4">
                                         <div class="card-header">
     
-                                            <h3 class="card-title">Payment Table</h3>
+                                            <h3 class="card-title">Bill Rates Table</h3>
     
     
                                         </div>
                                         <!-- /.card-header -->
                                         <div class="card-body">
     
-                                            <table class="table table-bordered table-hover">
-                                                <thead class="table-mode">
+                                            <table class="table table-bordered">
+                                                <thead>
                                                     <tr>
-                                                        <th>Tenant Name</th>
-                                                        <th>Room No.</th>
-                                                        <th>Monthly Due</th>
-                                                        <th>Total Payment</th>
-                                                        <th>Balance</th>
+    
+                                                        <th>Bills</th>
+                                                        <th>Rate</th>
+                                                        <th style="width: 100px" class=" text-left">Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td>Tenant 1</td>
-                                                        <td>1</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
+                                                    <tr class="align-middle">
+                                                        <td>
+                                                            Electricity
+                                                        </td>
+                                                        <td>
+                                                            100 / KWh
+                                                        </td>
+    
+                                                        <td class=" text-center">
+                                                            <button class="btn btn-primary btn-sm m-1" type="button">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm mb-1" type="button">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
+                                                        </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>Tenant 2</td>
-                                                        <td>2</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
+                                                    <tr class="align-middle">
+                                                        <td>
+                                                            Water
+                                                        </td>
+                                                        <td>
+                                                            70 Cu
+                                                        </td>
+    
+                                                        <td class=" text-center">
+                                                            <button class="btn btn-primary btn-sm m-1" type="button">
+                                                                <i class="bi bi-pencil-fill"></i>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
+                                                        </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>Tenant 3</td>
-                                                        <td>3</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tenant 4</td>
-                                                        <td>4</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tenant 5</td>
-                                                        <td>5</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tenant 6</td>
-                                                        <td>6</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
+    
+    
+    
+    
                                                 </tbody>
-                                                <tfoot>
-                                                    <tr>
-                                                        <td colspan="4" class="text-end"><strong>Total Collectible</strong></td>
-                                                        <td><strong>20000</strong></td>
-                                                    </tr>
-                                                </tfoot>
                                             </table>
                                         </div> <!-- /.card-body -->
                                         <div class="card-footer clearfix">
