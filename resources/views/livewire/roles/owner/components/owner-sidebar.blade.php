@@ -42,6 +42,7 @@
                         request()->routeIs('manage-beds*') ||
                         request()->routeIs('bed-assignment*') ||
                         request()->routeIs('invoice*') ||
+                        request()->routeIs('view-invoice*') ||
                         request()->routeIs('utility-bills*')
                             ? 'menu-open'
                             : 'menu-close' }}">
@@ -51,6 +52,7 @@
                             request()->routeIs('manage-beds*') ||
                             request()->routeIs('bed-assignment*') ||
                             request()->routeIs('invoice*') ||
+                            request()->routeIs('view-invoice*') ||
                             request()->routeIs('utility-bills*')
                                 ? 'active'
                                 : '' }}">
@@ -102,7 +104,7 @@
 
 
                             <li class="nav-item"> <a wire:navigate href="invoice-list"
-                                    class="nav-link {{ request()->routeIs('invoice-list*') ? 'active' : '' }}"> <i
+                                    class="nav-link {{ request()->routeIs('view-invoice*') || request()->routeIs('invoice-list*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-file-text-fill "></i>
                                     <p>Invoice</p>
                                 </a>
