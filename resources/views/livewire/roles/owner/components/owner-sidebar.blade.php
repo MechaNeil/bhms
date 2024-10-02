@@ -5,8 +5,7 @@
     <!--begin::Sidebar Brand-->
     <div class="sidebar-brand">
         <!--begin::Brand Link--> <a href="{{ route('dashboard-owner') }} " class="brand-link">
-            <!--begin::Brand Image--> <img src="{{ asset('assets/
-img/mn2.png') }}" alt="AdminLTE Logo" class="brand-image opacity-75 shadow">
+            <!--begin::Brand Image--> <img src="{{ asset('assets/img/mn2.png') }}" alt="AdminLTE Logo" class="brand-image opacity-75 shadow">
             <!--end::Brand Image-->
             <!--begin::Brand Text--> <span class="brand-text fw-light">MNTech Inc.</span>
             <!--end::Brand Text-->
@@ -102,8 +101,8 @@ img/mn2.png') }}" alt="AdminLTE Logo" class="brand-image opacity-75 shadow">
                             </li>
 
 
-                            <li class="nav-item"> <a wire:navigate href="invoice"
-                                    class="nav-link {{ request()->routeIs('invoice*') ? 'active' : '' }}"> <i
+                            <li class="nav-item"> <a wire:navigate href="invoice-list"
+                                    class="nav-link {{ request()->routeIs('invoice-list*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-file-text-fill "></i>
                                     <p>Invoice</p>
                                 </a>

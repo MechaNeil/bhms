@@ -6,6 +6,7 @@ use Livewire\Component;
 
 class ViewInvoice extends Component
 {
+    
     public function render()
     {
         return view('livewire.roles.owner.pages.invoice.tenants-invoice.view-invoice');

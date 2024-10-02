@@ -81,8 +81,7 @@
                                                     <td>RM-0001</td>
                                                     <td>Just a Normal Room With 2 Double Deck Beds</td>
                                                     <td>
-                                                        <img src="{{ asset('assets/
-img/photo1.png') }}"
+                                                        <img src="{{ asset('assets/img/photo1.png') }}"
                                                             class="img-thumbnail mx-auto d-block img-size-120"
                                                             alt="Room Image" />
                                                     </td>
@@ -99,8 +98,7 @@ img/photo1.png') }}"
                                                     <td>RM-0002</td>
                                                     <td>Room with 3 beds</td>
                                                     <td>
-                                                        <img src="{{ asset('assets/
-img/photo2.png') }}"
+                                                        <img src="{{ asset('assets/img/photo2.png') }}"
                                                             class="img-thumbnail mx-auto d-block img-size-120"
                                                             alt="Room Image" />
                                                     </td>
