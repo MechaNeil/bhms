@@ -115,8 +115,7 @@
                                                     <td>RM-0003</td>
                                                     <td>Delux Room With TV, with air conditioning unit</td>
                                                     <td>
-                                                        <img src="{{ asset('assets/
-img/photo3.jpg') }}"
+                                                        <img src="{{ asset('assets/img/photo3.jpg') }}"
                                                             class="img-thumbnail mx-auto d-block img-size-120"
                                                             alt="Room Image" />
                                                     </td>
@@ -133,8 +132,7 @@ img/photo3.jpg') }}"
                                                     <td>RM-0004</td>
                                                     <td>Room with a round table privete cr and kitchen</td>
                                                     <td>
-                                                        <img src="{{ asset('assets/
-img/photo4.jpg') }}"
+                                                        <img src="{{ asset('assets/img/photo4.jpg') }}"
                                                             class="img-thumbnail mx-auto d-block img-size-120"
                                                             alt="Room Image" />
                                                     </td>
