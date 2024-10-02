@@ -47,7 +47,6 @@
                                         <h3 class="card-title">Invoice List</h3>
                                     </div>
                                     <div class="card-body table">
-
                                         <div class="table-responsive">
                                             <table class="table table-bordered">
                                                 <thead class="table-mode">
