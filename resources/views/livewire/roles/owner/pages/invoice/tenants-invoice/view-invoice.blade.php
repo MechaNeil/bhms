@@ -68,7 +68,7 @@
                                         <h6>From:</h6>
                                         <address>
                                             <strong>MNTech, Inc.</strong><br>
-                                            Catsu, CICT<br>
+                                            Cat, CICT<br>
                                             Calatagan Proper, Virac, Catanduanes<br>
                                             Phone: 09632266467<br>
                                             Email: mneil@gmail.com
@@ -114,16 +114,12 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6>Payment Methods:</h6>
-                                        <img src="{{ asset('assets/
-img/credit/visa.png') }}" alt="Visa">
-                                        <img src="{{ asset('assets/
-img/credit/mastercard.png') }}"
+                                        <img src="{{ asset('assets/img/credit/visa.png') }}" alt="Visa">
+                                        <img src="{{ asset('assets/img/credit/mastercard.png') }}"
                                             alt="Mastercard">
-                                        <img src="{{ asset('assets/
-img/credit/american-express.png') }}"
+                                        <img src="{{ asset('assets/img/credit/american-express.png') }}"
                                             alt="American Express">
-                                        <img src="{{ asset('assets/
-img/credit/paypal2.png') }}" alt="Paypal">
+                                        <img src="{{ asset('assets/img/credit/paypal2.png') }}" alt="Paypal">
     
                                     </div>
                                     <div class="col-md-6">
