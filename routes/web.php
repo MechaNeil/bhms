@@ -63,9 +63,10 @@ Route::get('/bed-assignment', BedAssignment::class)->name('bed-assignment');
 Route::get('/manage-beds', ManageBeds::class)->name('manage-beds');
 Route::get('/tenants-information', TenantsInfo::class)->name('tenants-information');
 
-//  Miscellaneous
+//  Invoice
 Route::get('/utility-bills', Deductions::class)->name('utility-bills');
-Route::get('/invoice', ViewInvoice::class)->name('invoice');
+Route::get('/view-invoice', ViewInvoice::class)->name('view-invoice');
+Route::get('/invoice-list', InvoiceList::class)->name('invoice-list');
 
 // Notification
 Route::get('/requests', TenantsRequests::class)->name('requests');
