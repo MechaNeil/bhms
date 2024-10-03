@@ -74,7 +74,7 @@
                                                             <button wire:navigate href="view-invoice" class="btn btn-info btn-sm m-1"><i class="bi bi-eye"></i> &nbsp;View</button>
                                                             <button class="btn btn-success btn-sm m-1"><i class="bi bi-wallet2"></i> &nbsp;Pay</button>
                                                         </td>
-                                                        <td>IN-2024-May-2</td>
+                                                        <td>IN-2024-October-2</td>
                                                         <td>Mark Nel Tevs</td>
                                                         <td>October 2, 2024</td>
                                                         <td>5,000.00</td>
