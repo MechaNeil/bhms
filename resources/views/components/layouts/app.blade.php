@@ -127,11 +127,8 @@
         })();
     </script>
 
-
     @livewireScripts
     <!-- Livewire scripts -->
-
-
 
 </body>
 
