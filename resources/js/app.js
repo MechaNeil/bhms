@@ -8,6 +8,8 @@ import { OverlayScrollbars } from 'overlayscrollbars';
 
 
 import 'bootstrap/dist/js/bootstrap.js';
+
+
 import { Tooltip } from 'bootstrap';
 
 // Initialize tooltips
@@ -157,6 +159,7 @@ document.addEventListener("livewire:navigated", function() {
     //   });
     // });
   });
+
 
 
 document.addEventListener('livewire:navigated', () => {
