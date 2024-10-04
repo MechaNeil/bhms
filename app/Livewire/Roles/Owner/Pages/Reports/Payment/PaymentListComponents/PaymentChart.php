@@ -4,6 +4,7 @@ namespace App\Livewire\Roles\Owner\Pages\Reports\Payment\PaymentListComponents;
 
 use Livewire\Component;
 
+
 class PaymentChart extends Component
 {
     public function render()
