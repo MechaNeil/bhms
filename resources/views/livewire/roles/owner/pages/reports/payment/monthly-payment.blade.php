@@ -33,7 +33,7 @@
 
 
                                     </svg>
-                                    <span class="d-inline-block">Payment History</span>
+                                    <span class="d-inline-block">Monthly Payment</span>
                                 </h3>
 
                             </div>
@@ -41,7 +41,7 @@
                                 <ol class="breadcrumb float-sm-end">
                                     <li class="breadcrumb-item"><a href="#">Manage</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">
-                                        Payment History
+                                        Monthly Payment
                                     </li>
                                 </ol>
                             </div>
@@ -124,6 +124,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="card mt-3">
                             <div class="card-header">Payment Collection by Month</div>
                             <div class="card-body">
