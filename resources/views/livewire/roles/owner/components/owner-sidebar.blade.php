@@ -7,7 +7,7 @@
         <!--begin::Brand Link--> <a href="{{ route('dashboard-owner') }} " class="brand-link">
             <!--begin::Brand Image--> <img src="{{ asset('assets/img/mn2.png') }}" alt="AdminLTE Logo" class="brand-image opacity-75 shadow">
             <!--end::Brand Image-->
-            <!--begin::Brand Text--> <span class="brand-text fw-light">MNTech Inc.</span>
+            <!--begin::Brand Text--> <span class="brand-text fw-light">MN's Bhms</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->

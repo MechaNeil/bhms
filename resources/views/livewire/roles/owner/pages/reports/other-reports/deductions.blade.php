@@ -55,12 +55,12 @@
                                         <div class="card-body">
     
                                             <table class="table table-bordered">
-                                                <thead>
+                                                <thead class="table-mode">
                                                     <tr>
     
                                                         <th>Bills</th>
                                                         <th>Rate</th>
-                                                        <th style="width: 100px" class=" text-left">Action</th>
+                                                        <th style="width: 100px">Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -72,11 +72,11 @@
                                                             100 / KWh
                                                         </td>
     
-                                                        <td class=" text-center">
+                                                        <td class="text-center">
                                                             <button class="btn btn-primary btn-sm m-1" type="button">
                                                                 <i class="bi bi-pencil-fill"></i>
                                                             </button>
-                                                            <button class="btn btn-danger btn-sm mb-1" type="button">
+                                                            <button class="btn btn-danger btn-sm m-1" type="button">
                                                                 <i class="bi bi-trash-fill"></i>
                                                             </button>
                                                         </td>
@@ -89,7 +89,7 @@
                                                             70 Cu
                                                         </td>
     
-                                                        <td class=" text-center">
+                                                        <td class="text-center">
                                                             <button class="btn btn-primary btn-sm m-1" type="button">
                                                                 <i class="bi bi-pencil-fill"></i>
                                                             </button>
