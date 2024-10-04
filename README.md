@@ -62,7 +62,7 @@ The system ensures an efficient, user-friendly experience for all users, enhanci
 - Open the terminal again and run
     - `php artisan key:generate`
     - `php artisan migrate`
-    - `npm run dev` for producation use this `npm run build`
+    - `npm run dev` for production use this `npm run build`
 - In Laravel Herd inside the open site choose the `bhms-main`
 - click the url again and it should work normaly, enjoy!!
   
