@@ -54,80 +54,80 @@
         <!--begin::App Content-->
         <div class="app-content">
           <div class="container-fluid">
-              <div class="row">
-                  <div class="col-md-12">
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="card">
-                          <div class="card-body text-center" style="background-color: #007bff; color: white;">
-                            <h5>Total Transactions</h5>
-                            <h2>1</h2>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="card">
-                          <div class="card-body text-center" style="background-color: #28a745; color: white;">
-                            <h5>Total Amount Paid</h5>
-                            <h2>4,500.00</h2>
-                          </div>
-                        </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card">
+                      <div class="card-body text-center" style="background-color: #007bff; color: white;">
+                        <h5>Total Transactions</h5>
+                        <h2>1</h2>
                       </div>
                     </div>
-                  
-                    <!-- Data Visualization Section -->
-<livewire:roles.owner.pages.reports.payment.payment-list-components.payment-chart>
-
-                      <div class="card mb-4">
-                          <div class="card-header">
-
-                              <h3 class="card-title">Payment List</h3>
-
-
-                          </div>
-                          <!-- /.card-header -->
-                          <div class="card-body">
-                            <div class="table-responsive">
-                              <table class="table table-hover table-bordered">
-                                <thead class="table-mode">
-                                  <tr>
-                                    <th>Invoice Number</th>
-                                    <th>Tenant Name</th>
-                                    <th>Amount Paid</th>
-                                    <th>Payment Date</th>
-                                    <th>Payment Mode</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>2024-2-October</td>
-                                    <td>Mak Nel Tevs</td>
-                                    <td>3,000.00</td>
-                                    <td>October 2, 2024</td>
-                                    <td>
-                                      <span data-bs-toggle="tooltip" title="Paid via cash">
-                                        Cash
-                                      </span>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div> <!-- /.card-body -->
-                          <div class="card-footer clearfix">
-                              <ul class="pagination pagination-sm m-0 float-end">
-                                  <li class="page-item"> <a class="page-link" href="#">«</a> </li>
-                                  <li class="page-item"> <a class="page-link" href="#">1</a> </li>
-                                  <li class="page-item"> <a class="page-link" href="#">2</a> </li>
-                                  <li class="page-item"> <a class="page-link" href="#">3</a> </li>
-                                  <li class="page-item"> <a class="page-link" href="#">»</a> </li>
-                              </ul>
-                          </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card">
+                      <div class="card-body text-center" style="background-color: #28a745; color: white;">
+                        <h5>Total Amount Paid</h5>
+                        <h2>4,500.00</h2>
                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Data Visualization Section -->
+                <livewire:roles.owner.pages.reports.payment.payment-list-components.payment-chart>
+
+                  <div class="card mb-4">
+                    <div class="card-header">
+
+                      <h3 class="card-title">Payment List</h3>
+
+
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table table-hover table-bordered">
+                          <thead class="table-mode">
+                            <tr>
+                              <th>Invoice Number</th>
+                              <th>Tenant Name</th>
+                              <th>Amount Paid</th>
+                              <th>Payment Date</th>
+                              <th>Payment Mode</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>2024-2-October</td>
+                              <td>Mak Nel Tevs</td>
+                              <td>3,000.00</td>
+                              <td>October 2, 2024</td>
+                              <td>
+                                <span data-bs-toggle="tooltip" title="Paid via cash">
+                                  Cash
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div> <!-- /.card-body -->
+                    <div class="card-footer clearfix">
+                      <ul class="pagination pagination-sm m-0 float-end">
+                        <li class="page-item"> <a class="page-link" href="#">«</a> </li>
+                        <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                        <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                        <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                        <li class="page-item"> <a class="page-link" href="#">»</a> </li>
+                      </ul>
+                    </div>
                   </div>
               </div>
+            </div>
           </div> <!-- /.container-fluid -->
-      </div>
+        </div>
         <!--end::App Content-->
       </main>
       <livewire:roles.owner.components.owner-footer>

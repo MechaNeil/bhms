@@ -20,13 +20,13 @@
                             <!--begin::Row-->
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h3 class="mb-0">Tenants Registration</h3>
+                                    <h3 class="mb-0">Users</h3>
                                 </div>
                                 <div class="col-sm-6">
                                     <ol class="breadcrumb float-sm-end">
-                                        <li class="breadcrumb-item"><a href="#">Create Account</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Users</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">
-                                            Tenants Registration
+                                            Users
                                         </li>
                                     </ol>
                                 </div>
@@ -39,57 +39,76 @@
                     <!--begin::App Content-->
                     <div class="app-content">
                         <div class="container-fluid">
-                            <div class="callout callout-info mb-4">
-                                <h5 class="fw-bold">Tips</h5>
-                                <p>
-                                    The <a href="/starter.html" target="_blank" rel="noopener noreferrer"
-                                        class="callout-link">
-                                        starter page
-                                    </a> is a good place to start building your app if you’d like to
-                                    start from scratch.
-                                </p>
+                            <div class="row">
+                                <div class="col-md-12">                          
+                                    
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+    
+                                            <h3 class="card-title">Activity Logs</h3>
+    
+    
+                                        </div>
+                                        <!-- /.card-header -->
+                                        <div class="card-body">
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label>Show 
+                                                        <select class="form-select d-inline w-auto">
+                                                            <option>1</option>
+                                                            <option>5</option>
+                                                            <option>10</option>
+                                                        </select> 
+                                                        entries
+                                                    </label>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <input type="search" class="form-control d-inline w-auto" placeholder="Search">
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered">
+                                                    <thead class="table-mode">
+                                                        <tr>
+                                                            <th>Username</th>
+                                                            <th>Role</th>
+                                                            <th>Created At</th>
+                                                            <th>Active Status</th>
+                                                            <th>Last Active</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="userTable">
+                                                        <tr>
+                                                            <td>Mark</td>
+                                                            <td>Owner</td>
+                                                            <td>2024-04-05 14:09:32</td>
+                                                            <td>Active</td>
+                                                            <td>2024-04-05 15:00:00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Neil</td>
+                                                            <td>Assistant</td>
+                                                            <td>2024-04-05 13:45:22</td>
+                                                            <td>Inactive</td>
+                                                            <td>2024-04-05 14:30:00</td>
+                                                        </tr>
+                                                        <!-- Add more rows as needed -->
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div> <!-- /.card-body -->
+                                        <div class="card-footer clearfix">
+                                            <ul class="pagination pagination-sm m-0 float-end">
+                                                <li class="page-item"> <a class="page-link" href="#">«</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">»</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p>The layout consists of five major parts:</p>
-                            <ul>
-                                <li>
-                                    Wrapper <code>.app-wrapper</code> . A div that wraps the whole site.
-                                </li>
-                                <li>
-                                    Main Header <code>.app-header</code> . Contains the logo and navbar.
-                                </li>
-                                <li>
-                                    Main Sidebar <code>.app-sidebar</code> . Contains the sidebar user
-                                    panel and menu.
-                                </li>
-                                <li>
-                                    Content <code>.app-main</code> . Contains the page header and content.
-                                </li>
-                                <li>
-                                    Main Footer <code>.app-footer</code> . Contains the footer.
-                                </li>
-                            </ul>
-                            <h4>Layout Options</h4>
-                            <p>
-                                AdminLTE v4 provides a set of options to apply to your main
-                                layout. Each one of these classes can be added to the
-                                <code>body</code> tag to get the desired goal.
-                            </p>
-                            <ul>
-                                <li>
-                                    Fixed Sidebar: use the class <code>.layout-fixed</code> to get a
-                                    fixed sidebar.
-                                </li>
-                                <li>
-                                    Mini Sidebar on Toggle: use the class
-                                    <code>.sidebar-expand-* .sidebar-mini</code>
-                                    to have a collapsed sidebar upon loading.
-                                </li>
-                                <li>
-                                    Collapsed Sidebar: use the class
-                                    <code>.sidebar-expand-* .sidebar-mini .sidebar-collapse</code> to
-                                    have a collapsed sidebar upon loading.
-                                </li>
-                            </ul>
                         </div> <!-- /.container-fluid -->
                     </div>
                     <!--end::App Content-->

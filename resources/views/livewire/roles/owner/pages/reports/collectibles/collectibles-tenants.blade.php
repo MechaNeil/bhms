@@ -78,8 +78,8 @@
                                             <div class="card-body">
                                                 <h5>Collectibles by Tenant</h5>
                                                 <div class="table-responsive">
-                                                    <table class="table table-hover">
-                                                        <thead>
+                                                    <table class="table table-hover table-bordered">
+                                                        <thead class="table-mode">
                                                             <tr>
                                                                 <th>Tenant Name</th>
                                                                 <th>Outstanding Balance</th>
