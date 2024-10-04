@@ -36,6 +36,39 @@ The system ensures an efficient, user-friendly experience for all users, enhanci
 - **Livewire (Version 3)**
 - **Vite**
 
+## 👨‍💻 Installation 
+- Download the File
+- Extract the file
+    - Install Laravel Herd and 
+    - In Herd click Open Sites
+    - Click Add
+    - Choose Link existing project
+    - Choose the the folder of the Extracted file
+- If it doesn't work Do this instead 
+    - Manualy Move the file to this directory `C:\Users\{username}\Herd`
+    - After that go to your Laravel Herd, Open sites
+    - If it doesn't show up, refresh the site you can do this by right clicking to the Add and click `refresh`
+    - After that the site `bhms-main` should show up
+    - If you click the link at first it will not work and that's ok follow the next steps 
+    - open that file in Vscode and follow the steps and install Dependences
+
+#### ⚙️ **Install Dependences**
+- In vscode create/open terminal or use this shortcut {Ctrl+Shift+`}
+- In the terminal run
+    - `npm install`
+    - `composer install`
+    - `cp .env.example .env` 
+- in your .env file connect it to your database
+- Open the terminal again and run
+    - `php artisan key:generate`
+    - `php artisan migrate`
+    - `npm run dev` for producation use this `npm run build`
+- In Laravel Herd inside the open site choose the `bhms-main`
+- click the url again and it should work normaly, enjoy!!
+  
+Please Contribute to this project by leaving a star ⭐
+
+
 ## 👀 Conclusion
 The BHMS is a reliable and effective solution for automating the daily operations of boarding houses. It provides an online platform that meets the needs of both management and tenants, enhancing productivity and improving overall satisfaction.
 
