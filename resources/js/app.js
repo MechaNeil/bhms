@@ -1,5 +1,6 @@
 import '@popperjs/core/dist/umd/popper.min.js';
 // Import Bootstrap's JavaScript
+import 'apexcharts';
 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './bootstrap';

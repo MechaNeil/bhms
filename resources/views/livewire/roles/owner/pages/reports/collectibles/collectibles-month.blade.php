@@ -26,7 +26,7 @@
                                     <ol class="breadcrumb float-sm-end">
                                         <li class="breadcrumb-item"><a href="#">Manage</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">
-                                            Collectibles
+                                            Collectibles by Month
                                         </li>
                                     </ol>
                                 </div>
@@ -40,79 +40,67 @@
                     <div class="app-content">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-md-12">
-    
-                                    <div class="card mb-4">
+                                <div class="col-md-12 ">
+                                    <div class="row text-white">
+                                        <div class="col-6">
+                                          <div class="card bg-primary">
+                                            <div class="card-body">
+                                              <h5>Occupied Beds</h5>
+                                              <h3>Total: 1</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-6 ">
+                                          <div class="card bg-primary">
+                                            <div class="card-body">
+                                              <h5>Collectibles</h5>
+                                              <h3>Total: 20,000.00</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                    <div class="card mb-4 mt-4">
                                         <div class="card-header">
     
-                                            <h3 class="card-title">Payment Table</h3>
+                                            <h3 class="card-title">Collectibles by Months</h3>
     
     
                                         </div>
                                         <!-- /.card-header -->
                                         <div class="card-body">
-    
-                                            <table class="table table-bordered table-hover">
-                                                <thead class="table-mode">
-                                                    <tr>
-                                                        <th>Tenant Name</th>
-                                                        <th>Room No.</th>
-                                                        <th>Monthly Due</th>
-                                                        <th>Total Payment</th>
-                                                        <th>Balance</th>
-                                                    </tr>
+                                            <table class="table table-striped table-bordered">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Year</th>
+                                                    <th>Month</th>
+                                                    <th>Total Collectibles</th>
+                                                  </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td>Tenant 1</td>
-                                                        <td>1</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tenant 2</td>
-                                                        <td>2</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tenant 3</td>
-                                                        <td>3</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tenant 4</td>
-                                                        <td>4</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tenant 5</td>
-                                                        <td>5</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tenant 6</td>
-                                                        <td>6</td>
-                                                        <td>3000</td>
-                                                        <td>3000</td>
-                                                        <td>2000</td>
-                                                    </tr>
+                                                  <tr>
+                                                    <td>2024</td>
+                                                    <td>June</td>
+                                                    <td>5,000.00</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>2024</td>
+                                                    <td>July</td>
+                                                    <td>5,000.00</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>2024</td>
+                                                    <td>August</td>
+                                                    <td>5,000.00</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>2024</td>
+                                                    <td>September</td>
+                                                    <td>5,000.00</td>
+                                                  </tr>
                                                 </tbody>
-                                                <tfoot>
-                                                    <tr>
-                                                        <td colspan="4" class="text-end"><strong>Total Collectible</strong></td>
-                                                        <td><strong>20000</strong></td>
-                                                    </tr>
-                                                </tfoot>
-                                            </table>
+                                              </table>
                                         </div> <!-- /.card-body -->
                                         <div class="card-footer clearfix">
                                             <ul class="pagination pagination-sm m-0 float-end">
