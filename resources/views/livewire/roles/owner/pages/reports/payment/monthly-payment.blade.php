@@ -55,85 +55,79 @@
                 <div class="app-content">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-12">
-
-                                <div class="card mb-4">
-                                    <div class="card-header">
-
-                                        <h3 class="card-title">Payment History Table</h3>
-
-
-                                    </div>
-                                    <!-- /.card-header -->
+                            <div class="col-md-6">
+                                <div class="card text-white bg-primary mb-3">
+                                    <div class="card-header">Total Transactions</div>
                                     <div class="card-body">
-
-                                        <table class="table table-bordered">
-                                            <thead class="table-mode">
-                                                <tr>
-                                                    <th>Invoice No.</th>
-                                                    <th style="width: 150px">Amount Paid</th>
-                                                    <th>Date of Payment</th>
-                                                    <th style="width: 100px" class="text-center">Remarks</th>
-
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                                <tr class="align-middle">
-                                                    <td>
-                                                        IN-00001
-                                                    </td>
-                                                    <td>Php 3,000.00</td>
-                                                    <td>Sep 06, 2021</td>
-
-                                                    <td class="text-center">
-                                                        <span class="badge text-bg-success">Paid</span>
-                                                    </td>
-
-                                                </tr>
-
-                                                
-                                                <tr class="align-middle">
-                                                    <td>
-                                                        IN-00002
-                                                    </td>
-                                                    <td>Php 3,000.00</td>
-                                                    <td>Sep 06, 2021</td>
-
-                                                    <td class="text-center">
-                                                        <span class="badge text-bg-success">Paid</span>
-                                                    </td>
-
-                                                </tr>
-                                                
-                                                <tr class="align-middle">
-                                                    <td>
-                                                        IN-00003
-                                                    </td>
-                                                    <td>Php 3,000.00</td>
-                                                    <td>Sep 06, 2021</td>
-
-                                                    <td class="text-center">
-                                                        <span class="badge text-bg-success">Paid</span>
-                                                    </td>
-
-                                                </tr>
-
-
-
-                                            </tbody>
-                                        </table>
-                                    </div> <!-- /.card-body -->
-                                    <div class="card-footer clearfix">
-                                        <ul class="pagination pagination-sm m-0 float-end">
-                                            <li class="page-item"> <a class="page-link" href="#">«</a> </li>
-                                            <li class="page-item"> <a class="page-link" href="#">1</a> </li>
-                                            <li class="page-item"> <a class="page-link" href="#">2</a> </li>
-                                            <li class="page-item"> <a class="page-link" href="#">3</a> </li>
-                                            <li class="page-item"> <a class="page-link" href="#">»</a> </li>
-                                        </ul>
+                                        <h5 class="card-title">1</h5>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card text-white bg-success mb-3">
+                                    <div class="card-header">Total Payments</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">4,500.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <div class="card-header">
+
+                                <h3 class="card-title">Payment List</h3>
+  
+  
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label>Show 
+                                            <select class="form-select d-inline w-auto">
+                                                <option>1</option>
+                                                <option>5</option>
+                                                <option>10</option>
+                                            </select> 
+                                            entries
+                                        </label>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <input type="search" class="form-control d-inline w-auto" placeholder="Search">
+                                    </div>
+                                </div>
+
+                                <table class="table table-bordered">
+                                    <thead class="table-mode">
+                                        <tr>
+                                            <th>Year</th>
+                                            <th>Month</th>
+                                            <th>Collection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024</td>
+                                            <td>April</td>
+                                            <td>4,500.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <span>Showing 1 to 1 of 1 entries</span>
+                                    <nav>
+                                        <ul class="pagination">
+                                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <div class="card-header">Payment Collection by Month</div>
+                            <div class="card-body">
+                                <canvas id="paymentChart"></canvas>
                             </div>
                         </div>
                     </div> <!-- /.container-fluid -->
