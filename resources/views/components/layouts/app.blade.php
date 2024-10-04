@@ -127,11 +127,34 @@
         })();
     </script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctx = document.getElementById('paymentChart').getContext('2d');
+    var paymentChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['April'],
+            datasets: [{
+                label: 'Payment Collection (PHP)',
+                data: [4500],
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
     @livewireScripts
+    @livewireChartsScripts
+
     <!-- Livewire scripts -->
-
-
 
 </body>
 
