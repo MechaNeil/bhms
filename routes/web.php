@@ -90,7 +90,7 @@ Route::get('/company-info', CompanyInfo::class)->name('company-info');
 Route::get('/visit', VisitHomePage::class)->name('visit');
 
 // User Management
-Route::get('/activity-logs', Users::class)->name('activity-logs');
+Route::get('/activity-logs', UserActivityLogs::class)->name('activity-logs');
 Route::get('/users', Users::class)->name('users');
 
 // Create Backup
