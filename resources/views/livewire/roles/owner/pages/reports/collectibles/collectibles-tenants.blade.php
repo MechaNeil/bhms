@@ -75,8 +75,12 @@
                                 <div class="row mt-4">
                                     <div class="col-md-6">
                                         <div class="card">
+                                            
+                                            <div class="card-header">
+                                                <h5 class="card-title">Collectibles by Tenant</h5>
+                                            </div>
                                             <div class="card-body">
-                                                <h5>Collectibles by Tenant</h5>
+                                            
                                                 <div class="table-responsive">
                                                     <table class="table table-hover table-bordered">
                                                         <thead class="table-mode">
@@ -101,7 +105,9 @@
                                                     <button type="button" class="btn btn-secondary">Print</button>
                                                 </div>
                                             </div>
+
                                         </div>
+                                        
                                     </div>
                             
                                     <!-- Chart Column -->
