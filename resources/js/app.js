@@ -138,6 +138,65 @@ document.addEventListener("livewire:navigated", function() {
         }
       });
     }
+
+
+    // Backup Button functionality
+    const backupBtn = document.getElementById('backup-btn');
+    if (backupBtn) {
+        backupBtn.addEventListener('click', function () {
+          console.log("Backup Database");
+
+            // Show progress bar
+            const progressBar = document.getElementById('backup-progress');
+            const progressBarInner = document.getElementById('progress-bar');
+            if (progressBar && progressBarInner) {
+                progressBar.classList.remove('d-none');
+                progressBarInner.style.width = '0%';
+
+                // Simulate backup process
+                let progress = 0;
+                const interval = setInterval(function () {
+                    progress += 10;
+                    progressBarInner.style.width = progress + '%';
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        // Hide progress bar
+                        progressBar.classList.add('d-none');
+                        // Show success alert
+                        const successAlert = document.getElementById('success-alert');
+                        if (successAlert) {
+                            successAlert.classList.remove('d-none');
+                            // Add download link to alert
+                            const downloadLink = document.getElementById('download-link');
+                            if (downloadLink) {
+                                downloadLink.href = '#';  // Adjust this as needed
+                            }
+                        }
+                    }
+                }, 300);
+            }
+        });
+    }
+
+    // Handle Retry Button in Error Alert
+    const retryLink = document.getElementById('retry-link');
+    if (retryLink) {
+        retryLink.addEventListener('click', function () {
+            const errorAlert = document.getElementById('error-alert');
+            if (errorAlert) {
+                errorAlert.classList.add('d-none');
+            }
+            // Retry the backup process
+            if (backupBtn) {
+                backupBtn.click();
+            }
+        });
+    }
+
+    
+
+  });
+
     // for delete requests
     // document.getElementById('deleteTenantButton').addEventListener('click', function() {
     //   // Send a DELETE request to your backend API to delete the tenant
@@ -158,9 +217,6 @@ document.addEventListener("livewire:navigated", function() {
     //     console.error('Error deleting tenant:', error);
     //   });
     // });
-  });
-
-
 
 document.addEventListener('livewire:navigated', () => {
     console.log("Navigated");
