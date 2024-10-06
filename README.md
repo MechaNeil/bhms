@@ -69,7 +69,7 @@ The system ensures an efficient, user-friendly experience for all users, enhanci
     - `php artisan migrate`
     - `npm run dev` for production use this `npm run build`
 - In Laravel Herd inside the open site choose the `bhms-main`
-- click the url again and it should work normaly, enjoy!!
+- Click the url again and it should work normaly, enjoy!!
   
 Please Contribute to this project by leaving a star ⭐
 
