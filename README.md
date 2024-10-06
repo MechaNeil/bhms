@@ -41,7 +41,7 @@ The system ensures an efficient, user-friendly experience for all users, enhanci
     `Laravel Herd`
     `Composer`
     `Node.js`
-    `Vscode` or any IDLE you prefer 
+    `Vscode`.
 - Download the File
 - Extract the file
     - Install Laravel Herd and 
