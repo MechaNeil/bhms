@@ -73,7 +73,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th>Website:</th>
-                                                    <td><a href="#">https://github.com/MechaNeil</a></td>
+                                                    <td><a href="https://github.com/MechaNeil">https://github.com/MechaNeil</a></td>
                                                 </tr>
                                             </tbody>
                                 
