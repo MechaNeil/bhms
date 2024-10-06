@@ -37,6 +37,11 @@ The system ensures an efficient, user-friendly experience for all users, enhanci
 - **Vite**
 
 ## 👨‍💻 Installation 
+- You need this software before you start:
+    `Laravel Herd`
+    `Composer`
+    `Node.js`
+    `Vscode` or any IDLE you prefer 
 - Download the File
 - Extract the file
     - Install Laravel Herd and 
