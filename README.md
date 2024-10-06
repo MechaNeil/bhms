@@ -44,7 +44,7 @@ The system ensures an efficient, user-friendly experience for all users, enhanci
     `Vscode`.
 - Download the File
 - Extract the file
-    - Install Laravel Herd and 
+    - Open Laravel Herd and 
     - In Herd click Open Sites
     - Click Add
     - Choose Link existing project
