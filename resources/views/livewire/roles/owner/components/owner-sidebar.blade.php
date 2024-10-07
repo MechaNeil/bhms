@@ -250,8 +250,8 @@
                             <p>Company Info</p>
                         </a>
                     </li>
-                    <li class="nav-item"> <a wire:navigate href="visit"
-                            class="nav-link {{ request()->routeIs('visit*') ? 'active' : '' }}"> <i
+                    <li class="nav-item"> <a href="\"
+                            class="nav-link {{ request()->routeIs('\*') ? 'active' : '' }}"> <i
                                 class="nav-icon bi bi-globe"></i>
                             <p>Visit Home Page</p>
                         </a>
