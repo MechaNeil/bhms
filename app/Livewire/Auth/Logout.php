@@ -13,7 +13,7 @@ class Logout extends Component
         Auth::logout();
 
         // Redirect to the login page
-        return redirect()->route('login');
+        return redirect()->route('home');
     }
 
     public function render()

@@ -15,3 +15,19 @@
   .custom-tooltip .tooltip-arrow {
     border-top-color: #343a40 !important; 
   } */
+
+  .welcome-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  

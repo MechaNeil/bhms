@@ -31,6 +31,12 @@ use App\Livewire\Roles\Owner\Pages\Reports\Payment\PaymentList;
 use App\Livewire\Roles\Owner\Pages\UserManagement\Logs\UserActivityLogs;
 use App\Livewire\Roles\Owner\Pages\UserManagement\ManageUsers\Users;
 
+use App\Livewire\Home\Homepage;
+
+
+// Home
+
+Route::get('/', Homepage::class)->name('home');
 
 // Authentication
 
@@ -48,9 +54,9 @@ Route::get('/dashboard-owner', DashboardOwner::class)->name('dashboard-owner');
 Route::get('/permission-management', Assistants::class)->name('permission-management');
 
 // Welcome Page
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Assistants Dashboard
 
