@@ -15,11 +15,14 @@
         "@floating-ui/core": "^1.6.8",
         "@popperjs/core": "^2.11.8",
         "admin-lte": "^4.0.0-beta2",
+        "aos": "^2.3.4",
         "bootstrap": "^5.3.3",
         "bootstrap-icons": "^1.11.3",
         "chart.js": "^4.4.4",
         "overlayscrollbars": "^2.10.0",
         "poppers": "^0.1.2",
-        "sortablejs": "^1.15.3"
+        "sortablejs": "^1.15.3",
+        "swiper": "^11.1.14",
+        "swiper-bundle": "^0.0.1-security"
     }
 }

@@ -14,27 +14,24 @@
      
        <title>@yield('title')</title> <!-- Use dynamic title -->
 
-    <!--Bootstrap ================================================== -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('home/css/bootstrap.min.css') }}">
+    <!--Vite ================================================== -->
+    @vite(['resources/js/home.js', 'resources/css/home.css'])
+    <link rel="stylesheet" href="{{ asset('fonts/fontkasi.css') }}">
 
-    <!--vendor css ================================================== -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('home/css/vendor.css') }}">
 
     <!--Link Swiper's CSS ================================================== -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> --}}
 
     <!--Link AOS's CSS ================================================== -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    {{-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> --}}
     <!-- Style Sheet ================================================== -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('home/style.css') }}">
 
     <!-- Google Fonts ================================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> --}}
         
        <!-- AdminLTE CSS -->
        {{-- <script>
@@ -152,14 +149,20 @@
    
    
    </script> --}}
-   <script src={{ asset("home/js/jquery-1.11.0.min.js") }}></script>
-   <script type="text/javascript" src={{ asset("home/js/bootstrap.bundle.min.js") }}></script>
-   <script type="text/javascript" src={{ asset("home/js/plugins.js") }}></script>
+   <script src="{{ asset('home/js/aos/dist/aos.js') }}"></script>
+   <script src="{{ asset('home/js/swiper/swiper-bundle.min.js') }}"></script>
+   <script src="{{ asset('home/js/iconify-icon.min.js') }}"></script>
+
+
+
+{{-- 
    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <script type="text/javascript" src={{ asset("home/js/script.js") }}></script>
-   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-       @livewireScripts
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> --}}
+   {{-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+       --}}
+   
+   @livewireScripts
    
        <!-- Livewire scripts -->
    

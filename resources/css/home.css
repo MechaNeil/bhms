@@ -1,1 +1,9 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import './home_css/vendor.css';
+@import './home_css/style.css';
+
+
+@import './home_css/aos.css';
+@import './home_css/swiper-bundle.min.css';
+

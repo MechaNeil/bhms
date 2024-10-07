@@ -1,3 +1,4 @@
+@section('title', 'Home Page')
 <div>
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -245,8 +246,13 @@
                                     <a class="nav-link p-0" href="#">About</a>
                                 </li>
                                 <li class="nav-item px-3">
-                                    <a class="nav-link p-0" href="#">Services</a>
+                                    <a class="nav-link p-0" href="#">Gallary</a>
                                 </li>
+
+                                <li class="nav-item px-3">
+                                    <a class="nav-link p-0" href="#">Rooms</a>
+                                </li>
+
                                 <li class="nav-item px-3">
                                     <a class="nav-link p-0" href="#">Contact</a>
                                 </li>
@@ -260,10 +266,10 @@
                                         <li><a href="#" class="dropdown-item ">Room </a>
                                         </li>
 
-                                        <li><a href="#" class="dropdown-item ">Services </a></li>
                                         <li><a href="#" class="dropdown-item ">Gallery </a></li>
-                                        <li><a href="#" class="dropdown-item ">Reviews </a></li>
-                                        <li><a href="#" class="dropdown-item ">FAQs </a>
+
+                                        <li class="nav-item px-3">
+                                            <a class="nav-link p-0" href="#">Contact</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -295,7 +301,7 @@
                 style="background-image: url('{{ asset('home/images/slider-image.jpg') }}'); background-size: cover; background-repeat: no-repeat; height: 85vh; background-position: center;">
                 <div class="row align-items-center m-auto pt-5 px-4 px-lg-0">
                     <div class="text-start col-md-6 col-lg-5 col-xl-6 offset-lg-1">
-                        <h2 class="display-1 fw-normal">MN's Bhouse Live Your Live to the Fullest</h2>
+                        <h2 class="display-1 fw-normal">MN's Bhouse Live Your Life to the Fullest</h2>
                         <a href="#" class="btn btn-arrow btn-primary mt-3">
                             <span>Explore rooms <svg width="18" height="18">
                                     <use xlink:href="#arrow-right"></use>
@@ -311,7 +317,7 @@
 
                                     <img src="{{ asset('assets/img/mn2.png') }}" alt="logo-footer" class="img-fluid"
                                         style="width: 150px; display: flex; justify-content: center; margin: 0 auto;">
-                                    
+
                                     <a href="{{ route('dashboard-owner') }}" class="btn btn-arrow btn-primary mt-5">
 
                                         <span>Dashboard<svg width="18" height="18">
@@ -320,7 +326,7 @@
                                     </a>
                                     @else
                                     <img src="{{ asset('assets/img/mn2.png') }}" alt="logo-footer" class="img-fluid"
-                                    style="width: 100px; display: flex; justify-content: center; margin: 0 auto;">
+                                        style="width: 100px; display: flex; justify-content: center; margin: 0 auto;">
 
                                     <a href="{{ route('login') }}" class="btn btn-arrow btn-primary mt-3">
                                         <span>Log in<svg width="18" height="18">
@@ -328,14 +334,14 @@
                                             </svg></span>
                                     </a>
 
-                                        @if (Route::has('register'))
-                                        <a href="{{ route('register') }}" class="btn btn-arrow btn-primary mt-3">
-                                            <span>Register<svg width="18" height="18">
-                                                    <use xlink:href="#arrow-right"></use>
-                                                </svg></span>
-                                        </a>
+                                    @if (Route::has('register'))
+                                    <a href="{{ route('register') }}" class="btn btn-arrow btn-primary mt-3">
+                                        <span>Register<svg width="18" height="18">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg></span>
+                                    </a>
                                     @endif
-                                            @endauth
+                                    @endauth
                                 </div>
                                 @endif
                             </div>
@@ -454,7 +460,7 @@
                                         </tr>
                                         <tr class="text-white">
                                             <td class="pe-2">Services:</td>
-                                            <td>Wifi, Television, Bathroom,...</td>
+                                            <td>Wifi, Bathroom,...</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -497,7 +503,7 @@
                                         </tr>
                                         <tr class="text-white">
                                             <td class="pe-2">Services:</td>
-                                            <td>Wifi, Television, Bathroom,...</td>
+                                            <td>Wifi, Bathroom,...</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -540,7 +546,7 @@
                                         </tr>
                                         <tr class="text-white">
                                             <td class="pe-2">Services:</td>
-                                            <td>Wifi, Television, Bathroom,...</td>
+                                            <td>Wifi, Bathroom,...</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -583,7 +589,7 @@
                                         </tr>
                                         <tr class="text-white">
                                             <td class="pe-2">Services:</td>
-                                            <td>Wifi, Television, Bathroom,...</td>
+                                            <td>Wifi, Bathroom,...</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -626,7 +632,7 @@
                                         </tr>
                                         <tr class="text-white">
                                             <td class="pe-2">Services:</td>
-                                            <td>Wifi, Television, Bathroom,...</td>
+                                            <td>Wifi, Bathroom,...</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -702,7 +708,7 @@
     <section id="footer">
         <div class="container-fluid padding-side padding-small pt-0" data-aos="fade-up">
             <footer class="row">
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-0">
                     <img src="{{ asset('assets/img/mn2.png') }}" alt="logo-footer" class="img-fluid"
                         style="width: 80px">
                     <p class="mt-3">Welcome to MN's Bhouse, where comfort meets tranquility. Nestled in the heart of a
@@ -747,20 +753,22 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6 col-lg-3 offset-lg-1 mb-4 mb-lg-0">
-                    <h4 class="display-6 fw-normal">Join Our Community</h4>
-                    <p>Sign up to receive latest news.</p>
-                    <form class=" position-relative">
-                        <input type="text" class="form-control px-4 py-3 bg-transparent mb-3" placeholder="Your Name">
-                        <input type="email" class="form-control px-4 py-3 bg-transparent" placeholder="Your email">
-                        <div class="d-grid">
-                            <button href="#" class="btn btn-arrow btn-primary mt-3">
-                                <span>Apply Now<svg width="18" height="18">
-                                        <use xlink:href="#arrow-right"></use>
-                                    </svg></span>
-                            </button>
-                        </div>
-                    </form>
+
+
+            </footer>
+        </div>
+        <hr class="text-black">
+        <div class="container-fluid padding-side padding-small" data-aos="fade-up">
+            <footer class="row">
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <h4 class="display-6 fw-normal">Quick links</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="p-0 "> Home </a></li>
+                        <li class="nav-item"><a href="#" class="p-0 "> About us </a></li>
+                        <li class="nav-item"><a href="#" class="p-0 "> Privacy Policy</a></li>
+                        <li class="nav-item"><a href="#" class="p-0 "> Contact us </a></li>
+                        <li class="nav-item"><a href="#" class="p-0 "> Support </a></li>
+                    </ul>
                 </div>
                 <div class="col-md-6 col-lg-3 offset-lg-1 mb-4 mb-lg-0">
                     <h4 class="display-6 fw-normal">Our Info</h4>
@@ -786,21 +794,6 @@
                                 <use xlink:href="#email"></use>
                             </svg>mneil@gmail.com
                         </li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
-        <hr class="text-black">
-        <div class="container-fluid padding-side padding-small" data-aos="fade-up">
-            <footer class="row">
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <h4 class="display-6 fw-normal">Quick links</h4>
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a href="#" class="p-0 "> Home </a></li>
-                        <li class="nav-item"><a href="#" class="p-0 "> About us </a></li>
-                        <li class="nav-item"><a href="#" class="p-0 "> Privacy Policy</a></li>
-                        <li class="nav-item"><a href="#" class="p-0 "> Contact us </a></li>
-                        <li class="nav-item"><a href="#" class="p-0 "> Support </a></li>
                     </ul>
                 </div>
 
