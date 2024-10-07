@@ -14,7 +14,6 @@ export default defineConfig({
             css: {
                 devSourcemap: true, // Enable CSS source maps in development
               },
-            
         }),
         
         

@@ -5,7 +5,7 @@
     <!--begin::Sidebar Brand-->
     <div class="sidebar-brand">
         <!--begin::Brand Link--> <a href="{{ route('dashboard-owner') }} " class="brand-link">
-            <!--begin::Brand Image--> <img src="{{ asset('assets/img/mn2.png') }}" alt="AdminLTE Logo" class="brand-image opacity-75 shadow">
+            <!--begin::Brand Image--> <img src="{{ asset('assets/img/mn2.png') }}" alt="AdminLTE Logo" class="brand-image opacity-75">
             <!--end::Brand Image-->
             <!--begin::Brand Text--> <span class="brand-text fw-light">MN's Bhms</span>
             <!--end::Brand Text-->
@@ -250,7 +250,7 @@
                             <p>Company Info</p>
                         </a>
                     </li>
-                    <li class="nav-item"> <a wire:navigate href="visit"
+                    <li class="nav-item"> <a wire:navigate href="/"
                             class="nav-link {{ request()->routeIs('visit*') ? 'active' : '' }}"> <i
                                 class="nav-icon bi bi-globe"></i>
                             <p>Visit Home Page</p>

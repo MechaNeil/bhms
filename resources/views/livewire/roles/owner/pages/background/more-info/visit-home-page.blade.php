@@ -1,7 +1,7 @@
 
     {{-- The Master doesn't talk, he acts. --}}
 
-    @section('title', 'Register Tenants')
+    @section('title', 'Home Page')
     @section('body-class', 'layout-fixed sidebar-expand-lg sidebar-mini bg-body-tertiary')
     <!-- Defining a custom body class for the register page -->
     

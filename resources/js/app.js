@@ -1,16 +1,16 @@
 import '@popperjs/core/dist/umd/popper.min.js';
 // Import Bootstrap's JavaScript
 
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './bootstrap';
 
-import { OverlayScrollbars } from 'overlayscrollbars';
 
+import { OverlayScrollbars } from 'overlayscrollbars';
 
 import 'bootstrap/dist/js/bootstrap.js';
 
 
 import { Tooltip } from 'bootstrap';
+
 
 // Initialize tooltips
 document.addEventListener('livewire:navigated', function () {
@@ -18,6 +18,8 @@ document.addEventListener('livewire:navigated', function () {
   const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new Tooltip(tooltipTriggerEl);
   });
+
+
 });
 
 
@@ -193,6 +195,8 @@ document.addEventListener("livewire:navigated", function() {
         });
     }
 
+    // nav toggle
+
     
 
   });
@@ -222,3 +226,7 @@ document.addEventListener('livewire:navigated', () => {
     console.log("Navigated");
 
 });
+
+// Reinitialize Bootstrap collapse after Livewire navigation
+
+
