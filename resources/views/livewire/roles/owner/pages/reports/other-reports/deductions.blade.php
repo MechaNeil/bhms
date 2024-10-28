@@ -1,7 +1,7 @@
 
     {{-- The whole world belongs to you. --}}
 
-    @section('title', 'Collectibles')
+    @section('title', 'Bills')
     @section('body-class', 'layout-fixed sidebar-expand-lg sidebar-mini bg-body-tertiary')
     <!-- Defining a custom body class for the register page -->
     
@@ -20,7 +20,7 @@
                             <!--begin::Row-->
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h3 class="mb-0">Collectibles</h3>
+                                    <h3 class="mb-0">Utility Bills</h3>
                                 </div>
                                 <div class="col-sm-6">
                                     <ol class="breadcrumb float-sm-end">
@@ -60,7 +60,7 @@
     
                                                         <th>Bills</th>
                                                         <th>Rate</th>
-                                                        <th style="width: 100px">Action</th>
+                                                        <th style="width: 120px">Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
