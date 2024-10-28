@@ -57,7 +57,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
-                                    data-bs-target="#addTenantModal"">
+                                    data-bs-target="#addTenantModal">
                                     <i class=" bi bi-person-fill-add" style="font-size: 18px;"></i> Add New
                                 </button>
                                 <!-- Modal for Add tenants-->
@@ -172,8 +172,10 @@
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
+                                                
+                                                <button type="button" class="btn btn-secondary me-auto"
                                                     data-bs-dismiss="modal">Close</button>
+
                                                 <button type="submit" class="btn btn-primary" form="addTenantForm">Save
                                                     Tenant</button>
                                             </div>
@@ -293,7 +295,7 @@
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
+                                                <button type="button" class="btn btn-secondary me-auto"
                                                     data-bs-dismiss="modal">Close</button>
                                                 <button type="submit" class="btn btn-primary" form="editTenantForm">Save
                                                     Tenant</button>
@@ -316,7 +318,7 @@
                                                 <p>Are you sure you want to delete this tenant?</p>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
+                                                <button type="button" class="btn btn-secondary me-auto"
                                                     data-bs-dismiss="modal">Cancel</button>
                                                 <button type="button" class="btn btn-danger"
                                                     id="deleteTenantButton">Delete</button>

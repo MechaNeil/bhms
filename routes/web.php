@@ -45,62 +45,59 @@ Route::get('/login', Login::class)->name('login');
 Route::get('/register', Register::class)->name('register');
 
 
-// Route::get('/dashboard-owner', function () {
-//     return view('/dashboard-owner'); // Create a dashboard-owner.blade.php
-// })->middleware('auth')->name('dashboard-owner');
 
-// Home dashboard
-Route::get('/dashboard-owner', DashboardOwner::class)->name('dashboard-owner');
-Route::get('/permission-management', Assistants::class)->name('permission-management');
+Route::middleware(['auth'])->group(function () {
 
-// Welcome Page
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+    // Home dashboard
+    Route::get('/dashboard-owner', DashboardOwner::class)->name('dashboard-owner');
+    Route::get('/permission-management', Assistants::class)->name('permission-management');
 
-// Assistants Dashboard
+    // Welcome Page
+    // Route::get('/', function () {
+    //     return view('welcome');
+    // });
 
-Route::get('/custom-permission', Assistants::class)->name('custom-permission');
+    // Assistants Dashboard
 
-
-// Room Management
-Route::get('/room-management', RoomManagement::class)->name('room-management');
-Route::get('/bed-assignment', BedAssignment::class)->name('bed-assignment');
-Route::get('/manage-beds', ManageBeds::class)->name('manage-beds');
-Route::get('/tenants-information', TenantsInfo::class)->name('tenants-information');
-
-//  Invoice
-Route::get('/utility-bills', Deductions::class)->name('utility-bills');
-Route::get('/view-invoice', ViewInvoice::class)->name('view-invoice');
-Route::get('/invoice-list', InvoiceList::class)->name('invoice-list');
-
-// Notification
-Route::get('/requests', TenantsRequests::class)->name('requests');
-Route::get('/sms-configuration', SmsConfiguration::class)->name('sms-configuration');
-Route::get('/notice-board', NoticeBoard::class)->name('notice-board');
-
-// Genarate Reports
-Route::get('/collectibles-month', CollectiblesMonth::class)->name('collectibles-month');
-Route::get('/collectibles-tenants', CollectiblesTenants::class)->name('collectibles-tenants');
-Route::get('/monthly-payment', MonthlyPayment::class)->name('monthly-payment');
-Route::get('/payment-list', PaymentList::class)->name('payment-list');
+    Route::get('/custom-permission', Assistants::class)->name('custom-permission');
 
 
+    // Room Management
+    Route::get('/room-management', RoomManagement::class)->name('room-management');
+    Route::get('/bed-assignment', BedAssignment::class)->name('bed-assignment');
+    Route::get('/manage-beds', ManageBeds::class)->name('manage-beds');
+    Route::get('/tenants-information', TenantsInfo::class)->name('tenants-information');
 
-// Create Accounts
-// Route::get('/register-tenants', UserActivityLogs::class)->name('register-tenants');
-// Route::get('/new-assistant', Users::class)->name('new-assistant');
+    //  Invoice
+    Route::get('/utility-bills', Deductions::class)->name('utility-bills');
+    Route::get('/view-invoice', ViewInvoice::class)->name('view-invoice');
+    Route::get('/invoice-list', InvoiceList::class)->name('invoice-list');
 
-// Background
-Route::get('/company-info', CompanyInfo::class)->name('company-info');
-Route::get('/visit', VisitHomePage::class)->name('visit');
+    // Notification
+    Route::get('/requests', TenantsRequests::class)->name('requests');
+    Route::get('/sms-configuration', SmsConfiguration::class)->name('sms-configuration');
+    Route::get('/notice-board', NoticeBoard::class)->name('notice-board');
 
-// User Management
-Route::get('/activity-logs', UserActivityLogs::class)->name('activity-logs');
-Route::get('/users', Users::class)->name('users');
-
-// Create Backup
-Route::get('/backup-database', BackupDatabase::class)->name('backup-database');
+    // Genarate Reports
+    Route::get('/collectibles-month', CollectiblesMonth::class)->name('collectibles-month');
+    Route::get('/collectibles-tenants', CollectiblesTenants::class)->name('collectibles-tenants');
+    Route::get('/monthly-payment', MonthlyPayment::class)->name('monthly-payment');
+    Route::get('/payment-list', PaymentList::class)->name('payment-list');
 
 
 
+    // Create Accounts
+    // Route::get('/register-tenants', UserActivityLogs::class)->name('register-tenants');
+    // Route::get('/new-assistant', Users::class)->name('new-assistant');
+
+    // Background
+    Route::get('/company-info', CompanyInfo::class)->name('company-info');
+    Route::get('/visit', VisitHomePage::class)->name('visit');
+
+    // User Management
+    Route::get('/activity-logs', UserActivityLogs::class)->name('activity-logs');
+    Route::get('/users', Users::class)->name('users');
+
+    // Create Backup
+    Route::get('/backup-database', BackupDatabase::class)->name('backup-database');
+});
