@@ -140,6 +140,66 @@ document.addEventListener("livewire:navigated", function() {
         }
       });
     }
+    // Progress Bar addRoom
+    const addRoomForm = document.getElementById('addRoomForm');
+    if (addRoomForm) {
+      addRoomForm.addEventListener('input', function() {
+        const requiredFields = document.querySelectorAll('#addRoomForm [required]');
+        const filledFields = Array.from(requiredFields).filter(field => field.value !== '');
+        const progress = (filledFields.length / requiredFields.length) * 100;
+        const formProgressroom1 = document.getElementById('formProgressroom1');
+        if (formProgressroom1) {
+          formProgressroom1.style.width = progress + '%';
+          formProgressroom1.ariaValueNow = progress;
+        }
+      });
+    }
+  
+    // Progress Bar editRoom
+    const editRoomForm = document.getElementById('editRoomForm');
+    if (editRoomForm) {
+      editRoomForm.addEventListener('input', function() {
+        const requiredFields = document.querySelectorAll('#editRoomForm [required]');
+        const filledFields = Array.from(requiredFields).filter(field => field.value !== '');
+        const progress = (filledFields.length / requiredFields.length) * 100;
+        const formProgressroom2 = document.getElementById('formProgressroom2');
+        if (formProgressroom2) {
+          formProgressroom2.style.width = progress + '%';
+          formProgressroom2.ariaValueNow = progress;
+        }
+      });
+    }
+
+        // Progress Bar addBeds
+        const addBedsForm = document.getElementById('addBedsForm');
+        if (addBedsForm) {
+          addBedsForm.addEventListener('input', function() {
+            const requiredFields = document.querySelectorAll('#addBedsForm [required]');
+            const filledFields = Array.from(requiredFields).filter(field => field.value !== '');
+            const progress = (filledFields.length / requiredFields.length) * 100;
+            const formProgressbeds1 = document.getElementById('formProgressbeds1');
+            if (formProgressbeds1) {
+              formProgressbeds1.style.width = progress + '%';
+              formProgressbeds1.ariaValueNow = progress;
+            }
+          });
+        }
+      
+        // Progress Bar editBeds
+        const editBedsForm = document.getElementById('editBedsForm');
+        if (editBedsForm) {
+          editBedsForm.addEventListener('input', function() {
+            const requiredFields = document.querySelectorAll('#editBedsForm [required]');
+            const filledFields = Array.from(requiredFields).filter(field => field.value !== '');
+            const progress = (filledFields.length / requiredFields.length) * 100;
+            const formProgressbeds2 = document.getElementById('formProgressbeds2');
+            if (formProgressbeds2) {
+              formProgressbeds2.style.width = progress + '%';
+              formProgressbeds2.ariaValueNow = progress;
+            }
+          });
+        }
+  
 
 
     // Backup Button functionality
