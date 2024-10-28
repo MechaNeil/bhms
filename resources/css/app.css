@@ -1,4 +1,4 @@
-@import 'admin-lte/dist/css/adminlte.min.css';
+@import 'admin-lte/dist/css/adminlte.css';
 
 
 @import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -59,4 +59,13 @@
   --bs-table-hover-color: #fff;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color)
+}
+table {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !important;
+
+}
+
+body {
+
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !important;
 }
