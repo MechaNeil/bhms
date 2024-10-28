@@ -52,7 +52,7 @@ document.addEventListener("livewire:navigated", function() {
 
 document.addEventListener("livewire:navigated", function() {
 
-    console.log("Navigated Tenants");
+    console.log("Navigated Livewire");
 
     const userName = 'Mak Nel'; // This will come from my database in future, this is for testing
     // Tentants
@@ -223,7 +223,11 @@ document.addEventListener("livewire:navigated", function() {
     // });
 
 document.addEventListener('livewire:navigated', () => {
-    console.log("Navigated");
+    console.log("Livewire Navigated");
+
+});
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("Dom loaded");
 
 });
 
