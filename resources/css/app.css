@@ -61,7 +61,7 @@
 }
 
 
-.card {
+.card, .card-header {
   transition: 0.5s ease-in-out;
 }
 .img-thumbnail {
@@ -84,6 +84,32 @@
 
 .page-item:first-child, .page-link{
   transition: 0.5s ease-in-out;
+}
+
+.alert, .alert-link {
+  transition: 0.5s ease-in-out;
+}
+
+/* Style readonly inputs to look disabled */
+/* .form-control[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+  cursor: not-allowed;
+} */
+
+
+[data-bs-theme="light"] .form-control[disabled] {
+  background-color: #e9ecef;
+  opacity: 1; /* Ensures text color is not dimmed */
+  cursor: not-allowed;
+}
+
+
+[data-bs-theme="dark"] .form-control[disabled] {
+  background-color: #343a40; /* Dark gray for dark theme */
+  color: #adb5bd; /* Lighter text color for contrast */
+  opacity: 1; /* Ensures text color is not dimmed */
+  cursor: not-allowed;
 }
 
 

@@ -236,7 +236,7 @@
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <p>Are you sure you want to delete this bed?</p>
+                                                <p>Are you sure you want to delete this assigned bed?</p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary me-auto"
@@ -280,12 +280,16 @@
                                                             Oct 06,2021
                                                         </td>
                                                         <td class="text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button">
-                                                                <i class="bi bi-pencil-fill"></i>
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                            data-bs-toggle="modal" data-bs-target="#editAssignBedsModal">
+                                                            <i class="bi bi-pencil-fill"></i>
                                                             </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button">
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteAssignBedsModal">
                                                                 <i class="bi bi-trash-fill"></i>
                                                             </button>
+                                                            
                                                         </td>
                                                     </tr>
                                                     <tr class="align-middle">
@@ -297,10 +301,13 @@
                                                             Oct 06,2021
                                                         </td>
                                                         <td class="text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button">
-                                                                <i class="bi bi-pencil-fill"></i>
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                            data-bs-toggle="modal" data-bs-target="#editAssignBedsModal">
+                                                            <i class="bi bi-pencil-fill"></i>
                                                             </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button">
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteAssignBedsModal">
                                                                 <i class="bi bi-trash-fill"></i>
                                                             </button>
                                                         </td>
@@ -314,10 +321,13 @@
                                                             Oct 06,2021
                                                         </td>
                                                         <td class=" text-center justify-items-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button">
-                                                                <i class="bi bi-pencil-fill"></i>
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                            data-bs-toggle="modal" data-bs-target="#editAssignBedsModal">
+                                                            <i class="bi bi-pencil-fill"></i>
                                                             </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button">
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteAssignBedsModal">
                                                                 <i class="bi bi-trash-fill"></i>
                                                             </button>
                                                         </td>
@@ -331,10 +341,13 @@
                                                             Oct 06,2021
                                                         </td>
                                                         <td class=" text-center justify-items-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button">
-                                                                <i class="bi bi-pencil-fill"></i>
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                            data-bs-toggle="modal" data-bs-target="#editAssignBedsModal">
+                                                            <i class="bi bi-pencil-fill"></i>
                                                             </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button">
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteAssignBedsModal">
                                                                 <i class="bi bi-trash-fill"></i>
                                                             </button>
                                                         </td>

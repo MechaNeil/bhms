@@ -234,7 +234,7 @@ document.addEventListener("livewire:navigated", function () {
         });
     }
 
-    // Progress Bar addBeds
+    // Progress Bar addAssignBeds
     const addAssignBedsForm = document.getElementById("addAssignBedsForm");
     if (addAssignBedsForm) {
         addAssignBedsForm.addEventListener("input", function () {
@@ -256,7 +256,7 @@ document.addEventListener("livewire:navigated", function () {
         });
     }
 
-    // Progress Bar editBeds
+    // Progress Bar editAssignBeds
     const editAssignBedsForm = document.getElementById("editAssignBedsForm");
     if (editAssignBedsForm) {
         editAssignBedsForm.addEventListener("input", function () {
@@ -277,6 +277,99 @@ document.addEventListener("livewire:navigated", function () {
             }
         });
     }
+
+    // Progress Bar updateInvoice
+    const updateInvoiceForm = document.getElementById("updateInvoiceForm");
+    if (updateInvoiceForm) {
+        updateInvoiceForm.addEventListener("input", function () {
+            const requiredFields = document.querySelectorAll(
+                "#updateInvoiceForm [required]"
+            );
+            const filledFields = Array.from(requiredFields).filter(
+                (field) => field.value !== ""
+            );
+            const progress =
+                (filledFields.length / requiredFields.length) * 100;
+            const formProgressInvoice1 = document.getElementById(
+                "formProgressInvoice1"
+            );
+            if (formProgressInvoice1) {
+                formProgressInvoice1.style.width = progress + "%";
+                formProgressInvoice1.ariaValueNow = progress;
+            }
+        });
+    }
+
+    // Progress Bar payInvoice
+    const payInvoiceForm = document.getElementById("payInvoiceForm");
+    if (payInvoiceForm) {
+        payInvoiceForm.addEventListener("input", function () {
+            const requiredFields = document.querySelectorAll(
+                "#payInvoiceForm [required]"
+            );
+            const filledFields = Array.from(requiredFields).filter(
+                (field) => field.value !== ""
+            );
+            const progress =
+                (filledFields.length / requiredFields.length) * 100;
+            const formProgressInvoice2 = document.getElementById(
+                "formProgressInvoice2"
+            );
+            if (formProgressInvoice2) {
+                formProgressInvoice2.style.width = progress + "%";
+                formProgressInvoice2.ariaValueNow = progress;
+            }
+        });
+    }
+
+
+        // Progress Bar addAssignBeds
+    const addBillsForm = document.getElementById("addBillsForm");
+    if (addBillsForm) {
+        addBillsForm.addEventListener("input", function () {
+            const requiredFields = document.querySelectorAll(
+                "#addBillsForm [required]"
+            );
+            const filledFields = Array.from(requiredFields).filter(
+                (field) => field.value !== ""
+            );
+            const progress =
+                (filledFields.length / requiredFields.length) * 100;
+            const formProgressBills1 = document.getElementById(
+                "formProgressBills1"
+            );
+            if (formProgressBills1) {
+                formProgressBills1.style.width = progress + "%";
+                formProgressBills1.ariaValueNow = progress;
+            }
+        });
+    }
+
+    // Progress Bar editAssignBeds
+    const editBillsForm = document.getElementById("editBillsForm");
+    if (editBillsForm) {
+        editBillsForm.addEventListener("input", function () {
+            const requiredFields = document.querySelectorAll(
+                "#editBillsForm [required]"
+            );
+            const filledFields = Array.from(requiredFields).filter(
+                (field) => field.value !== ""
+            );
+            const progress =
+                (filledFields.length / requiredFields.length) * 100;
+            const formProgressBills2 = document.getElementById(
+                "formProgressBills2"
+            );
+            if (formProgressBills2) {
+                formProgressBills2.style.width = progress + "%";
+                formProgressBills2.ariaValueNow = progress;
+            }
+        });
+    }
+
+
+    
+
 
     // Backup Button functionality
     const backupBtn = document.getElementById("backup-btn");
