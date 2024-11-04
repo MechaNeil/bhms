@@ -37,41 +37,6 @@
                 <!--end::App Content Header-->
                 <!--begin::App Content-->
                 <div class="app-content">
-                    <!-- /.container-fluid -->
-                    {{-- <form wire:submit="changeGreeting()">
-
-                        <select type="text" class="p-4 mb-2" wire:model.fill='greeting'>
-                            @foreach ($greetings as $item)
-                            <option value="{{ $item->greeting }}">
-                                {{ $item->greeting }}
-                            </option>
-
-                            @endforeach
-                        </select> --}}
-
-                        {{-- wire modifier live, debounce.1000s, change, blur, fill --}}
-                        {{-- <input type="text" class="p-4 mb-2" wire:model='name'>
-                        <div>
-                            @error('name')
-                            {{ $message }}
-
-                            @enderror
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            Greet
-                        </button>
-                </div>
-
-                </form> --}}
-
-                <livewire:roles.owner.pages.dashboard.manage-assistant.component.search placeholder="whatever we want">
-   
-                {{-- 
-                @if ($greetingMessage != '')
-                <div class="mt-5">
-                    {{ $greetingMessage }}!
-                </div>
-                @endif --}}
 </div>
 <!--end::App Content-->
 </main>

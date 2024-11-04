@@ -129,15 +129,6 @@ body {
         border-color 0.3s ease-in-out !important;
 }
 
-.results-container {
-  max-height: 400px; /* Set a maximum height */
-  overflow-y: auto; /* Enable vertical scrolling */
-  overflow-x: hidden;
-  scrollbar-color: var(--bs-secondary-bg) transparent;
-  scrollbar-width: thin;
-
-   /* Hide horizontal scrolling if not needed */
-}
 
 .table-responsive {
   scrollbar-color: var(--bs-secondary-bg) transparent;
@@ -158,10 +149,4 @@ body {
   overflow-y: auto;
    /* Start with hidden overflow */
  /* Show scrollbar on hover */
-}
-.results-container a {
-  text-decoration: none; /* Remove underline from links in the results container */
-}
-.article a{
-  text-decoration: none;
 }
