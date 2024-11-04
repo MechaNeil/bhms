@@ -24,14 +24,14 @@
             <nav class="mt-2">
                 <!--begin::Sidebar Menu-->
                 <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                    <li class="nav-item"> <a wire:navigate href="dashboard-owner"
+                    <li class="nav-item"> <a wire:navigate href="/dashboard-owner"
                             class="nav-link {{ request()->routeIs('dashboard-owner*') ? 'active' : '' }}"> <i
                                 class="nav-icon bi bi-speedometer2"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
 
-                    <li class="nav-item"> <a wire:navigate href="permission-management"
+                    <li class="nav-item"> <a wire:navigate href="/permission-management"
                             class="nav-link {{ request()->routeIs('permission-management*') ? 'active' : '' }}"> <i
                                 class="nav-icon bi bi-person-gear"></i>
                             <p>Assistant</p>
@@ -66,19 +66,19 @@
                         </a>
                         <ul class="nav nav-treeview">
 
-                            <li class="nav-item"> <a wire:navigate href="room-management"
+                            <li class="nav-item"> <a wire:navigate href="/room-management"
                                     class="nav-link {{ request()->routeIs('room-management*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-house-gear-fill"></i>
                                     <p>Room</p>
                                 </a>
                             </li>
-                            <li class="nav-item"> <a wire:navigate href="tenants-information"
+                            <li class="nav-item"> <a wire:navigate href="/tenants-information"
                                     class="nav-link {{ request()->routeIs('tenants-information*') ? 'active' : '' }}">
                                     <i class="nav-icon bi bi-people-fill"></i>
                                     <p>Tenants</p>
                                 </a>
                             </li>
-                            <li class="nav-item"> <a wire:navigate href="manage-beds"
+                            <li class="nav-item"> <a wire:navigate href="/manage-beds"
                                     class="nav-link {{ request()->routeIs('manage-beds*') ? 'active' : '' }}">
                                     <svg class="nav-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 27 27" fill="currentColor">
@@ -90,7 +90,7 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item"> <a wire:navigate href="bed-assignment"
+                            <li class="nav-item"> <a wire:navigate href="/bed-assignment"
                                     class="nav-link {{ request()->routeIs('bed-assignment*') ? 'active' : '' }}">
                                     <svg class="nav-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 27 27" fill="currentColor">
@@ -103,13 +103,13 @@
                             </li>
 
 
-                            <li class="nav-item"> <a wire:navigate href="invoice-list"
+                            <li class="nav-item"> <a wire:navigate href="/invoice-list"
                                     class="nav-link {{ request()->routeIs('view-invoice*') || request()->routeIs('invoice-list*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-file-text-fill "></i>
                                     <p>Invoice</p>
                                 </a>
                             </li>
-                            <li class="nav-item"> <a wire:navigate href="utility-bills"
+                            <li class="nav-item"> <a wire:navigate href="/utility-bills"
                                     class="nav-link {{ request()->routeIs('utility-bills*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi-cash"></i>
                                     <p>Bills</p>
@@ -137,17 +137,17 @@
                             </p>     
                         </a>
                         <ul class="nav nav-treeview">
-                            <li class="nav-item"> <a wire:navigate href="requests"
+                            <li class="nav-item"> <a wire:navigate href="/requests"
                                     class="nav-link {{ request()->routeIs('requests*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-list-check"></i>
                                     <p>Requests</p>
                                 </a> </li>
-                            <li class="nav-item"> <a wire:navigate href="sms-configuration"
+                            <li class="nav-item"> <a wire:navigate href="/sms-configuration"
                                     class="nav-link {{ request()->routeIs('sms-configuration*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi-envelope-fill"></i>
                                     <p>SMS</p>
                                 </a> </li>
-                            <li class="nav-item"> <a wire:navigate href="notice-board"
+                            <li class="nav-item"> <a wire:navigate href="/notice-board"
                                     class="nav-link {{ request()->routeIs('notice-board*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi-megaphone-fill"></i>
                                     <p>Notice Board</p>
@@ -175,25 +175,25 @@
                         </a>
                         <ul class="nav nav-treeview">
 
-                            <li class="nav-item"> <a wire:navigate href="collectibles-month"
+                            <li class="nav-item"> <a wire:navigate href="/collectibles-month"
                                     class="nav-link {{ request()->routeIs('collectibles-month*') ? 'active' : '' }}">
                                     <i class="nav-icon bi bi-wallet"></i>
                                     <p>Collectibles Months</p>
                                 </a>
                             </li>
-                            <li class="nav-item"> <a wire:navigate href="collectibles-tenants"
+                            <li class="nav-item"> <a wire:navigate href="/collectibles-tenants"
                                     class="nav-link {{ request()->routeIs('collectibles-tenants*') ? 'active' : '' }}">
                                     <i class="nav-icon bi bi-wallet"></i>
                                     <p>Collectibles Tenants</p>
                                 </a>
                             </li>
-                            <li class="nav-item"> <a wire:navigate href="monthly-payment"
+                            <li class="nav-item"> <a wire:navigate href="/monthly-payment"
                                     class="nav-link {{ request()->routeIs('monthly-payment*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-cash-stack"></i>
                                     <p>Monthly Payments</p>
                                 </a>
                             </li>
-                            <li class="nav-item"> <a wire:navigate href="payment-list"
+                            <li class="nav-item"> <a wire:navigate href="/payment-list"
                                     class="nav-link {{ request()->routeIs('payment-list*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-cash-stack"></i>
                                     <p>Payments List</p>
@@ -215,13 +215,13 @@
                         </p>     
                         </a>
                         <ul class="nav nav-treeview">
-                            <li class="nav-item"> <a wire:navigate href="users"
+                            <li class="nav-item"> <a wire:navigate href="/users"
                                     class="nav-link {{ request()->routeIs('users*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-person-circle"></i>
                                     <p>Users</p>
                                 </a>
                             </li>
-                            <li class="nav-item"> <a wire:navigate href="activity-logs"
+                            <li class="nav-item"> <a wire:navigate href="/activity-logs"
                                     class="nav-link {{ request()->routeIs('activity-logs*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-card-checklist"></i>
                                     <p>Activity Logs</p>
@@ -233,7 +233,7 @@
 
 
                     <li class="nav-header">CREATE BACKUP</li>
-                    <li class="nav-item"> <a wire:navigate href="backup-database"
+                    <li class="nav-item"> <a wire:navigate href="/backup-database"
                             class="nav-link {{ request()->routeIs('backup-database*') ? 'active' : '' }}"> <i
                                 class="nav-icon bi bi-database-fill"></i>
                             <p>Backup Database</p>
@@ -243,8 +243,14 @@
                     <li class="nav-header">MORE INFO</li>
 
 
+                    <li class="nav-item"> <a wire:navigate href="/article-index"
+                        class="nav-link {{ request()->routeIs('article-index*') ? 'active' : '' }}"> <i
+                            class="nav-icon bi bi-buildings"></i>
+                        <p>Article-Index</p>
+                    </a>
+                </li>
 
-                    <li class="nav-item"> <a wire:navigate href="company-info"
+                    <li class="nav-item"> <a wire:navigate href="/company-info"
                             class="nav-link {{ request()->routeIs('company-info*') ? 'active' : '' }}"> <i
                                 class="nav-icon bi bi-buildings"></i>
                             <p>Company Info</p>
@@ -256,6 +262,7 @@
                             <p>Visit Home Page</p>
                         </a>
                     </li>
+                    
 
 
 

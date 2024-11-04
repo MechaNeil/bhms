@@ -39,6 +39,7 @@ class Login extends Component
 
                 // Redirect to dashboard on success
                 return redirect()->route('dashboard-owner');
+                
             } else {
                 // Incorrect password
                 $this->addError('password', 'The provided password is incorrect.');

@@ -19,7 +19,7 @@
                         <!--begin::Row-->
                         <div class="row">
                             <div class="col-sm-6">
-                                <h3 class="m-1" style="display: flex; align-items: flex-end;">
+                                <h3 class="m-0" style="display: flex; align-items: flex-end;">
                                     <!-- Adjust the SVG size using width and height -->
                                     <svg class="d-inline-block text-secondary"
                                         style="margin-right: 8px; width: 38px; height: 38px; vertical-align: middle;"
