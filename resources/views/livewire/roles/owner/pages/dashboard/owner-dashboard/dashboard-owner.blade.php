@@ -42,14 +42,74 @@
                         <!--begin::Row-->
                         <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols">
 
-                            <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.monthly-earnings>
 
-                            <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.total-due-date>
 
-                            <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.all-tenants>
+                            <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.active-tenants>
+                                <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.total-beds>
+                                    <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.monthly-earnings>
+                                        <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.total-collectibles>
 
-                            <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.occupancy-rate>
 
+                                            {{--
+                                            <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.total-due-date>
+
+                                                <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.all-tenants>
+
+                                                    <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.occupancy-rate>
+                                                        --}}
+
+                        </div>
+                        <div class="row row-cols-2">
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">List of Due Dates (Greater than or Equal to Current Date)
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table table-bordered">
+                                            <thead class="table-mode">
+                                                <tr>
+                                                    <th>Invoice Number</th>
+                                                    <th>Due Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Example row, you can dynamically generate rows here -->
+                                                <tr>
+                                                    <td>INV-001</td>
+                                                    <td>2024-11-10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Upcoming Invoices (7 Days Before Due Date)</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table table-bordered">
+                                            <thead class="table-mode">
+                                                <tr>
+                                                    <th>Invoice Number</th>
+                                                    <th>Due Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Example row, you can dynamically generate rows here -->
+                                                <tr>
+                                                    <td>INV-002</td>
+                                                    <td>2024-11-17</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2">
@@ -59,22 +119,27 @@
                             <div class="col-lg-6 col-6">
 
                                 <!--begin::Room Status-->
+                                {{--
                                 <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.room-status>
+                                    --}}
 
-                                <!--end::Room Status-->
+                                    <!--end::Room Status-->
                             </div>
 
                             <!--end::Col-->
                             <div class="col-lg-6 col-6">
 
+                                {{--
                                 <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.property>
+                                    --}}
 
-                                <!--end::Room Status-->
+                                    <!--end::Room Status-->
                             </div>
 
                         </div>
                         <div class="row">
-                        {{-- <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.chart>      <!--end::Col--> --}}
+                            {{-- <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.chart>
+                                <!--end::Col--> --}}
                         </div>
                         <!--end::Row-->
                         <!--begin::Row-->
@@ -92,7 +157,7 @@
             <!--end::App Main-->
             <!--begin::Footer livewire-->
             <livewire:roles.owner.components.owner-footer>
-            <!--end::Footer livewire-->
-            <div class="sidebar-overlay"></div>
-            
+                <!--end::Footer livewire-->
+                <div class="sidebar-overlay"></div>
+
 </div>
