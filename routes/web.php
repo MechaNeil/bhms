@@ -31,6 +31,7 @@ use App\Livewire\Roles\Owner\Pages\Reports\Payment\PaymentList;
 use App\Livewire\Roles\Owner\Pages\UserManagement\Logs\UserActivityLogs;
 use App\Livewire\Roles\Owner\Pages\UserManagement\ManageUsers\Users;
 
+
 use App\Livewire\Home\Homepage;
 
 
@@ -100,4 +101,5 @@ Route::middleware(['auth'])->group(function () {
 
     // Create Backup
     Route::get('/backup-database', BackupDatabase::class)->name('backup-database');
+
 });

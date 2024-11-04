@@ -1,11 +1,9 @@
-import "@popperjs/core/dist/umd/popper.min.js";
 // Import Bootstrap's JavaScript
-
 import "./bootstrap";
 
 import { OverlayScrollbars } from "overlayscrollbars";
 
-import "bootstrap/dist/js/bootstrap.js";
+
 
 import { Tooltip } from "bootstrap";
 
@@ -37,6 +35,7 @@ document.addEventListener("livewire:navigated", function () {
             },
         });
     }
+    
 });
 
 // By adding checks like if (element) { ... }, you ensure that the code inside

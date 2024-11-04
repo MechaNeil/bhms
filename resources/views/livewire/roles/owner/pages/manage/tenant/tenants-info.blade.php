@@ -277,7 +277,7 @@
                                                         <div class="col-md-6 mb-3">
                                                             <label for="gender" class="form-label">Gender</label>
                                                             <select class="form-select" id="gender" required>
-                                                                <option value="" disabled selected>Select gender
+                                                                <option disabled selected>Select gender
                                                                 </option>
                                                                 <option value="male">Male</option>
                                                                 <option value="female">Female</option>

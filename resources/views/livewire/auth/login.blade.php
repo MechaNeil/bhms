@@ -15,8 +15,9 @@
 
                 <div class="input-group has-validation mb-3">
 
-                    <input wire:model.lazy="username" type="text"
-                        class="form-control @error('username') is-invalid @enderror" placeholder="Username"
+                    <input wire:model.live.debounce="username" type="text"
+                        class="form-control @error('username') is-invalid @else @if ($username != '') is-valid @endif @enderror"
+                        placeholder="Username"
                         style="border-top-left-radius: 6px; border-bottom-left-radius: 6; border-top-right-radius: 0px; border-bottom-right-radius: 0;"
                         aria-describedby="inputGroupPrepend">
                     <span class="input-group-text">
@@ -29,8 +30,8 @@
                 <!-- Password Input -->
 
                 <div class="input-group has-validation mb-3">
-                    <input wire:model.lazy="password" type="password"
-                        class="form-control @error('password') is-invalid @enderror" placeholder="Password"
+                    <input wire:model.live.debounce="password" type="password"
+                        class="form-control @error('password') is-invalid @else @if ($password != '') is-valid @endif @enderror" placeholder="Password"
                         style="border-top-left-radius: 6px; border-bottom-left-radius: 6; border-top-right-radius: 0px; border-bottom-right-radius: 0;"
                         aria-describedby="inputGroupPrepend">
                     <div class="input-group-text"><span class="bi bi-lock-fill"></span></div>
@@ -55,7 +56,7 @@
             </p>
             <p class="mb-0">
                 <a wire:navigate href="register" class="text-center">Register a new membership</a>
-                
+
             </p>
         </div>
     </div>

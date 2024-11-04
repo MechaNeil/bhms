@@ -41,11 +41,12 @@
     <!-- Livewire styles -->
 </head>
 
-<body class="@yield('body-class', 'hold-transition sidebar-mini layout-fixed')">
+<body class="@yield('body-class', 'hold-transition sidebar-mini layout-fixed')" x-data x-on:click="$dispatch('search:clear-results')">
 
     {{ $slot }}
 
     <script src="{{ asset('admin-lte/js/adminlte.min.js') }}"></script>
+    
 <script>
         (() => {
             "use strict";
@@ -152,6 +153,9 @@
     });
 </script> --}}
     @livewireScripts
+    <script data-navigate-once>
+            console.log('page loaded');
+    </script>
 
     <!-- Livewire scripts -->
 
