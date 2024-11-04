@@ -135,6 +135,7 @@ body {
   overflow-x: hidden;
   scrollbar-color: var(--bs-secondary-bg) transparent;
   scrollbar-width: thin;
+
    /* Hide horizontal scrolling if not needed */
 }
 
