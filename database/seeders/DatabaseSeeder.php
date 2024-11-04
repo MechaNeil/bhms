@@ -32,10 +32,6 @@ class DatabaseSeeder extends Seeder
         // Greeting::create(['greeting' => 'Hey!']);
         // Greeting::create(['greeting' => 'Howdy!']);
 
-        Article::factory()
-            ->count(50)
-            ->create();
-    
 
     }
 }
