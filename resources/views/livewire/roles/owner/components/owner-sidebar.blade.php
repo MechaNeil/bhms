@@ -5,7 +5,8 @@
     <!--begin::Sidebar Brand-->
     <div class="sidebar-brand">
         <!--begin::Brand Link--> <a href="{{ route('dashboard-owner') }} " class="brand-link">
-            <!--begin::Brand Image--> <img src="{{ asset('assets/img/mn2.png') }}" alt="AdminLTE Logo" class="brand-image opacity-75">
+            <!--begin::Brand Image--> <img src="{{ asset('assets/img/mn2.png') }}" alt="AdminLTE Logo"
+                class="brand-image opacity-75">
             <!--end::Brand Image-->
             <!--begin::Brand Text--> <span class="brand-text fw-light">MN's Bhms</span>
             <!--end::Brand Text-->
@@ -14,7 +15,7 @@
     </div>
     <!--end::Sidebar Brand-->
     <!--begin::Sidebar Wrapper-->
-    
+
     <div class="sidebar-wrapper" data-overlayscrollbars="host">
         <div class="os-size-observer os-size-observer-appear">
             <div class="os-size-observer-listener ltr"></div>
@@ -56,13 +57,12 @@
                             request()->routeIs('utility-bills*')
                                 ? 'active'
                                 : '' }}">
-                             <i
-                             class="nav-icon bi bi-menu-button-wide"></i>
-                         <p>
-                             MANAGE
-                             <i class="nav-arrow bi bi-chevron-right"></i>
-                         </p>                        
-                        
+                            <i class="nav-icon bi bi-menu-button-wide"></i>
+                            <p>
+                                MANAGE
+                                <i class="nav-arrow bi bi-chevron-right"></i>
+                            </p>
+
                         </a>
                         <ul class="nav nav-treeview">
 
@@ -104,8 +104,8 @@
 
 
                             <li class="nav-item"> <a wire:navigate href="/invoice-list"
-                                    class="nav-link {{ request()->routeIs('view-invoice*') || request()->routeIs('invoice-list*') ? 'active' : '' }}"> <i
-                                        class="nav-icon bi bi-file-text-fill "></i>
+                                    class="nav-link {{ request()->routeIs('view-invoice*') || request()->routeIs('invoice-list*') ? 'active' : '' }}">
+                                    <i class="nav-icon bi bi-file-text-fill "></i>
                                     <p>Invoice</p>
                                 </a>
                             </li>
@@ -128,13 +128,12 @@
                             request()->routeIs('notice-board*')
                                 ? 'active'
                                 : '' }}">
-                                
-                                <i
-                                class="nav-icon bi bi-send-fill"></i>
+
+                            <i class="nav-icon bi bi-send-fill"></i>
                             <p>
                                 NOTIFY
                                 <i class="nav-arrow bi bi-chevron-right"></i>
-                            </p>     
+                            </p>
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item"> <a wire:navigate href="/requests"
@@ -167,11 +166,11 @@
                         request()->routeIs('monthly-payment*') ||
                         request()->routeIs('payment-list*') ? 'active' : '' }}"">
                                 <i
-                                class="nav-icon bi bi-receipt"></i>
+                                class=" nav-icon bi bi-receipt"></i>
                             <p>
-                               REPORTS
+                                REPORTS
                                 <i class="nav-arrow bi bi-chevron-right"></i>
-                            </p>     
+                            </p>
                         </a>
                         <ul class="nav nav-treeview">
 
@@ -208,11 +207,11 @@
                         <a href="#"
                             class="nav-link {{ request()->routeIs('users*') || request()->routeIs('activity-logs*') ? 'active' : '' }}"">
                             <i
-                            class="nav-icon bi bi-person-fill-gear"></i>
-                        <p>
-                            ADMINISTER
-                            <i class="nav-arrow bi bi-chevron-right"></i>
-                        </p>     
+                            class=" nav-icon bi bi-person-fill-gear"></i>
+                            <p>
+                                ADMINISTER
+                                <i class="nav-arrow bi bi-chevron-right"></i>
+                            </p>
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item"> <a wire:navigate href="/users"
@@ -243,12 +242,7 @@
                     <li class="nav-header">MORE INFO</li>
 
 
-                    <li class="nav-item"> <a wire:navigate href="/article-index"
-                        class="nav-link {{ request()->routeIs('article-index*') ? 'active' : '' }}"> <i
-                            class="nav-icon bi bi-buildings"></i>
-                        <p>Article-Index</p>
-                    </a>
-                </li>
+
 
                     <li class="nav-item"> <a wire:navigate href="/company-info"
                             class="nav-link {{ request()->routeIs('company-info*') ? 'active' : '' }}"> <i
@@ -262,7 +256,7 @@
                             <p>Visit Home Page</p>
                         </a>
                     </li>
-                    
+
 
 
 
