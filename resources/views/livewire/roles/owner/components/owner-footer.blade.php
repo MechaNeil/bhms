@@ -1,6 +1,6 @@
 {{-- If your happiness depends on money, you will never be happy with yourself. --}}
 
-<footer class="app-footer" >
+<footer class="app-footer mt-2">
     <!--begin::To the end-->
     <div class="float-end d-none d-sm-inline">Keep Learning</div>
     <!--end::To the end-->
