@@ -8,7 +8,7 @@
 
             <div class="results-container">
                 @if (count($results) == 0)
-                <a>No results found</a>
+                <div class="pe-2">No results found</div>
                 @endif
                 @foreach($results as $result)
                 <div class="pt-1" wire:key='{{ $result->id }}'>

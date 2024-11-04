@@ -15,4 +15,5 @@
     <livewire:roles.owner.pages.dashboard.manage-assistant.component.search-results placeholder="Type something to word" :results=$results :show="!empty($searchText)">
 
 
+
 </div>

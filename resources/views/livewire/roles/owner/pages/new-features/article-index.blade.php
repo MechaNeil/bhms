@@ -44,9 +44,9 @@
                     
                     <div class="m-auto w-50">
                         @foreach ($articles as $article)
-                        <div class="mt-1 p-3 wire:key="{{ $article->id }}"">
+                        <div class="mt-1 p-3" wire:key='{{ $article->id }}'>
                             <h3 class="article">
-                                <a href="/article/{{ $article->id }}">{{ $article->title }}</a>
+                                <a wire:navigate href="/article/{{ $article->id }}">{{ $article->title }}</a>
                             </h3>
                             <p>
                                 {{ str($article->content)->words(30) }}
