@@ -155,75 +155,6 @@
                                 </div>
 
                                 {{-- Edit Modal --}}
-                                <div class="modal fade" id="editAssignBedsModal" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="editAssignBedsModalLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <!-- Larger modal for more space -->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="editAssignBedsModalLabel">Edit Beds</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-
-                                            <div class="progress mb-3" style="height: 5px;">
-                                                <div class="progress-bar" id="formProgressAssignbeds2"
-                                                    role="progressbar" style="width: 0%;" aria-valuenow="0"
-                                                    aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-
-
-                                            <div class="modal-body">
-                                                <form id="editAssignBedsForm">
-                                                    <div class="mb-3">
-                                                        <label for="roomSelect" class="form-label">Room</label>
-                                                        <select class="form-select" id="roomSelect" required>
-                                                            <option value="" disabled selected>Select a room</option>
-                                                            <option value="1">room 1</option>
-                                                            <option value="2">room 2</option>
-                                                            <option value="3">room 3</option>
-                                                            <!-- Add more rooms as needed -->
-                                                        </select>
-                                                    </div>
-
-                                                    <!-- Bed Number Input -->
-                                                    <div class="mb-3">
-                                                        <label for="bedNumber" class="form-label">Bed Number</label>
-                                                        <input type="number" class="form-control" id="bedNumber"
-                                                            placeholder="Bed Number" required>
-                                                    </div>
-
-                                                    <!-- Monthly Rent Input -->
-                                                    <div class="mb-3">
-                                                        <label for="monthlyRent" class="form-label">Monthly Rent</label>
-                                                        <input type="number" class="form-control" id="monthlyRent"
-                                                            placeholder="Monthly Rent" required>
-                                                    </div>
-
-                                                    <!-- Status Dropdown -->
-                                                    <div class="mb-3">
-                                                        <label for="statusSelect" class="form-label">Status</label>
-                                                        <select class="form-select" id="statusSelect" required>
-
-                                                            <option value="available" selected>Available</option>
-                                                            <option value="occupied">Occupied</option>
-                                                            <option value="maintenance">Under Maintenance</option>
-                                                        </select>
-                                                    </div>
-
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary me-auto"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="submit" class="btn btn-primary"
-                                                    form="editAssignBedsForm">Save
-                                                    Beds</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <!-- Delete Modal -->
                                 <div class="modal fade" id="deleteAssignBedsModal" tabindex="-1"
@@ -280,16 +211,10 @@
                                                             Oct 06,2021
                                                         </td>
                                                         <td class="text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button"
-                                                            data-bs-toggle="modal" data-bs-target="#editAssignBedsModal">
-                                                            <i class="bi bi-pencil-fill"></i>
+                                                            <button class="btn btn-success btn-sm m-1" type="button">
+                                                                <i class="bi bi-eye-fill"></i>
                                                             </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#deleteAssignBedsModal">
-                                                                <i class="bi bi-trash-fill"></i>
-                                                            </button>
-                                                            
+
                                                         </td>
                                                     </tr>
                                                     <tr class="align-middle">
@@ -301,14 +226,8 @@
                                                             Oct 06,2021
                                                         </td>
                                                         <td class="text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button"
-                                                            data-bs-toggle="modal" data-bs-target="#editAssignBedsModal">
-                                                            <i class="bi bi-pencil-fill"></i>
-                                                            </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#deleteAssignBedsModal">
-                                                                <i class="bi bi-trash-fill"></i>
+                                                            <button class="btn btn-success btn-sm m-1" type="button">
+                                                                <i class="bi bi-eye-fill"></i>
                                                             </button>
                                                         </td>
                                                     </tr>
@@ -321,14 +240,8 @@
                                                             Oct 06,2021
                                                         </td>
                                                         <td class=" text-center justify-items-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button"
-                                                            data-bs-toggle="modal" data-bs-target="#editAssignBedsModal">
-                                                            <i class="bi bi-pencil-fill"></i>
-                                                            </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#deleteAssignBedsModal">
-                                                                <i class="bi bi-trash-fill"></i>
+                                                            <button class="btn btn-success btn-sm m-1" type="button">
+                                                                <i class="bi bi-eye-fill"></i>
                                                             </button>
                                                         </td>
                                                     </tr>
@@ -341,14 +254,8 @@
                                                             Oct 06,2021
                                                         </td>
                                                         <td class=" text-center justify-items-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button"
-                                                            data-bs-toggle="modal" data-bs-target="#editAssignBedsModal">
-                                                            <i class="bi bi-pencil-fill"></i>
-                                                            </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#deleteAssignBedsModal">
-                                                                <i class="bi bi-trash-fill"></i>
+                                                            <button class="btn btn-success btn-sm m-1" type="button">
+                                                                <i class="bi bi-eye-fill"></i>
                                                             </button>
                                                         </td>
                                                     </tr>
