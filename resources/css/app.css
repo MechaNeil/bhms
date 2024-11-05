@@ -67,6 +67,11 @@
     border-color: var(--bs-table-border-color);
 }
 
+.form-select {
+  transition: 0.5s ease-in-out, color 0.2s ease-in-out;
+}
+
+
 .callout, .callout-info {
   transition: 0.5s ease-in-out, color 0.2s ease-in-out;
 }
