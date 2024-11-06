@@ -146,6 +146,8 @@
 
                                             <div class="modal-body">
                                                 <form id="payInvoiceForm">
+
+                                                    {{-- Invoice Number (Disbled) --}}
                                                     <div class="mb-3">
                                                         <label for="invoiceNumber" class="form-label">Invoice
                                                             Number</label>
@@ -153,25 +155,19 @@
                                                             value="2024-1-1-May" disabled>
                                                     </div>
 
-                                                    <!-- Bed Rate (Disabled) -->
+                                                    <!-- Tenant Name (Disabled) -->
                                                     <div class="mb-3">
-                                                        <label for="bedRate" class="form-label">Bed Rate</label>
-                                                        <input type="text" class="form-control" id="bedRate"
-                                                            value="5000" disabled>
+                                                        <label for="tenantName" class="form-label">Tenant Name</label>
+                                                        <input type="text" class="form-control" id="tenantName"
+                                                            value="Mak Nel Tevs" disabled>
                                                     </div>
 
-                                                    <!-- Penalty -->
-                                                    <div class="mb-3">
-                                                        <label for="penalty" class="form-label">Penalty</label>
-                                                        <input type="number" class="form-control" id="penalty"
-                                                            placeholder="0" required>
-                                                    </div>
 
-                                                    <!-- Discount -->
+                                                    <!-- Due Date (Disabled)-->
                                                     <div class="mb-3">
-                                                        <label for="discount" class="form-label">Discount</label>
-                                                        <input type="number" class="form-control" id="discount"
-                                                            placeholder="0" required>
+                                                        <label for="dueDate" class="form-label">Due Date</label>
+                                                        <input type="text" class="form-control" id="dueDate"
+                                                            placeholder="mm/dd/yyyy" value="October 6, 2024" disabled>
                                                     </div>
 
                                                     <!-- Total Due (Disabled) -->
@@ -180,13 +176,23 @@
                                                         <input type="text" class="form-control" id="totalDue"
                                                             value="5000" disabled>
                                                     </div>
+                                                    <!-- Payment Amount -->
 
-                                                    <!-- Remarks -->
                                                     <div class="mb-3">
-                                                        <label for="remarks" class="form-label">Remarks</label>
-                                                        <textarea class="form-control" id="remarks" rows="3"
-                                                            placeholder="Enter remarks if any"></textarea>
+                                                        <label for="paymentAmount" class="form-label">Payment
+                                                            Amount</label>
+                                                        <div class="input-group">
+                                                            <input type="number" class="form-control" id="paymentAmount"
+                                                                placeholder="0" required aria-label="Payment Amount"
+                                                                min="0" step="0.01">
+                                                            <button type="button" class="btn btn-primary"
+                                                                id="payFullAmount" aria-label="Pay Full Amount">
+                                                                Full Amount
+                                                            </button>
+                                                        </div>
                                                     </div>
+
+
 
                                                 </form>
                                             </div>
@@ -239,27 +245,33 @@
                                                         <td>IN-2024-October-2</td>
                                                         <td>Mark Nel Tevs</td>
                                                         <td>October 2, 2024</td>
-                                                        <td>
-                                                            <div style="font-family: Arial, sans-serif;">
-                                                                <div style="margin-bottom: 10px;">
-                                                                    <p style="margin: 5px 0;">Bed Rate: <strong>Php 5,000</strong></p>
-                                                                </div>
-                                                                <div style="margin-bottom: 10px;">
-                                                                    <p style="margin: 5px 0;"><strong>Utility Bills:</strong></p>
-                                                                    <p style="margin: 5px 0;">Electricity: <strong>Php 3,200</strong></p>
-                                                                    <p style="margin: 5px 0;">Water: <strong>Php 60</strong></p>
-                                                                </div>
-                                                                <div style="margin-bottom: 10px;">
-                                                                    <p style="margin: 5px 0;">Penalty Amount: <strong>Php 00.0</strong></p>
-                                                                    <p style="margin: 5px 0;">Discount Amount: <strong>Php 00.0</strong></p>
-                                                                </div>
-                                                                <div>
-                                                                    <p style="margin: 5px 0;"><strong>Total Due: Php 5,000</strong></p>
-                                                                </div>
+                                                        <td style="min-width: 220px">
+                                                            <div class="row mb-2">
+                                                                <div class="col-6"><strong>Bed Rate:</strong></div>
+                                                                <div class="col-6">Php 2,000</div>
+                                                            </div>
+                                                            <div class="row mb-2">
+                                                                <div class="col-6"><strong>Utility Bills:</strong></div>
+                                                                <div class="col-6">Php 185</div>
+                                                            </div>
+                                                            <div class="row mb-2">
+                                                                <div class="col-6"><strong>Penalty:</strong></div>
+                                                                <div class="col-6">Php 00.0</div>
+                                                            </div>
+                                                            <div class="row mb-2">
+                                                                <div class="col-6"><strong>Discount:</strong></div>
+                                                                <div class="col-6">Php 00.0</div>
+                                                            </div>
+                                                            <div class="row mb-2">
+                                                                <div class="col-6"><strong>Total Due:</strong></div>
+                                                                <div class="col-6"><strong>Php 1,785</strong></div>
                                                             </div>
                                                         </td>
 
-                                                        <td>Unpaid</td>
+                                                        <td>
+                                                            <span
+                                                                class="badge rounded-pill text-bg-danger">Unpaid</span>
+                                                        </td>
                                                         <td>Payment is due on October 2, 2024</td>
 
                                                     </tr>
