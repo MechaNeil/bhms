@@ -80,36 +80,38 @@
                                                     <div class="mb-3">
                                                         <label for="roomSelect" class="form-label">Room</label>
                                                         <select class="form-select" id="roomSelect" required>
-                                                          <option value="" disabled selected>Select a room</option>
-                                                          <option value="1">room 1</option>
-                                                          <option value="2">room 2</option>
-                                                          <option value="3">room 3</option>
-                                                          <!-- Add more rooms as needed -->
+                                                            <option value="" disabled selected>Select a room</option>
+                                                            <option value="1">room 1</option>
+                                                            <option value="2">room 2</option>
+                                                            <option value="3">room 3</option>
+                                                            <!-- Add more rooms as needed -->
                                                         </select>
-                                                      </div>
-                                                      
-                                                      <!-- Bed Number Input -->
-                                                      <div class="mb-3">
+                                                    </div>
+
+                                                    <!-- Bed Number Input -->
+                                                    <div class="mb-3">
                                                         <label for="bedNumber" class="form-label">Bed Number</label>
-                                                        <input type="number" class="form-control" id="bedNumber" placeholder="Bed Number" required>
-                                                      </div>
-                                            
-                                                      <!-- Monthly Rent Input -->
-                                                      <div class="mb-3">
+                                                        <input type="number" class="form-control" id="bedNumber"
+                                                            placeholder="Bed Number" required>
+                                                    </div>
+
+                                                    <!-- Monthly Rent Input -->
+                                                    <div class="mb-3">
                                                         <label for="monthlyRent" class="form-label">Monthly Rent</label>
-                                                        <input type="number" class="form-control" id="monthlyRent" placeholder="Monthly Rent" required>
-                                                      </div>
-                                            
-                                                      <!-- Status Dropdown -->
-                                                      <div class="mb-3">
+                                                        <input type="number" class="form-control" id="monthlyRent"
+                                                            placeholder="Monthly Rent" required>
+                                                    </div>
+
+                                                    <!-- Status Dropdown -->
+                                                    <div class="mb-3">
                                                         <label for="statusSelect" class="form-label">Status</label>
                                                         <select class="form-select" id="statusSelect" required>
-                                                          
-                                                          <option value="available" selected>Available</option>
-                                                          <option value="occupied">Occupied</option>
-                                                          <option value="maintenance">Under Maintenance</option>
+
+                                                            <option value="available" selected>Available</option>
+                                                            <option value="occupied">Occupied</option>
+                                                            <option value="maintenance">Under Maintenance</option>
                                                         </select>
-                                                      </div>
+                                                    </div>
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
@@ -147,36 +149,38 @@
                                                     <div class="mb-3">
                                                         <label for="roomSelect" class="form-label">Room</label>
                                                         <select class="form-select" id="roomSelect" required>
-                                                          <option value="" disabled selected>Select a room</option>
-                                                          <option value="1">room 1</option>
-                                                          <option value="2">room 2</option>
-                                                          <option value="3">room 3</option>
-                                                          <!-- Add more rooms as needed -->
+                                                            <option value="" disabled selected>Select a room</option>
+                                                            <option value="1">room 1</option>
+                                                            <option value="2">room 2</option>
+                                                            <option value="3">room 3</option>
+                                                            <!-- Add more rooms as needed -->
                                                         </select>
-                                                      </div>
-                                                      
-                                                      <!-- Bed Number Input -->
-                                                      <div class="mb-3">
+                                                    </div>
+
+                                                    <!-- Bed Number Input -->
+                                                    <div class="mb-3">
                                                         <label for="bedNumber" class="form-label">Bed Number</label>
-                                                        <input type="number" class="form-control" id="bedNumber" placeholder="Bed Number" required>
-                                                      </div>
-                                            
-                                                      <!-- Monthly Rent Input -->
-                                                      <div class="mb-3">
+                                                        <input type="number" class="form-control" id="bedNumber"
+                                                            placeholder="Bed Number" required>
+                                                    </div>
+
+                                                    <!-- Monthly Rent Input -->
+                                                    <div class="mb-3">
                                                         <label for="monthlyRent" class="form-label">Monthly Rent</label>
-                                                        <input type="number" class="form-control" id="monthlyRent" placeholder="Monthly Rent" required>
-                                                      </div>
-                                            
-                                                      <!-- Status Dropdown -->
-                                                      <div class="mb-3">
+                                                        <input type="number" class="form-control" id="monthlyRent"
+                                                            placeholder="Monthly Rent" required>
+                                                    </div>
+
+                                                    <!-- Status Dropdown -->
+                                                    <div class="mb-3">
                                                         <label for="statusSelect" class="form-label">Status</label>
                                                         <select class="form-select" id="statusSelect" required>
-                                                        
-                                                          <option value="available" selected>Available</option>
-                                                          <option value="occupied">Occupied</option>
-                                                          <option value="maintenance">Under Maintenance</option>
+
+                                                            <option value="available" selected>Available</option>
+                                                            <option value="occupied">Occupied</option>
+                                                            <option value="maintenance">Under Maintenance</option>
                                                         </select>
-                                                      </div>
+                                                    </div>
 
                                                 </form>
                                             </div>
@@ -255,12 +259,12 @@
                                                             <button class="btn btn-primary btn-sm m-1" type="button"
                                                                 data-bs-toggle="modal" data-bs-target="#editBedsModal">
                                                                 <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#deleteBedsModal">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBedsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     <tr class="align-middle">
@@ -278,13 +282,13 @@
                                                             <button class="btn btn-primary btn-sm m-1" type="button"
                                                                 data-bs-toggle="modal" data-bs-target="#editBedsModal">
                                                                 <i class="bi bi-pencil-fill"></i>
-                                                                </button>
+                                                            </button>
 
-                                                                <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#deleteBedsModal">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBedsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     <tr class="align-middle">
@@ -302,12 +306,12 @@
                                                             <button class="btn btn-primary btn-sm m-1" type="button"
                                                                 data-bs-toggle="modal" data-bs-target="#editBedsModal">
                                                                 <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#deleteBedsModal">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBedsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     <tr class="align-middle">
@@ -325,12 +329,12 @@
                                                             <button class="btn btn-primary btn-sm m-1" type="button"
                                                                 data-bs-toggle="modal" data-bs-target="#editBedsModal">
                                                                 <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#deleteBedsModal">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBedsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     <tr class="align-middle">
@@ -348,12 +352,12 @@
                                                             <button class="btn btn-primary btn-sm m-1" type="button"
                                                                 data-bs-toggle="modal" data-bs-target="#editBedsModal">
                                                                 <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#deleteBedsModal">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBedsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     <tr class="align-middle">
@@ -371,12 +375,12 @@
                                                             <button class="btn btn-primary btn-sm m-1" type="button"
                                                                 data-bs-toggle="modal" data-bs-target="#editBedsModal">
                                                                 <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#deleteBedsModal">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBedsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                 </tbody>

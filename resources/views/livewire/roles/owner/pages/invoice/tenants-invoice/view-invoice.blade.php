@@ -68,8 +68,8 @@
                                         <h6>From:</h6>
                                         <address>
                                             <strong>MNTech, Inc.</strong><br>
-                                            Cat, CICT<br>
-                                            Calatagan Proper, Virac, Catanduanes<br>
+                                            Calatagan Proper,<br>
+                                            Virac, Catanduanes<br>
                                             Phone: 09632266467<br>
                                             Email: mneil@gmail.com
                                         </address>
@@ -96,14 +96,16 @@
                                                     <th>Month</th>
                                                     <th>Year</th>
                                                     <th>Subtotal</th>
+                                                    <th>Total</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>Monthly Rent</td>
-                                                    <td>September</td>
-                                                    <td>2023</td>
-                                                    <td>Php 5,000.00</td>
+                                                    <td>November</td>
+                                                    <td>2024</td>
+                                                    <td>Php 2,385</td>
+                                                    <td>Php 1,785</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -122,24 +124,63 @@
                                         <img src="{{ asset('assets/img/credit/paypal2.png') }}" alt="Paypal">
     
                                     </div>
+                                    
                                     <div class="col-md-6">
                                         <h6>Amount Due 09/06/2021:</h6>
                                         <table class="table">
-                                            <tr>
-                                                <th>Subtotal:</th>
-                                                <td>Php 5000.00</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Tax (9.3%):</th>
-                                                <td>Php 10.34</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Total:</th>
-                                                <td>Php 3190.00</td>
-                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Bed Rate:</th>
+                                                    <td><strong>Php 2,000</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Utility Bills:</th>
+                                                    <td>
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Electricity Bill: <strong>Php 900</strong></td>
+                                                                    
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Water Bill: <strong>Php 240</strong></td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                    <td>Shared Utility Discount: <strong>Php 755</strong></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Total Bill: <strong>Php 385</strong></td>
+                                                                </tr>
+                                                            
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Penalty Amount:</th>
+                                                    <td>Php 00.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Discount Amount:</th>
+                                                    <td>Php 00.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Subtotal:</th>
+                                                    <td><strong>Php 2,385</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Shared Room Discount (10%): </th>
+                                                    <td>Php 600</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total:</th>
+                                                    <td><strong>Php 1,785</strong></td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                     </div>
-                                </div>
                 
                                 <!-- Print Button -->
                                 <div class="row">
