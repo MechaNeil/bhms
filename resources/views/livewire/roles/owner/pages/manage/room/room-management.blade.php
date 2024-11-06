@@ -208,7 +208,7 @@
                                     <!-- /.card-header -->
                                     <div class="card-body">
 
-                                        <table class="table table-bordered">
+                                        <table class="table table-bordered table-hover">
                                             <thead class="table-mode">
                                                 <tr>
                                                     <th style="width: 100px">Room No.</th>

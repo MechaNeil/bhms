@@ -1,11 +1,8 @@
 @import "admin-lte/dist/css/adminlte.css";
 
-
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
 @import "overlayscrollbars/overlayscrollbars.css";
-
-
 
 /* Custom Tooltip color */
 /* 
@@ -19,12 +16,33 @@
     border-top-color: #343a40 !important; 
   } */
 
+  .img-size-120,
+  .img-size-64,
+  .img-size-50,
+  .img-size-32 {
+    height: auto;
+  }
+
+  .img-size-120{
+    width: 120px;
+  }
+  .img-size-64 {
+    width: 64px;
+  }
+  
+  .img-size-50 {
+    width: 50px;
+  }
+  
+  .img-size-32 {
+    width: 32px;
+  }
+  
+
 .welcome-section {
     padding: 20px;
     text-align: center;
 }
-
-
 
 .welcome-section h1 {
     font-size: 36px;
@@ -35,7 +53,6 @@
     font-size: 18px;
     margin-bottom: 20px;
 }
-
 
 /* Table header */
 [data-bs-theme="light"] .table-mode {
@@ -68,45 +85,49 @@
 }
 
 .form-select {
-  transition: 0.5s ease-in-out, color 0.2s ease-in-out;
+    transition: 0.5s ease-in-out, color 0.2s ease-in-out;
 }
 
-
-.callout, .callout-info {
-  transition: 0.5s ease-in-out, color 0.2s ease-in-out;
+.callout,
+.callout-info {
+    transition: 0.5s ease-in-out, color 0.2s ease-in-out;
 }
 
-.card, .card-header {
-  transition: 0.5s ease-in-out, color 0.2s ease-in-out;
+.card,
+.card-header {
+    transition: 0.5s ease-in-out, color 0.2s ease-in-out;
 }
 .img-thumbnail {
-  transition: 0.5s ease-in-out;
-
+    transition: 0.5s ease-in-out;
 }
 .table {
-  transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 .table-mode > * {
-  transition: border-color 0.5s ease-in-out;
+    transition: border-color 0.5s ease-in-out;
 }
 
 .table > :not(caption) > * > * {
-  transition: color 0.3s ease-in-out, background-color 0.5s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.5s ease-in-out;
 }
-.form-control, .input-group-text{
-  transition: color 0.3s ease-in-out, background-color 0.5s ease-in-out,
-  border-color 0.5s ease-in-out !important;
+.form-control,
+.input-group-text {
+    transition: color 0.3s ease-in-out, background-color 0.5s ease-in-out,
+        border-color 0.5s ease-in-out !important;
 }
-.page-item:not(:first-child), .page-link{
-  transition: 0.5s ease-in-out;
-}
-
-.page-item:first-child, .page-link{
-  transition: 0.5s ease-in-out;
+.page-item:not(:first-child),
+.page-link {
+    transition: 0.5s ease-in-out;
 }
 
-.alert, .alert-link {
-  transition: 0.5s ease-in-out;
+.page-item:first-child,
+.page-link {
+    transition: 0.5s ease-in-out;
+}
+
+.alert,
+.alert-link {
+    transition: 0.5s ease-in-out;
 }
 
 /* Style readonly inputs to look disabled */
@@ -116,45 +137,43 @@
   cursor: not-allowed;
 } */
 
-
 [data-bs-theme="light"] .form-control[disabled] {
-  background-color: #e9ecef;
-  opacity: 1; /* Ensures text color is not dimmed */
-  cursor: not-allowed;
+    background-color: #e9ecef;
+    opacity: 1; /* Ensures text color is not dimmed */
+    cursor: not-allowed;
 }
-
 
 [data-bs-theme="dark"] .form-control[disabled] {
-  background-color: #343a40; /* Dark gray for dark theme */
-  color: #adb5bd; /* Lighter text color for contrast */
-  opacity: 1; /* Ensures text color is not dimmed */
-  cursor: not-allowed;
+    background-color: #343a40; /* Dark gray for dark theme */
+    color: #adb5bd; /* Lighter text color for contrast */
+    opacity: 1; /* Ensures text color is not dimmed */
+    cursor: not-allowed;
 }
-
 
 body {
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
         border-color 0.3s ease-in-out !important;
 }
 
-
 .table-responsive {
-  scrollbar-color: var(--bs-secondary-bg) transparent;
-  scrollbar-width: thin;
-  transition: scrollbar-color 0.3s ease;
+    scrollbar-color: var(--bs-secondary-bg) transparent;
+    scrollbar-width: thin;
+    transition: scrollbar-color 0.3s ease;
 }
 
-
 .flow {
-  max-height: 550px;
-  overflow-y: hidden; /* Start with hidden overflow */
-  overflow-x: hidden;
-  transition: overflow-y 0.5s ease; /* Smooth transition */
+    max-height: 550px;
+    overflow-y: hidden; /* Start with hidden overflow */
+    overflow-x: hidden;
+    transition: overflow-y 0.5s ease; /* Smooth transition */
 }
 
 .flow:hover {
+    overflow-y: auto;
+    /* Start with hidden overflow */
+    /* Show scrollbar on hover */
+}
+.table-container {
+    min-width: 800px;
 
-  overflow-y: auto;
-   /* Start with hidden overflow */
- /* Show scrollbar on hover */
 }
