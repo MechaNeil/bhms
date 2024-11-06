@@ -16,6 +16,29 @@
     border-top-color: #343a40 !important; 
   } */
 
+  .img-size-120,
+  .img-size-64,
+  .img-size-50,
+  .img-size-32 {
+    height: auto;
+  }
+
+  .img-size-120{
+    width: 120px;
+  }
+  .img-size-64 {
+    width: 64px;
+  }
+  
+  .img-size-50 {
+    width: 50px;
+  }
+  
+  .img-size-32 {
+    width: 32px;
+  }
+  
+
 .welcome-section {
     padding: 20px;
     text-align: center;
