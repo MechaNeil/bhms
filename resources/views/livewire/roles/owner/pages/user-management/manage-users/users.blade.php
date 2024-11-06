@@ -45,7 +45,7 @@
                                     <div class="card mb-4">
                                         <div class="card-header">
     
-                                            <h3 class="card-title">Activity Logs</h3>
+                                            <h3 class="card-title">Users List</h3>
     
     
                                         </div>
@@ -73,7 +73,7 @@
                                                             <th>Username</th>
                                                             <th>Role</th>
                                                             <th>Created At</th>
-                                                            <th>Active Status</th>
+                                                            <th>Status</th>
                                                             <th>Last Active</th>
                                                         </tr>
                                                     </thead>

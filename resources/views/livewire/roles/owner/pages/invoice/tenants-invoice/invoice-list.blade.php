@@ -193,7 +193,7 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary me-auto"
                                                     data-bs-dismiss="modal">Close</button>
-                                                <button type="submit" class="btn btn-primary" form="payInvoiceForm">Save
+                                                <button type="submit" class="btn btn-success" form="payInvoiceForm">Pay
                                                     Invoice</button>
                                             </div>
                                         </div>
@@ -206,18 +206,16 @@
                                         <h3 class="card-title">Invoice List</h3>
                                     </div>
                                     <div class="card-body table">
+
                                         <div class="table-responsive">
-                                            <table class="table table-bordered">
+                                            <table class="table table-bordered table-container">
                                                 <thead class="table-mode">
                                                     <tr>
                                                         <th style="width: 200px">Action</th>
                                                         <th>Invoice Number</th>
                                                         <th>Tenant Name</th>
                                                         <th>Due Date</th>
-                                                        <th>Bed Rate</th>
-                                                        <th>Penalty Amount</th>
-                                                        <th>Discount Amount</th>
-                                                        <th>Total Due</th>
+                                                        <th style="min-width: 200px">Billing Summary</th>
                                                         <th>Status</th>
                                                         <th>Remarks</th>
                                                     </tr>
@@ -241,12 +239,29 @@
                                                         <td>IN-2024-October-2</td>
                                                         <td>Mark Nel Tevs</td>
                                                         <td>October 2, 2024</td>
-                                                        <td>5,000.00</td>
-                                                        <td>0.00</td>
-                                                        <td>0.00</td>
-                                                        <td>5,000.00</td>
+                                                        <td>
+                                                            <div style="font-family: Arial, sans-serif;">
+                                                                <div style="margin-bottom: 10px;">
+                                                                    <p style="margin: 5px 0;">Bed Rate: <strong>Php 5,000</strong></p>
+                                                                </div>
+                                                                <div style="margin-bottom: 10px;">
+                                                                    <p style="margin: 5px 0;"><strong>Utility Bills:</strong></p>
+                                                                    <p style="margin: 5px 0;">Electricity: <strong>Php 3,200</strong></p>
+                                                                    <p style="margin: 5px 0;">Water: <strong>Php 60</strong></p>
+                                                                </div>
+                                                                <div style="margin-bottom: 10px;">
+                                                                    <p style="margin: 5px 0;">Penalty Amount: <strong>Php 00.0</strong></p>
+                                                                    <p style="margin: 5px 0;">Discount Amount: <strong>Php 00.0</strong></p>
+                                                                </div>
+                                                                <div>
+                                                                    <p style="margin: 5px 0;"><strong>Total Due: Php 5,000</strong></p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
                                                         <td>Unpaid</td>
-                                                        <td></td>
+                                                        <td>Payment is due on October 2, 2024</td>
+
                                                     </tr>
 
                                                 </tbody>
