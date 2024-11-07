@@ -30,9 +30,13 @@ use App\Livewire\Roles\Owner\Pages\Reports\Payment\MonthlyPayment;
 use App\Livewire\Roles\Owner\Pages\Reports\Payment\PaymentList;
 use App\Livewire\Roles\Owner\Pages\UserManagement\Logs\UserActivityLogs;
 use App\Livewire\Roles\Owner\Pages\UserManagement\ManageUsers\Users;
+use App\Livewire\Roles\Owner\Pages\UserManagement\UserPermission\Permission;
+
 
 
 use App\Livewire\Home\Homepage;
+
+
 
 
 // Home
@@ -96,6 +100,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/visit', VisitHomePage::class)->name('visit');
 
     // User Management
+    Route::get('/user-permissions', Permission::class)->name('user-permissions');
     Route::get('/activity-logs', UserActivityLogs::class)->name('activity-logs');
     Route::get('/users', Users::class)->name('users');
 

@@ -202,10 +202,10 @@
                     </li>
 
                     <li
-                        class="nav-item {{ request()->routeIs('users*') || request()->routeIs('activity-logs*') ? 'menu-open' : 'menu-close' }}">
+                        class="nav-item {{ request()->routeIs('users*') || request()->routeIs('activity-logs*') || request()->routeIs('user-permissions*')  ? 'menu-open' : 'menu-close' }}">
 
                         <a href="#"
-                            class="nav-link {{ request()->routeIs('users*') || request()->routeIs('activity-logs*') ? 'active' : '' }}"">
+                            class="nav-link {{ request()->routeIs('users*') || request()->routeIs('activity-logs*') || request()->routeIs('user-permissions*')  ? 'active' : '' }}"">
                             <i
                             class=" nav-icon bi bi-person-fill-gear"></i>
                             <p>
@@ -214,6 +214,12 @@
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
+                            <li class="nav-item"> <a wire:navigate href="/user-permissions"
+                                    class="nav-link {{ request()->routeIs('user-permissions*') ? 'active' : '' }}"> <i
+                                        class="nav-icon bi bi-gear-fill"></i>
+                                    <p>Permission</p>
+                                </a>
+                            </li>
                             <li class="nav-item"> <a wire:navigate href="/users"
                                     class="nav-link {{ request()->routeIs('users*') ? 'active' : '' }}"> <i
                                         class="nav-icon bi bi-person-circle"></i>
