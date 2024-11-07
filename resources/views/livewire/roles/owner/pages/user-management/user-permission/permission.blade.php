@@ -58,13 +58,13 @@
                                 <div class="mb-3">
                                     <h5>Permissions</h5>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="manageUsers">
+                                        <input class="form-check-input"  class="form-check-input" type="checkbox" id="manageUsers">
                                         <label class="form-check-label" for="manageUsers">
                                             Manage Users
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="viewReports">
+                                        <input class="form-check-input"  class="form-check-input" type="checkbox" id="viewReports">
                                         <label class="form-check-label" for="viewReports">
                                             View Reports
                                         </label>
@@ -108,8 +108,8 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>Admin</td>
-                                                            <td><input type="checkbox" checked disabled></td>
-                                                            <td><input type="checkbox" checked disabled></td>
+                                                            <td><input  class="form-check-input" type="checkbox" checked disabled></td>
+                                                            <td><input  class="form-check-input" type="checkbox" checked disabled></td>
                                                             <td>
                                                                 <button class="btn btn-secondary btn-sm disabled"
                                                                     data-bs-toggle="modal" data-bs-target="#editRoleModal"
@@ -118,8 +118,8 @@
                                                         </tr>
                                                         <tr>
                                                             <td>Tenant</td>
-                                                            <td><input type="checkbox" disabled></td>
-                                                            <td><input type="checkbox" checked disabled></td>
+                                                            <td><input  class="form-check-input" type="checkbox" disabled></td>
+                                                            <td><input  class="form-check-input" type="checkbox" checked disabled></td>
                                                             <td>
                                                                 <button class="btn btn-secondary btn-sm"
                                                                     data-bs-toggle="modal" data-bs-target="#editRoleModal"
@@ -128,8 +128,8 @@
                                                         </tr>
                                                         <tr>
                                                             <td>Assistant</td>
-                                                            <td><input type="checkbox" checked disabled></td>
-                                                            <td><input type="checkbox" disabled></td>
+                                                            <td><input  class="form-check-input" type="checkbox" checked disabled></td>
+                                                            <td><input  class="form-check-input" type="checkbox" disabled></td>
                                                             <td>
                                                                 <button class="btn btn-primary btn-sm"
                                                                     data-bs-toggle="modal" data-bs-target="#editRoleModal"
