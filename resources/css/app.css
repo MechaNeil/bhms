@@ -16,8 +16,23 @@
     border-top-color: #343a40 !important; 
   } */
 
+    .hover-img {
+        width: 100px; /* original size */
+        height: auto; /* maintain aspect ratio */
+        transition: transform 0.3s ease; /* smooth transition */
+    }
+
+    .hover-img:hover {
+        transform: scale(1.2); /* scale up the image */
+    }
+
+  .info-p {
+    margin: -0.3rem;
+    font-size: 0.9rem;
+  }
+
   .form-check-input:disabled {
-transition: 0.5s ease-in-out;
+transition: 0.3s ease-in-out;
   }
 
   .img-size-120,
@@ -89,49 +104,49 @@ transition: 0.5s ease-in-out;
 }
 
 .form-select {
-    transition: 0.5s ease-in-out, color 0.2s ease-in-out;
+    transition: 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 
 .callout,
 .callout-info {
-    transition: 0.5s ease-in-out, color 0.2s ease-in-out;
+    transition: 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 
 .card,
 .card-header {
-    transition: 0.5s ease-in-out, color 0.2s ease-in-out;
+    transition: 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 .img-thumbnail {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .table {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .table-mode > * {
-    transition: border-color 0.5s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
 }
 
 .table > :not(caption) > * > * {
-    transition: color 0.3s ease-in-out, background-color 0.5s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 .form-control,
 .input-group-text {
-    transition: color 0.3s ease-in-out, background-color 0.5s ease-in-out,
-        border-color 0.5s ease-in-out !important;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+        border-color 0.3s ease-in-out !important;
 }
 .page-item:not(:first-child),
 .page-link {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .page-item:first-child,
 .page-link {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .alert,
 .alert-link {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 /* Style readonly inputs to look disabled */
@@ -169,7 +184,7 @@ body {
     max-height: 550px;
     overflow-y: hidden; /* Start with hidden overflow */
     overflow-x: hidden;
-    transition: overflow-y 0.5s ease; /* Smooth transition */
+    transition: overflow-y 0.3s ease; /* Smooth transition */
 }
 
 .flow:hover {

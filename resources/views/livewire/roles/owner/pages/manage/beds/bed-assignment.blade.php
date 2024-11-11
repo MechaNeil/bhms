@@ -197,6 +197,7 @@
                                                         <th>Bed No.</th>
                                                         <th>Date Start</th>
                                                         <th>Due Date</th>
+                                                        <th>Months to Stay</th>
                                                         <th style="width: 109px"
                                                             class=" text-center justify-items-center">Action</th>
                                                     </tr>
@@ -208,7 +209,10 @@
                                                         <td>BD-0001</td>
                                                         <td>Sept 06,2021</td>
                                                         <td>
-                                                            Oct 06,2021
+                                                            Dec 01,2028
+                                                        </td>
+                                                        <td>
+                                                            36 Months
                                                         </td>
                                                         <td class="text-center">
                                                             <button class="btn btn-success btn-sm m-1" type="button">
@@ -217,48 +221,8 @@
 
                                                         </td>
                                                     </tr>
-                                                    <tr class="align-middle">
-                                                        <td>Mark Tevs</td>
-                                                        <td>RM-0001</td>
-                                                        <td>BD-0001</td>
-                                                        <td>Sept 06,2021</td>
-                                                        <td>
-                                                            Oct 06,2021
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <button class="btn btn-success btn-sm m-1" type="button">
-                                                                <i class="bi bi-eye-fill"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="align-middle">
-                                                        <td>Mark Tevs</td>
-                                                        <td>RM-0001</td>
-                                                        <td>BD-0001</td>
-                                                        <td>Sept 06,2021</td>
-                                                        <td>
-                                                            Oct 06,2021
-                                                        </td>
-                                                        <td class=" text-center justify-items-center">
-                                                            <button class="btn btn-success btn-sm m-1" type="button">
-                                                                <i class="bi bi-eye-fill"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="align-middle">
-                                                        <td>Mark Tevs</td>
-                                                        <td>RM-0001</td>
-                                                        <td>BD-0001</td>
-                                                        <td>Sept 06,2021</td>
-                                                        <td>
-                                                            Oct 06,2021
-                                                        </td>
-                                                        <td class=" text-center justify-items-center">
-                                                            <button class="btn btn-success btn-sm m-1" type="button">
-                                                                <i class="bi bi-eye-fill"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
+                                                   
+                                                    
 
 
 

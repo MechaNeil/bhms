@@ -84,10 +84,16 @@
                                                 <form id="addTenantForm">
                                                     <div class="row">
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="completeName" class="form-label">Complete
-                                                                Name</label>
-                                                            <input type="text" class="form-control" id="completeName"
-                                                                placeholder="Enter full name" required>
+                                                            <label for="firstName" class="form-label">First Name</label>
+                                                            <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="middleNameInitial" class="form-label">Middle Name</label>
+                                                            <input type="text" class="form-control" id="middleNameInitial" placeholder="Enter middle name initial" maxlength="1">
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="lastName" class="form-label">Last Name</label>
+                                                            <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
                                                         </div>
                                                         <div class="col-md-6 mb-3">
                                                             <label for="profilePicture" class="form-label">Profile
@@ -207,10 +213,16 @@
                                                 <form id="editTenantForm">
                                                     <div class="row">
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="completeName" class="form-label">Complete
-                                                                Name</label>
-                                                            <input type="text" class="form-control" id="completeName"
-                                                                placeholder="Enter full name" required>
+                                                            <label for="firstName" class="form-label">First Name</label>
+                                                            <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="middleNameInitial" class="form-label">Middle Name</label>
+                                                            <input type="text" class="form-control" id="middleNameInitial" placeholder="Enter middle name initial" maxlength="1">
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="lastName" class="form-label">Last Name</label>
+                                                            <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
                                                         </div>
                                                         <div class="col-md-6 mb-3">
                                                             <label for="profilePicture" class="form-label">Profile

@@ -96,6 +96,8 @@
                               <th>Amount Paid</th>
                               <th>Payment Date</th>
                               <th>Payment Mode</th>
+                              <th>Proccesed By</th>
+                              <th>Offical Recipt</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -109,6 +111,14 @@
                                   Cash
                                 </span>
                               </td>
+                              <td>
+                                <span class="badge text-bg-success" data-bs-toggle="tooltip" data-bs-title="Processed by Admin">Admin</span>
+                              </td>
+                              <td>
+                                <a href="#" class="btn btn-sm btn-success">View</a>
+                                <a href="#" class="btn btn-sm btn-primary">Download</a>
+                              </td>
+
                             </tr>
                           </tbody>
                         </table>

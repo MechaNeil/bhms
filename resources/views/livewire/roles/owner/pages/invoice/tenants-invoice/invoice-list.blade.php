@@ -222,7 +222,11 @@
                                                         <th>Tenant Name</th>
                                                         <th>Due Date</th>
                                                         <th style="min-width: 200px">Billing Summary</th>
-                                                        <th>Status</th>
+                                                        <th>Amount Paid</th> <!-- New Column -->
+                                                        <th>Remaining Balance</th>
+                                                        <th>Proof of Payment</th> 
+                                                        <th class="text-center">Status</th>
+                                                        <th class="text-center">Processed By</th>
                                                         <th>Remarks</th>
                                                     </tr>
                                                 </thead>
@@ -242,7 +246,7 @@
                                                                 data-bs-target="#payInvoiceModal"><i
                                                                     class="bi bi-wallet2"></i> &nbsp;Pay</button>
                                                         </td>
-                                                        <td>IN-2024-October-2</td>
+                                                        <td>IN-1-24121</td>
                                                         <td>Mark Nel Tevs</td>
                                                         <td>October 2, 2024</td>
                                                         <td style="min-width: 220px">
@@ -252,7 +256,7 @@
                                                             </div>
                                                             <div class="row mb-2">
                                                                 <div class="col-6"><strong>Utility Bills:</strong></div>
-                                                                <div class="col-6">Php 185</div>
+                                                                <div class="col-6">Php 385</div>
                                                             </div>
                                                             <div class="row mb-2">
                                                                 <div class="col-6"><strong>Penalty:</strong></div>
@@ -267,13 +271,29 @@
                                                                 <div class="col-6"><strong>Php 1,785</strong></div>
                                                             </div>
                                                         </td>
-
-                                                        <td>
+                                                        <td>Php 0.00</td> <!-- Amount Paid -->
+                                                        <td>Php 1,785</td> <!-- Remaining Balance -->
+                                                        <td class="text-center">
+                                                            <div class="d-flex flex-column align-items-center">
+                                                                <span class="badge rounded-pill text-bg-warning mb-1">Pending Review</span>
+                                                                <img src="{{ asset('assets/img/credit/visa.png') }}" alt="Proof of Payment" style="width: 100px; height: auto;">
+                                                                <div>
+                                                                    <button wire:navigate href="proof-of-transaction" class="btn btn-info btn-sm m-1 mt-2">
+                                                                        <i class="bi bi-eye"></i> &nbsp;View
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    
+                                                        <td class="text-center">
                                                             <span
                                                                 class="badge rounded-pill text-bg-danger">Unpaid</span>
                                                         </td>
-                                                        <td>Payment is due on October 2, 2024</td>
-
+                                                        <td style="min-width: 120px" class="text-center">                                <span class="badge text-bg-success" data-bs-toggle="tooltip" data-bs-title="Processed by Admin">Admin</span>
+                                                        </td>
+                                                        <td>Mak Nel Tevs has new Proof of Payment</td>
+                                                        <!-- Remaining Balance -->
+                                                        
                                                     </tr>
 
                                                 </tbody>

@@ -31,7 +31,7 @@ use App\Livewire\Roles\Owner\Pages\Reports\Payment\PaymentList;
 use App\Livewire\Roles\Owner\Pages\UserManagement\Logs\UserActivityLogs;
 use App\Livewire\Roles\Owner\Pages\UserManagement\ManageUsers\Users;
 use App\Livewire\Roles\Owner\Pages\UserManagement\UserPermission\Permission;
-
+use App\Livewire\Roles\Owner\Pages\Invoice\TenantsInvoice\ProofOfTransaction;
 
 
 use App\Livewire\Home\Homepage;
@@ -77,6 +77,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/utility-bills', Deductions::class)->name('utility-bills');
     Route::get('/view-invoice', ViewInvoice::class)->name('view-invoice');
     Route::get('/invoice-list', InvoiceList::class)->name('invoice-list');
+    Route::get('/proof-of-transaction', ProofOfTransaction::class)->name('proof-of-transaction');
 
     // Notification
     Route::get('/requests', TenantsRequests::class)->name('requests');
