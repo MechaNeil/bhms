@@ -157,6 +157,21 @@ CREATE TABLE Payment Method {
     
 }
 
+-- Table for storing the finalized payment history
+CREATE TABLE Payment_History (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    invoice_id INT,       -- Link to the relevant invoice
+    amount_paid DECIMAL(10, 2),  -- Final amount paid for this transaction
+    payment_date DATE,    -- Date when the payment was finalized
+    payment_method_id INT,  -- Reference to the payment method used
+    proof_id INT,         -- Reference to the approved Proof_of_Transaction record
+    processed_by INT,     -- Admin or user who processed this payment (Foreign Key to User)
+
+    FOREIGN KEY (invoice_id) REFERENCES Invoice(id),
+    FOREIGN KEY (payment_method_id) REFERENCES Payment_Method(id),
+    FOREIGN KEY (proof_id) REFERENCES Proof_of_Transaction(id),
+    FOREIGN KEY (processed_by) REFERENCES User(id)
+);
 
 -- Relationships --
 

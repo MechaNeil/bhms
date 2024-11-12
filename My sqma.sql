@@ -159,7 +159,7 @@ CREATE TABLE SMS (
     message TEXT
 );
 
--- Table for storing proof of transactions provided by tenants
+-- Table for storing proof of transactions provided by tenants, and user/admin pay for the tenant
 CREATE TABLE Proof_of_Transaction (
     id INT PRIMARY KEY AUTO_INCREMENT,
     tenant_id INT,                         -- Foreign Key to Tenant (who provided proof)
@@ -170,7 +170,9 @@ CREATE TABLE Proof_of_Transaction (
     status_id INT,                         -- Admin approval status
     date_submitted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Submission timestamp
     reply_from_owner TEXT,                 -- Owner's response (e.g., reasons for rejection)
-
+    payment_method_id INT,
+        
+    FOREIGN KEY (payment_method_id) REFERENCES Payment_Method(id),
     FOREIGN KEY (tenant_id) REFERENCES Tenant(id),
     FOREIGN KEY (invoice_id) REFERENCES Invoice(id),
     FOREIGN KEY (status_id) REFERENCES Status(id)        -- Reference to Status table (e.g., approved, rejected)
@@ -181,35 +183,22 @@ CREATE TABLE Proof_of_Transaction (
 CREATE TABLE Payment_Method (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL UNIQUE,  -- Name of the payment method (e.g., "Credit Card")
+    payment_logo VARCHAR(255), 
     description TEXT  -- Description of the payment method for reference
 );
 
--- Table for storing the finalized payment history
-CREATE TABLE Payment_History (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    invoice_id INT,       -- Link to the relevant invoice
-    amount_paid DECIMAL(10, 2),  -- Final amount paid for this transaction
-    payment_date DATE,    -- Date when the payment was finalized
-    payment_method_id INT,  -- Reference to the payment method used
-    proof_id INT,         -- Reference to the approved Proof_of_Transaction record
-    processed_by INT,     -- Admin or user who processed this payment (Foreign Key to User)
 
-    FOREIGN KEY (invoice_id) REFERENCES Invoice(id),
-    FOREIGN KEY (payment_method_id) REFERENCES Payment_Method(id),
-    FOREIGN KEY (proof_id) REFERENCES Proof_of_Transaction(id),
-    FOREIGN KEY (processed_by) REFERENCES User(id)
-);
--- Payment Table
-CREATE TABLE Payment (
+-- Payment List stored all invoice that are paid and processed by the user/admin
+CREATE TABLE Payment_List (
     id INT PRIMARY KEY AUTO_INCREMENT,
     invoice_id INT,                     -- Foreign Key to Invoice
-    payment_amount DECIMAL(10, 2),
-    processed_by INT,                   -- Foreign Key to User
-    date DATE,
+    processed_by_user_id INT,                   -- Foreign Key to User
+    amount_paid DECIMAL(10, 2),
+    payment_status_id INT,
+    payment_date DATE,
     receipt_number VARCHAR(20) UNIQUE,
-    status_id INT DEFAULT 0,            -- Replaced TINYINT status with a foreign key to Status table
-    proof_of_payment VARCHAR(255),
+
+    FOREIGN KEY (payment_status_id) REFERENCES Status(id),   
     FOREIGN KEY (invoice_id) REFERENCES Invoice(id),
-    FOREIGN KEY (processed_by) REFERENCES User(id),
-    FOREIGN KEY (status_id) REFERENCES Status(id)
+    FOREIGN KEY (processed_by_user_id) REFERENCES User(id),
 );
