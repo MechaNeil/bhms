@@ -3,7 +3,7 @@
 @section('body-class', 'register-page bg-body-secondary')
 
 <div class="register-box">
-    <div class="register-logo"><a href="#"><b>Admin</b>LTE</a></div>
+    <div class="register-logo"><a href="#"><b>MN's </b>BHMS</a></div>
 
     <div class="card">
         <div class="card-body register-card-body">

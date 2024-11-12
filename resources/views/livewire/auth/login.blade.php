@@ -3,7 +3,7 @@
 @section('body-class', 'login-page bg-body-secondary')
 
 <div class="login-box">
-    <div class="login-logo"><a href="#"><b>Admin</b>LTE</a></div>
+    <div class="login-logo"><a href="#"><b>MN's </b>BHMS</a></div>
 
     <div class="card">
         <div class="card-body login-card-body">
