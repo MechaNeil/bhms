@@ -96,27 +96,39 @@
                               <th>Amount Paid</th>
                               <th>Payment Date</th>
                               <th>Payment Mode</th>
+                              <th>Payment Status</th>
+                              <th>Proof of Payment</th>
                               <th>Proccesed By</th>
                               <th>Offical Recipt</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>2024-2-October</td>
+                              <td>IN-1-2024121</td>
                               <td>Mak Nel Tevs</td>
-                              <td>3,000.00</td>
-                              <td>October 2, 2024</td>
+                              <td>Php 700</td>
+                              <td>December 1, 2024</td>
                               <td>
                                 <span data-bs-toggle="tooltip" title="Paid via cash">
                                   Cash
                                 </span>
                               </td>
                               <td>
+                                <span
+                                    class="badge rounded-pill text-bg-warning">Partialy Paid</span>
+                            </td>
+                            <td>
+                              <button wire:navigate href="proof-of-transaction" class="btn btn-info btn-sm m-1">
+                                <i class="bi bi-eye"></i> &nbsp;View
+                            </button>
+                            </td>
+
+                              <td>
                                 <span class="badge text-bg-success" data-bs-toggle="tooltip" data-bs-title="Processed by Admin">Admin</span>
                               </td>
                               <td>
-                                <a href="#" class="btn btn-sm btn-success">View</a>
-                                <a href="#" class="btn btn-sm btn-primary">Download</a>
+                                <a href="#" class="btn btn-sm btn-success m-1">View</a>
+                                <a href="#" class="btn btn-sm btn-primary m-1">Download</a>
                               </td>
 
                             </tr>

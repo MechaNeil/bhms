@@ -118,10 +118,9 @@
 
                                                     <!-- Due Date Input -->
                                                     <div class="mb-3">
-                                                        <label for="dueDateInput" class="form-label">Due Date (enter
-                                                            1-28)</label>
-                                                        <input type="number" class="form-control" id="dueDateInput"
-                                                            placeholder="Enter due date" min="1" max="28" required>
+                                                        <label for="dueDateInput" class="form-label">Date Start</label>
+                                                        <input type="date" class="form-control" id="dueDateInput"
+                                                        required>
                                                     </div>
 
                                                     <!-- Months to Stay Input -->
@@ -196,7 +195,7 @@
                                                         <th>Room No.</th>
                                                         <th>Bed No.</th>
                                                         <th>Date Start</th>
-                                                        <th>Due Date</th>
+                                                        <th>Date End</th>
                                                         <th>Months to Stay</th>
                                                         <th style="width: 109px"
                                                             class=" text-center justify-items-center">Action</th>

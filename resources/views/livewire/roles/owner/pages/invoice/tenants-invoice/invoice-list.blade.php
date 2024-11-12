@@ -47,7 +47,105 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="co-md-12">
+                                <div class="modal fade" id="payForTenant" tabindex="-1"
+                                    aria-labelledby="payForTenantLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="payForTenantLabel">Pay For Tenant
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form id="updateProofForm">
+                                                    <div class="row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="invoiceNumber" class="form-label">Invoice
+                                                                Number</label>
+                                                            <input type="text" class="form-control" id="invoiceNumber"
+                                                                value="IN-1-2024121" disabled>
+                                                        </div>
 
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="tenantName" class="form-label">Tenant
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="tenantName"
+                                                                value="Mark Nel Tevs" disabled>
+                                                        </div>
+
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="dateOfPayment" class="form-label">Date of
+                                                                Payment</label>
+                                                            <input type="date" class="form-control" id="dateOfPayment"
+                                                                value="today" required>
+                                                        </div>
+
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="amountPaid" class="form-label">Amount
+                                                                Paid</label>
+                                                            <div class="input-group mb-3"> <span
+                                                                    class="input-group-text">Php</span> <input type="text"
+                                                                    class="form-control"
+                                                                    aria-label="Amount (to the nearest Peso)"> 
+                                                                    <span
+                                                                    class="input-group-text btn btn-secondary">Pay</span> </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="remainingBalance" class="form-label">Remaining
+                                                                Balance</label>
+                                                            <input type="text" class="form-control"
+                                                                id="remainingBalance" value="1785" disabled>
+                                                        </div>
+
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="paymentMethod" class="form-label">Payment
+                                                                Method</label>
+                                                            <select class="form-select" id="paymentMethod" required>
+                                                                <option value="Cash" selected>Cash</option>
+                                                                <option value="Credit Card">Credit Card</option>
+                                                                <option value="Bank Transfer">Bank Transfer</option>
+                                                                <option value="Bank Transfer">Online Payment</option>
+
+                                                                <!-- Add more payment methods as needed -->
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="status" class="form-label">Status</label>
+                                                            <input type="text" class="form-control"
+                                                                id="remainingBalance" value="Approve" disabled>
+
+                                                        </div>
+
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="proofOfPayment" class="form-label">Proof of
+                                                                Payment</label>
+                                                            <input class="form-control" type="file" id="proofOfPayment">
+
+                                                        </div>
+
+
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="remarks" class="form-label">Reply to
+                                                                Tenant</label>
+                                                            <textarea class="form-control" id="remarks" rows="3"
+                                                                placeholder="Enter remarks if any"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary me-auto"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-warning"
+                                                    form="updateInvoiceForm">Pay
+                                                    For Tenant</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 {{-- update Invoice Modal --}}
                                 <div class="modal fade" id="updateInvoiceModal" data-bs-backdrop="static"
                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="updateInvoiceModalLabel"
@@ -74,35 +172,42 @@
                                                         <label for="invoiceNumber" class="form-label">Invoice
                                                             Number</label>
                                                         <input type="text" class="form-control" id="invoiceNumber"
-                                                            value="2024-1-1-May" disabled>
+                                                            value="IN-1-2024121" disabled>
                                                     </div>
 
                                                     <!-- Bed Rate (Read-Only) -->
                                                     <div class="mb-3">
                                                         <label for="bedRate" class="form-label">Bed Rate</label>
                                                         <input type="text" class="form-control" id="bedRate"
-                                                            value="5000" disabled>
+                                                            value="Php 2,000" disabled>
                                                     </div>
 
                                                     <!-- Penalty -->
                                                     <div class="mb-3">
                                                         <label for="penalty" class="form-label">Penalty</label>
                                                         <input type="number" class="form-control" id="penalty"
-                                                            placeholder="0" required>
+                                                            placeholder="Php 0" required>
                                                     </div>
 
                                                     <!-- Discount -->
                                                     <div class="mb-3">
                                                         <label for="discount" class="form-label">Discount</label>
                                                         <input type="number" class="form-control" id="discount"
-                                                            placeholder="0" required>
+                                                            placeholder="Php 0" required>
                                                     </div>
 
                                                     <!-- Total Due (Read-Only) -->
                                                     <div class="mb-3">
                                                         <label for="totalDue" class="form-label">Total Due</label>
                                                         <input type="text" class="form-control" id="totalDue"
-                                                            value="5000" disabled>
+                                                            value="Php 1,785" disabled>
+
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="totalDue" class="form-label">Remaining
+                                                            Balance</label>
+                                                        <input type="text" class="form-control" id="totalDue"
+                                                            value="Php 1,785" disabled>
                                                     </div>
 
                                                     <!-- Remarks -->
@@ -152,7 +257,7 @@
                                                         <label for="invoiceNumber" class="form-label">Invoice
                                                             Number</label>
                                                         <input type="text" class="form-control" id="invoiceNumber"
-                                                            value="2024-1-1-May" disabled>
+                                                            value="IN-1-2024121" disabled>
                                                     </div>
 
                                                     <!-- Tenant Name (Disabled) -->
@@ -167,29 +272,28 @@
                                                     <div class="mb-3">
                                                         <label for="dueDate" class="form-label">Due Date</label>
                                                         <input type="text" class="form-control" id="dueDate"
-                                                            placeholder="mm/dd/yyyy" value="October 6, 2024" disabled>
+                                                            placeholder="mm/dd/yyyy" value="December 1, 2024" disabled>
                                                     </div>
 
                                                     <!-- Total Due (Disabled) -->
                                                     <div class="mb-3">
                                                         <label for="totalDue" class="form-label">Total Due</label>
                                                         <input type="text" class="form-control" id="totalDue"
-                                                            value="5000" disabled>
+                                                            value="Php 1,785" disabled>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="totalDue" class="form-label">Remaining
+                                                            Balance</label>
+                                                        <input type="text" class="form-control" id="totalDue"
+                                                            value="Php 1,085" disabled>
                                                     </div>
                                                     <!-- Payment Amount -->
 
                                                     <div class="mb-3">
                                                         <label for="paymentAmount" class="form-label">Payment
                                                             Amount</label>
-                                                        <div class="input-group">
-                                                            <input type="number" class="form-control" id="paymentAmount"
-                                                                placeholder="0" required aria-label="Payment Amount"
-                                                                min="0" step="0.01">
-                                                            <button type="button" class="btn btn-primary"
-                                                                id="payFullAmount" aria-label="Pay Full Amount">
-                                                                Full Amount
-                                                            </button>
-                                                        </div>
+                                                        <input type="text" class="form-control" id="paymentAmount"
+                                                            value="Php 700" disabled aria-label="Payment Amount">
                                                     </div>
 
 
@@ -224,7 +328,7 @@
                                                         <th style="min-width: 200px">Billing Summary</th>
                                                         <th>Amount Paid</th> <!-- New Column -->
                                                         <th>Remaining Balance</th>
-                                                        <th>Proof of Payment</th> 
+                                                        <th>Proof of Payment</th>
                                                         <th class="text-center">Status</th>
                                                         <th class="text-center">Processed By</th>
                                                         <th>Remarks</th>
@@ -241,14 +345,19 @@
                                                             <button wire:navigate href="view-invoice"
                                                                 class="btn btn-info btn-sm m-1"><i
                                                                     class="bi bi-eye"></i> &nbsp;View</button>
+                                                            <button class="btn btn-warning btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal" data-bs-target="#payForTenant"><i
+                                                                    class="bi bi-wallet2"></i> &nbsp;Pay for
+                                                                Tenant</button>
                                                             <button class="btn btn-success btn-sm m-1" type="button"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#payInvoiceModal"><i
-                                                                    class="bi bi-wallet2"></i> &nbsp;Pay</button>
+                                                                    class="bi bi-wallet2"></i> &nbsp;Pay the
+                                                                Invoice</button>
                                                         </td>
-                                                        <td>IN-1-24121</td>
+                                                        <td>IN-1-2024121</td>
                                                         <td>Mark Nel Tevs</td>
-                                                        <td>October 2, 2024</td>
+                                                        <td>December 1, 2024</td>
                                                         <td style="min-width: 220px">
                                                             <div class="row mb-2">
                                                                 <div class="col-6"><strong>Bed Rate:</strong></div>
@@ -271,29 +380,35 @@
                                                                 <div class="col-6"><strong>Php 1,785</strong></div>
                                                             </div>
                                                         </td>
-                                                        <td>Php 0.00</td> <!-- Amount Paid -->
-                                                        <td>Php 1,785</td> <!-- Remaining Balance -->
+                                                        <td>Php 700.00</td> <!-- Amount Paid -->
+                                                        <td>Php 1,085.00</td> <!-- Remaining Balance -->
                                                         <td class="text-center">
                                                             <div class="d-flex flex-column align-items-center">
-                                                                <span class="badge rounded-pill text-bg-warning mb-1">Pending Review</span>
-                                                                <img src="{{ asset('assets/img/credit/visa.png') }}" alt="Proof of Payment" style="width: 100px; height: auto;">
+                                                                <span
+                                                                    class="badge rounded-pill text-bg-success mb-1">Approve</span>
+                                                                <img src="{{ asset('assets/img/credit/visa.png') }}"
+                                                                    alt="Proof of Payment"
+                                                                    style="width: 100px; height: auto;">
                                                                 <div>
-                                                                    <button wire:navigate href="proof-of-transaction" class="btn btn-info btn-sm m-1 mt-2">
+                                                                    <button wire:navigate href="proof-of-transaction"
+                                                                        class="btn btn-info btn-sm m-1 mt-2">
                                                                         <i class="bi bi-eye"></i> &nbsp;View
                                                                     </button>
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                    
+
                                                         <td class="text-center">
-                                                            <span
-                                                                class="badge rounded-pill text-bg-danger">Unpaid</span>
+                                                            <span class="badge rounded-pill text-bg-warning">Partially
+                                                                Paid</span>
                                                         </td>
-                                                        <td style="min-width: 120px" class="text-center">                                <span class="badge text-bg-success" data-bs-toggle="tooltip" data-bs-title="Processed by Admin">Admin</span>
+                                                        <td style="min-width: 120px" class="text-center"> <span
+                                                                class="badge text-bg-success" data-bs-toggle="tooltip"
+                                                                data-bs-title="Processed by Admin">Admin</span>
                                                         </td>
-                                                        <td>Mak Nel Tevs has new Proof of Payment</td>
+                                                        <td>Admin has approve the Proof of Payment</td>
                                                         <!-- Remaining Balance -->
-                                                        
+
                                                     </tr>
 
                                                 </tbody>

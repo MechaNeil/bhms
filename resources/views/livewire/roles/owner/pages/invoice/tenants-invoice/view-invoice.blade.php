@@ -89,7 +89,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <h6>Invoice: </h6>
-                                    <div class="mb-4"><strong>#IN-1-24121</strong></div>
+                                    <div class="mb-4"><strong>#IN-1-2024121</strong></div>
 
                                     <h6>Due Date:</h6>
                                     <div><strong>December 1, 2024</strong></div>
@@ -110,23 +110,23 @@
                                                 <th>Total</th>
                                                 <th>Amount Paid</th> <!-- New Column -->
                                                 <th>Remaining Balance</th>
-                                                <th>status</th>
+                                                <th>Status</th>
                                                 <th>Remarks</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>IN-1-24121</td>
+                                                <td>IN-1-2024121</td>
                                                 <td>Mark Nel Tevs</td>
                                                 <td>May 5, 2024</td>
                                                 <td>Php 2,000</td>
                                                 <td>Php 2,385</td>
 
                                                 <td>Php 1,785</td>
-                                                <td>Php 0.00</td> <!-- Amount Paid -->
-                                                <td>Php 1,785.00</td>
-                                                <td>unpaid</td>
-                                                <td>something</td>
+                                                <td>Php 700.00</td> <!-- Amount Paid -->
+                                                <td>Php 1085.00</td>
+                                                <td>Partially Paid</td>
+                                                <td>Admin has approve the Proof of Payment</td>
                                             </tr>
                                         </tbody>
                                     </table>

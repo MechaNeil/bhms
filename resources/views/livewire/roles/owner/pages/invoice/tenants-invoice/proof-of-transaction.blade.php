@@ -48,48 +48,59 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="co-md-12">
-                                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
-                                    data-bs-target="#addRoomModal">
-                                    <i class=" bi bi-person-fill-add" style="font-size: 18px;"></i> Add New
-                                </button>
+
                                 <!-- Edit Modal -->
-                                <div class="modal fade" id="editProofModal" tabindex="-1" aria-labelledby="editProofModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="editProofModal" tabindex="-1"
+                                    aria-labelledby="editProofModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="editProofModalLabel">Edit Proof of Payment</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <h5 class="modal-title" id="editProofModalLabel">Edit Proof of Payment
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <form id="updateProofForm">
+                                                <form id="editProofForm">
                                                     <div class="row">
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="invoiceNumber" class="form-label">Invoice Number</label>
-                                                            <input type="text" class="form-control" id="invoiceNumber" value="2024-1-1-May" disabled>
+                                                            <label for="invoiceNumber" class="form-label">Invoice
+                                                                Number</label>
+                                                            <input type="text" class="form-control" id="invoiceNumber"
+                                                                value="IN-1-2024121" disabled>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="tenantName" class="form-label">Tenant Name</label>
-                                                            <input type="text" class="form-control" id="tenantName" value="Mark Nel Tevs" disabled>
+                                                            <label for="tenantName" class="form-label">Tenant
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="tenantName"
+                                                                value="Mark Nel Tevs" disabled>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="dateOfPayment" class="form-label">Date of Payment</label>
-                                                            <input type="date" class="form-control" id="dateOfPayment" value="2024-10-02" required>
+                                                            <label for="dateOfPayment" class="form-label">Date of
+                                                                Payment</label>
+                                                            <input type="date" class="form-control" id="dateOfPayment"
+                                                                value="2024-10-02" required>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="amountPaid" class="form-label">Amount Paid</label>
-                                                            <input type="number" class="form-control" id="amountPaid" value="1785" required>
+                                                            <label for="amountPaid" class="form-label">Amount
+                                                                Paid</label>
+                                                            <input type="number" class="form-control" id="amountPaid"
+                                                                value="1785" required>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="remainingBalance" class="form-label">Remaining Balance</label>
-                                                            <input type="number" class="form-control" id="remainingBalance" value="1785" disabled>
+                                                            <label for="remainingBalance" class="form-label">Remaining
+                                                                Balance</label>
+                                                            <input type="text" class="form-control"
+                                                                id="remainingBalance" value="1785" disabled>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="paymentMethod" class="form-label">Payment Method</label>
+                                                            <label for="paymentMethod" class="form-label">Payment
+                                                                Method</label>
                                                             <select class="form-select" id="paymentMethod" required>
                                                                 <option value="Cash" selected>Cash</option>
                                                                 <option value="Credit Card">Credit Card</option>
@@ -99,84 +110,110 @@
                                                                 <!-- Add more payment methods as needed -->
                                                             </select>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
                                                             <label for="status" class="form-label">Status</label>
                                                             <select class="form-select" id="status" required>
-                                                                <option value="Pending Review" selected>Pending Review</option>
+                                                                <option value="Pending Review" selected>Pending Review
+                                                                </option>
                                                                 <option value="Rejected">Rejected</option>
                                                                 <!-- Add more statuses as needed -->
                                                             </select>
                                                         </div>
-                                                        
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="proofOfPayment" class="form-label">Proof of Payment</label>
+                                                            <label for="proofOfPayment" class="form-label">Proof of
+                                                                Payment</label>
                                                             <div class="text-start">
-                                                                <img src="{{ asset('assets/img/credit/visa.png') }}" alt="Proof of Payment" style="width: 100px; height: auto;">
+                                                                <img src="{{ asset('assets/img/credit/visa.png') }}"
+                                                                    alt="Proof of Payment"
+                                                                    style="width: 100px; height: auto;">
                                                                 <div>
-                                                                    <button wire:navigate href="view-proof-transaction" class="btn btn-info btn-sm m-1 mt-2"><i class="bi bi-eye"></i> &nbsp;View</button>
+                                                                    <button wire:navigate href="view-proof-transaction"
+                                                                        class="btn btn-info btn-sm m-1 mt-2"><i
+                                                                            class="bi bi-eye"></i> &nbsp;View</button>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        
-                                
+
+
                                                         <div class="col-md-12 mb-3">
                                                             <label for="remarks" class="form-label">Reply</label>
-                                                            <textarea class="form-control" id="remarks" rows="3" placeholder="Enter remarks if any"></textarea>
+                                                            <textarea class="form-control" id="remarks" rows="3"
+                                                                placeholder="Enter remarks if any"></textarea>
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary" id="saveChangesButton">Save Changes</button>
+                                                <button type="button" class="btn btn-secondary me-auto"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="submit" class=" btn btn-primary" form="editProofForm"><i
+                                                        class="bi bi-box-arrow-in-up"></i>
+                                                    &nbsp;Save Changes</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- update Proof Modal --}}
-                                <div class="modal fade" id="updateProofModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="updateProofModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="updateProofModal" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="updateProofModalLabel"
+                                    aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="updateProofModalLabel">Update Proof</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
-                                
+
                                             <div class="progress mb-3" style="height: 5px;">
-                                                <div class="progress-bar" id="formProgressProof1" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar" id="formProgressProof1" role="progressbar"
+                                                    style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                             </div>
-                                
+
                                             <div class="modal-body">
                                                 <form id="updateProofForm">
                                                     <div class="row">
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="invoiceNumber" class="form-label">Invoice Number</label>
-                                                            <input type="text" class="form-control" id="invoiceNumber" value="2024-1-1-May" disabled>
+                                                            <label for="invoiceNumber" class="form-label">Invoice
+                                                                Number</label>
+                                                            <input type="text" class="form-control" id="invoiceNumber"
+                                                                value="IN-1-2024121" disabled>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="tenantName" class="form-label">Tenant Name</label>
-                                                            <input type="text" class="form-control" id="tenantName" value="Mark Nel Tevs" disabled>
+                                                            <label for="tenantName" class="form-label">Tenant
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="tenantName"
+                                                                value="Mark Nel Tevs" disabled>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="dateOfPayment" class="form-label">Date of Payment</label>
-                                                            <input type="date" class="form-control" id="dateOfPayment" value="2024-10-02" disabled>
+                                                            <label for="dateOfPayment" class="form-label">Date of
+                                                                Payment</label>
+                                                            <input type="date" class="form-control" id="dateOfPayment"
+                                                                value="2024-10-02" disabled>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="amountPaid" class="form-label">Amount Paid</label>
-                                                            <input class="form-control" id="amountPaid" value="1785" disabled>
+                                                            <label for="amountPaid" class="form-label">Amount
+                                                                Paid</label>
+                                                            <input class="form-control" id="amountPaid" value="1785"
+                                                                disabled>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="remainingBalance" class="form-label">Remaining Balance</label>
-                                                            <input class="form-control" id="remainingBalance" value="0.00" disabled>
+                                                            <label for="remainingBalance" class="form-label">Remaining
+                                                                Balance</label>
+                                                            <input class="form-control" id="remainingBalance"
+                                                                value="0.00" disabled>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="paymentMethod" class="form-label">Payment Method</label>
+                                                            <label for="paymentMethod" class="form-label">Payment
+                                                                Method</label>
                                                             <select class="form-select" id="paymentMethod" disabled>
                                                                 <option value="Cash" selected>Cash</option>
                                                                 <option value="Credit Card">Credit Card</option>
@@ -185,38 +222,46 @@
                                                                 <!-- Add more payment methods as needed -->
                                                             </select>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
                                                             <label for="status" class="form-label">Status</label>
-                                                            <input class="form-control" id="status" value="Approved" disabled>
-                                                               
-                                                                
-                                                                <!-- Add more statuses as needed -->
+                                                            <input class="form-control" id="status" value="Approved"
+                                                                disabled>
+
+
+                                                            <!-- Add more statuses as needed -->
                                                             </input>
                                                         </div>
-                                
+
                                                         <div class="col-md-6 mb-3">
-                                                            <label for="proofOfPayment" class="form-label">Proof of Payment</label>
+                                                            <label for="proofOfPayment" class="form-label">Proof of
+                                                                Payment</label>
                                                             <div class="text-start">
-                                                                <img src="{{ asset('assets/img/credit/visa.png') }}" alt="Proof of Payment" style="width: 100px; height: auto;">
+                                                                <img src="{{ asset('assets/img/credit/visa.png') }}"
+                                                                    alt="Proof of Payment"
+                                                                    style="width: 100px; height: auto;">
                                                                 <div>
-                                                                    <button wire:navigate href="view-proof-transaction" class="btn btn-info btn-sm m-1 mt-2"><i class="bi bi-eye"></i> &nbsp;View</button>
+                                                                    <button wire:navigate href="view-proof-transaction"
+                                                                        class="btn btn-info btn-sm m-1 mt-2"><i
+                                                                            class="bi bi-eye"></i> &nbsp;View</button>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                
+
                                                         <div class="col-md-12 mb-3">
                                                             <label for="remarks" class="form-label">Reply</label>
-                                                            <textarea class="form-control" id="remarks" rows="3" placeholder="Enter remarks if any"></textarea>
+                                                            <textarea class="form-control" id="remarks" rows="3"
+                                                                placeholder="Enter remarks if any" required></textarea>
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-secondary me-auto"
+                                                    data-bs-dismiss="modal">Close</button>
                                                 <button type="submit" class=" btn btn-primary" form="updateProofForm"><i
-                                                    class="bi bi-box-arrow-in-up"></i>
-                                                &nbsp;Update to Invoice</button>
+                                                        class="bi bi-box-arrow-in-up"></i>
+                                                    &nbsp;Update to Invoice</button>
                                             </div>
                                         </div>
                                     </div>
@@ -245,8 +290,10 @@
                                                         <th>Payment Method</th>
                                                         <th>Status</th>
                                                         <th>Date Submitted</th>
+                                                        <th>Processed By</th>
                                                         <th>Reply from Owner</th>
-                                                        
+
+
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -264,9 +311,9 @@
                                                                 &nbsp;Update</button>
 
                                                         </td>
-                                                        <td>IN-1-24121</td>
+                                                        <td>IN-1-2024121</td>
                                                         <td>Mark Nel Tevs</td>
-                                                        <td>October 2, 2024</td>
+                                                        <td>December 1, 2024</td>
 
                                                         <td>
                                                             <div class="text-center">
@@ -274,23 +321,25 @@
                                                                     alt="Proof of Payment"
                                                                     style="width: 100px; height: auto;">
                                                                 <div>
-                                                                    <button
-                                                                        class="btn btn-info btn-sm m-1 mt-2"><i
+                                                                    <button class="btn btn-info btn-sm m-1 mt-2"><i
                                                                             class="bi bi-eye"></i> &nbsp;View</button>
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                        <td>Php 1,785</td> <!-- Amount Paid -->
-                                                        <td>Php 0.00</td> <!-- Remaining Balance -->
+                                                        <td>Php 700.00</td> <!-- Amount Paid -->
+                                                        <td>Php 1,085.00</td> <!-- Remaining Balance -->
 
                                                         <td>
                                                             Cash
                                                         </td>
-                                                        <td> <span
-                                                                class="badge rounded-pill text-bg-warning mb-1">Pending
-                                                                Review</span>
+                                                        <td> <span class="badge rounded-pill text-bg-warning mb-1">
+                                                            Approved</span>
                                                         </td>
                                                         <td>November 10, 2024</td>
+                                                        <td style="min-width: 120px" class="text-center"> <span
+                                                                class="badge text-bg-success" data-bs-toggle="tooltip"
+                                                                data-bs-title="Processed by Admin">Admin</span>
+                                                        </td>
                                                         <td>Noted</td>
 
                                                     </tr>
