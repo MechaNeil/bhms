@@ -43,6 +43,10 @@ document.addEventListener("livewire:navigated", function () {
 // This should prevent errors when navigating between pages.
 
 document.addEventListener("livewire:navigated", function () {
+    
+
+
+
     console.log("Navigated Livewire");
 
     const userName = "Mak Nel"; // This will come from my database in future, this is for testing

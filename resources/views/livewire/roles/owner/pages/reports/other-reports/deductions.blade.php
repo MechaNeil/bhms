@@ -69,6 +69,17 @@
                                             <div class="modal-body">
                                                 <form id="addBillsForm">
                                                     <div class="mb-3">
+                                                        <div class="mb-3">
+                                                            <label for="appartmentName" class="form-label">Appartment
+                                                                Name</label>
+                                                            <select class="form-select" id="appartmentName">
+                                                                <option value="" disabled selected>Select
+                                                                    Appartment Name</option>
+                                                                <option value="apartment1">MN's BigHouse</option>
+                                                                <option value="apartment2">MN Tevs Vhouse</option>
+                                                                <!-- Add more options as needed -->
+                                                            </select>
+                                                        </div>
                                                         <label for="billType" class="form-label">Bill Type</label>
                                                         <select class="form-select" id="billType" required>
                                                           <option selected disabled>Choose a bill type...</option>
@@ -126,6 +137,17 @@
                                                 <form id="editBillsForm">
                                                     
                                                     <div class="mb-3">
+                                                        <div class="mb-3">
+                                                            <label for="appartmentName" class="form-label">Appartment
+                                                                Name</label>
+                                                            <select class="form-select" id="appartmentName">
+                                                                <option value="" disabled selected>Select
+                                                                    Appartment Name</option>
+                                                                <option value="apartment1">MN's BigHouse</option>
+                                                                <option value="apartment2">MN Tevs Vhouse</option>
+                                                                <!-- Add more options as needed -->
+                                                            </select>
+                                                        </div>
                                                         <label for="billType" class="form-label">Bill Type</label>
                                                         <select class="form-select" id="billType" required>
                                                           <option selected disabled>Choose a bill type...</option>
@@ -186,7 +208,86 @@
                                     <div class="card mb-4">
                                         <div class="card-header">
     
-                                            <h3 class="card-title">Bill Rates Table</h3>
+                                            <h3 class="card-title">MN's BigHouse Bill Rates Table</h3>
+    
+    
+                                        </div>
+                                        <!-- /.card-header -->
+                                        <div class="card-body">
+    
+                                            <table class="table table-bordered">
+                                                <thead class="table-mode">
+                                                    <tr>
+    
+                                                        <th>Bills</th>
+                                                        <th>Rate</th>
+                                                        <th style="width: 120px">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="align-middle">
+                                                        <td>
+                                                            Electricity
+                                                        </td>
+                                                        <td>
+                                                            100 / KWh
+                                                        </td>
+    
+                                                        <td class="text-center">
+
+                                                            
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                            data-bs-toggle="modal" data-bs-target="#editBillsModal">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBillsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="align-middle">
+                                                        <td>
+                                                            Water
+                                                        </td>
+                                                        <td>
+                                                            70 Cu
+                                                        </td>
+    
+                                                        <td class="text-center">
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                            data-bs-toggle="modal" data-bs-target="#editBillsModal">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBillsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+    
+    
+    
+    
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- /.card-body -->
+                                        <div class="card-footer clearfix">
+                                            <ul class="pagination pagination-sm m-0 float-end">
+                                                <li class="page-item"> <a class="page-link" href="#">«</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">»</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+    
+                                            <h3 class="card-title">MN's Tevs Vhouse Bill Rates Table</h3>
     
     
                                         </div>

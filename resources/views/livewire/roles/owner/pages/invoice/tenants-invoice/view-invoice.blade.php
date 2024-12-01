@@ -81,10 +81,10 @@
                                     
                                     <address>
                                         <strong>Mak Nel Tevs</strong> <br>
+                                        Apartment: MN's BigHouse <br>
                                         Room No: RM-0001 <br>
                                         Bed No: BD-0001 <br>
-                                        Phone: 09815428341<br>
-                                        Email: mn@gmail.com
+                                        
                                     </address>
                                 </div>
                                 <div class="col-sm-4">

@@ -38,7 +38,7 @@
                             <p>Assistant</p>
                         </a>
                     </li>
-                    <li class="nav-item {{ request()->routeIs('room-management*') ||
+                    <li class="nav-item {{ request()->routeIs('room-management*') || request()->routeIs('apartment*') ||
                         request()->routeIs('tenants-information*') ||
                         request()->routeIs('manage-beds*') ||
                         request()->routeIs('bed-assignment*') ||
@@ -49,7 +49,7 @@
                             ? 'menu-open'
                             : 'menu-close' }}">
 
-                        <a href="#" class="nav-link {{ request()->routeIs('room-management*') ||
+                        <a href="#" class="nav-link {{ request()->routeIs('room-management*') || request()->routeIs('apartment*') ||
                             request()->routeIs('tenants-information*') ||
                             request()->routeIs('manage-beds*') ||
                             request()->routeIs('bed-assignment*') ||
@@ -67,6 +67,12 @@
 
                         </a>
                         <ul class="nav nav-treeview">
+                            <li class="nav-item"> <a wire:navigate href="/apartment"
+                                    class="nav-link {{ request()->routeIs('apartment*') ? 'active' : '' }}"> <i
+                                        class="nav-icon bi bi-house-gear-fill"></i>
+                                    <p>Appartment</p>
+                                </a>
+                            </li>
 
                             <li class="nav-item"> <a wire:navigate href="/room-management"
                                     class="nav-link {{ request()->routeIs('room-management*') ? 'active' : '' }}"> <i

@@ -40,7 +40,7 @@
                     <!--begin::Container-->
                     <div class="container-fluid">
                         <!--begin::Row-->
-                        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols">
+                        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols mb-2">
 
 
 
@@ -48,6 +48,8 @@
                                 <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.total-beds>
                                     <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.monthly-earnings>
                                         <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.total-collectibles>
+                        
+
 
 
                                             {{--
@@ -57,9 +59,20 @@
 
                                                     <livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.occupancy-rate>
                                                         --}}
-
+                                                        
                         </div>
+                        
+
                         <div class="row row-cols-2">
+                            <div class="mb-4">
+                                <div class="card card-outline card-success">
+                                    <div class="card-header">
+                                        <h2 class="card-title"  style="font-size: 24px;">Property</h2>
+                                        <div class="card-tools"> <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse"> <i data-lte-icon="expand" class="bi bi-plus-lg"></i> <i data-lte-icon="collapse" class="bi bi-dash-lg"></i> </button> </div> <!-- /.card-tools -->
+                                    </div> <!-- /.card-header -->
+                                    <div class="card-body"><livewire:roles.owner.pages.dashboard.owner-dashboard.dashboard-owner-components.property></div> <!-- /.card-body -->
+                                </div>
+                            </div> 
                             <div>
                                 <div class="card">
                                     <div class="card-header">

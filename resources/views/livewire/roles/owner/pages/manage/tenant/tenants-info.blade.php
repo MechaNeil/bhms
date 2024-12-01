@@ -83,6 +83,17 @@
                                             <div class="modal-body">
                                                 <form id="addTenantForm">
                                                     <div class="row">
+                                                        <div class="mb-3">
+                                                            <label for="appartmentName" class="form-label">Appartment
+                                                                Name</label>
+                                                            <select class="form-select" id="appartmentName">
+                                                                <option value="" disabled selected>Select
+                                                                    Appartment Name</option>
+                                                                <option value="apartment1">MN's BigHouse</option>
+                                                                <option value="apartment2">MN Tevs Vhouse</option>
+                                                                <!-- Add more options as needed -->
+                                                            </select>
+                                                        </div>
                                                         <div class="col-md-6 mb-3">
                                                             <label for="firstName" class="form-label">First Name</label>
                                                             <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
@@ -182,7 +193,7 @@
                                                 <button type="button" class="btn btn-secondary me-auto"
                                                     data-bs-dismiss="modal">Close</button>
 
-                                                <button type="submit" class="btn btn-primary" form="addTenantForm">Save
+                                                <button type="submit" class="btn btn-primary" form="addTenantForm">Add
                                                     Tenant</button>
                                             </div>
                                         </div>
@@ -212,6 +223,17 @@
                                             <div class="modal-body">
                                                 <form id="editTenantForm">
                                                     <div class="row">
+                                                        <div class="mb-3">
+                                                            <label for="appartmentName" class="form-label">Appartment
+                                                                Name</label>
+                                                            <select class="form-select" id="appartmentName">
+                                                                <option value="" disabled selected>Select
+                                                                    Appartment Name</option>
+                                                                <option value="apartment1">MN's BigHouse</option>
+                                                                <option value="apartment2">MN Tevs Vhouse</option>
+                                                                <!-- Add more options as needed -->
+                                                            </select>
+                                                        </div>
                                                         <div class="col-md-6 mb-3">
                                                             <label for="firstName" class="form-label">First Name</label>
                                                             <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
@@ -427,8 +449,26 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
 
-                                        <h3 class="card-title">Tenants Table</h3>
-
+                                        
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="card-title">Tenants Table</h3>
+                                            <!-- Dropdown -->
+                                            <div class="ms-auto d-flex align-items-center">
+                                                <label for="apartmentName" class="form-label mb-0 me-2">Apartment</label>
+                                                <div class="dropdown dropdown-hover">
+                                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="apartmentName" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select Apartment(s)
+                                                    </button>
+                                                    <ul class="dropdown-menu p-2" aria-labelledby="apartmentName">
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment1" id="apartment1"><label class="form-check-label ms-1" for="apartment1">MN's BigHouse</label></li>
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment2" id="apartment2"><label class="form-check-label ms-1" for="apartment2">MN Tevs Vhouse</label></li>
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment3" id="apartment3"><label class="form-check-label ms-1" for="apartment3">Green Villa</label></li>
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment4" id="apartment4"><label class="form-check-label ms-1" for="apartment4">Ocean View</label></li>
+                                                        <!-- Add more options as needed -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                     </div>
                                     <!-- /.card-header -->

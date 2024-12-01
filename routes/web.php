@@ -32,6 +32,7 @@ use App\Livewire\Roles\Owner\Pages\UserManagement\Logs\UserActivityLogs;
 use App\Livewire\Roles\Owner\Pages\UserManagement\ManageUsers\Users;
 use App\Livewire\Roles\Owner\Pages\UserManagement\UserPermission\Permission;
 use App\Livewire\Roles\Owner\Pages\Invoice\TenantsInvoice\ProofOfTransaction;
+use App\Livewire\Roles\Owner\Pages\Manage\Property\Apartment;
 
 
 use App\Livewire\Home\Homepage;
@@ -65,6 +66,9 @@ Route::middleware(['auth'])->group(function () {
     // Assistants Dashboard
 
     Route::get('/custom-permission', Assistants::class)->name('custom-permission');
+
+    // Apartment
+    Route::get('/apartment', Apartment::class)->name('apartment');
 
 
     // Room Management

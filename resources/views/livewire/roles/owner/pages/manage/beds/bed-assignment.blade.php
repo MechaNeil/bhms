@@ -80,6 +80,17 @@
                                             <div class="modal-body">
                                                 <form id="addAssignBedsForm">
                                                     <div class="mb-3">
+                                                        <label for="appartmentName" class="form-label">Appartment
+                                                            Name</label>
+                                                        <select class="form-select" id="appartmentName">
+                                                            <option value="" disabled selected>Select
+                                                                Appartment Name</option>
+                                                            <option value="apartment1">MN's BigHouse</option>
+                                                            <option value="apartment2">MN Tevs Vhouse</option>
+                                                            <!-- Add more options as needed -->
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
                                                         <label for="tenantNameSelect" class="form-label">Tenant
                                                             Name</label>
                                                         <select class="form-select" id="tenantNameSelect" required>
@@ -181,8 +192,26 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
 
-                                        <h3 class="card-title">Beds Assign Table</h3>
-
+                                        
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="card-title">Beds Assign Table</h3>
+                                            <!-- Dropdown -->
+                                            <div class="ms-auto d-flex align-items-center">
+                                                <label for="apartmentName" class="form-label mb-0 me-2">Apartment</label>
+                                                <div class="dropdown dropdown-hover">
+                                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="apartmentName" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select Apartment(s)
+                                                    </button>
+                                                    <ul class="dropdown-menu p-2" aria-labelledby="apartmentName">
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment1" id="apartment1"><label class="form-check-label ms-1" for="apartment1">MN's BigHouse</label></li>
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment2" id="apartment2"><label class="form-check-label ms-1" for="apartment2">MN Tevs Vhouse</label></li>
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment3" id="apartment3"><label class="form-check-label ms-1" for="apartment3">Green Villa</label></li>
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment4" id="apartment4"><label class="form-check-label ms-1" for="apartment4">Ocean View</label></li>
+                                                        <!-- Add more options as needed -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                     </div>
                                     <!-- /.card-header -->
@@ -192,6 +221,7 @@
                                                 <thead class="table-mode">
                                                     <tr>
                                                         <th>Tenant Name</th>
+                                                        <th>Apartment Name</th>
                                                         <th>Room No.</th>
                                                         <th>Bed No.</th>
                                                         <th>Date Start</th>
@@ -204,6 +234,7 @@
                                                 <tbody>
                                                     <tr class="align-middle">
                                                         <td>Mark Tevs</td>
+                                                        <td>MN's BigHouse</td>
                                                         <td>RM-0001</td>
                                                         <td>BD-0001</td>
                                                         <td>Sept 06,2021</td>

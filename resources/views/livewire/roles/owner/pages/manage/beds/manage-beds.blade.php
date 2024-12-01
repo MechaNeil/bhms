@@ -78,6 +78,17 @@
                                             <div class="modal-body">
                                                 <form id="addBedsForm">
                                                     <div class="mb-3">
+                                                        <label for="appartmentName" class="form-label">Appartment
+                                                            Name</label>
+                                                        <select class="form-select" id="appartmentName">
+                                                            <option value="" disabled selected>Select
+                                                                Appartment Name</option>
+                                                            <option value="apartment1">MN's BigHouse</option>
+                                                            <option value="apartment2">MN Tevs Vhouse</option>
+                                                            <!-- Add more options as needed -->
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
                                                         <label for="roomSelect" class="form-label">Room</label>
                                                         <select class="form-select" id="roomSelect" required>
                                                             <option value="" disabled selected>Select a room</option>
@@ -92,7 +103,7 @@
                                                     <div class="mb-3">
                                                         <label for="bedNumber" class="form-label">Bed Number</label>
                                                         <input type="number" class="form-control" id="bedNumber"
-                                                            placeholder="Bed Number" required>
+                                                            placeholder="Bed Number" disabled>
                                                     </div>
 
                                                     <!-- Monthly Rent Input -->
@@ -146,6 +157,17 @@
 
                                             <div class="modal-body">
                                                 <form id="editBedsForm">
+                                                    <div class="mb-3">
+                                                        <label for="appartmentName" class="form-label">Appartment
+                                                            Name</label>
+                                                        <select class="form-select" id="appartmentName">
+                                                            <option value="" disabled selected>Select
+                                                                Appartment Name</option>
+                                                            <option value="apartment1">MN's BigHouse</option>
+                                                            <option value="apartment2">MN Tevs Vhouse</option>
+                                                            <!-- Add more options as needed -->
+                                                        </select>
+                                                    </div>
                                                     <div class="mb-3">
                                                         <label for="roomSelect" class="form-label">Room</label>
                                                         <select class="form-select" id="roomSelect" required>
@@ -224,7 +246,26 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
 
-                                        <h3 class="card-title">Beds Table</h3>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            
+                                            <h3 class="card-title">Beds Table</h3>
+                                            <!-- Dropdown -->
+                                            <div class="ms-auto d-flex align-items-center">
+                                                <label for="apartmentName" class="form-label mb-0 me-2">Apartment</label>
+                                                <div class="dropdown dropdown-hover">
+                                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="apartmentName" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select Apartment(s)
+                                                    </button>
+                                                    <ul class="dropdown-menu p-2" aria-labelledby="apartmentName">
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment1" id="apartment1"><label class="form-check-label ms-1" for="apartment1">MN's BigHouse</label></li>
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment2" id="apartment2"><label class="form-check-label ms-1" for="apartment2">MN Tevs Vhouse</label></li>
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment3" id="apartment3"><label class="form-check-label ms-1" for="apartment3">Green Villa</label></li>
+                                                        <li><input class="form-check-input" type="checkbox" value="apartment4" id="apartment4"><label class="form-check-label ms-1" for="apartment4">Ocean View</label></li>
+                                                        <!-- Add more options as needed -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
                                     </div>
@@ -235,6 +276,7 @@
                                             <table class="table table-bordered">
                                                 <thead class="table-mode">
                                                     <tr>
+                                                        <th>Apartment Name</th>
                                                         <th>Bed No.</th>
                                                         <th>Room No.</th>
                                                         <th>Daily Rate</th>
@@ -244,123 +286,9 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    
                                                     <tr class="align-middle">
-                                                        <td>BD-0001</td>
-                                                        <td>RM-0001</td>
-                                                        <td>100.00</td>
-                                                        <td>
-                                                            2000.00
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <span
-                                                                class="badge rounded-pill text-bg-success">available</span>
-                                                        </td>
-                                                        <td class=" text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal" data-bs-target="#editBedsModal">
-                                                                <i class="bi bi-pencil-fill"></i>
-                                                            </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#deleteBedsModal">
-                                                                <i class="bi bi-trash-fill"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="align-middle">
-                                                        <td>BD-0002</td>
-                                                        <td>RM-0001</td>
-                                                        <td>100.00</td>
-                                                        <td>
-                                                            2000.00
-                                                        </td>
-                                                        <td class=" text-center">
-                                                            <span
-                                                                class="badge rounded-pill text-bg-warning">occupied</span>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal" data-bs-target="#editBedsModal">
-                                                                <i class="bi bi-pencil-fill"></i>
-                                                            </button>
-
-                                                            <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#deleteBedsModal">
-                                                                <i class="bi bi-trash-fill"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="align-middle">
-                                                        <td>BD-0003</td>
-                                                        <td>RM-0002</td>
-                                                        <td>100.00</td>
-                                                        <td>
-                                                            2000.00
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <span
-                                                                class="badge rounded-pill text-bg-success">available</span>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal" data-bs-target="#editBedsModal">
-                                                                <i class="bi bi-pencil-fill"></i>
-                                                            </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#deleteBedsModal">
-                                                                <i class="bi bi-trash-fill"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="align-middle">
-                                                        <td>BD-0004</td>
-                                                        <td>RM-0002</td>
-                                                        <td>100.00</td>
-                                                        <td>
-                                                            2000.00
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <span
-                                                                class="badge rounded-pill text-bg-success">available</span>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal" data-bs-target="#editBedsModal">
-                                                                <i class="bi bi-pencil-fill"></i>
-                                                            </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#deleteBedsModal">
-                                                                <i class="bi bi-trash-fill"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="align-middle">
-                                                        <td>BD-0005</td>
-                                                        <td>RM-0002</td>
-                                                        <td>100.00</td>
-                                                        <td>
-                                                            2000.00
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <span
-                                                                class="badge rounded-pill text-bg-success">available</span>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <button class="btn btn-primary btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal" data-bs-target="#editBedsModal">
-                                                                <i class="bi bi-pencil-fill"></i>
-                                                            </button>
-                                                            <button class="btn btn-danger btn-sm m-1" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#deleteBedsModal">
-                                                                <i class="bi bi-trash-fill"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="align-middle">
+                                                        <td>MN's BigHouse</td>
                                                         <td>BD-0006</td>
                                                         <td>RM-0004</td>
                                                         <td>300.00</td>

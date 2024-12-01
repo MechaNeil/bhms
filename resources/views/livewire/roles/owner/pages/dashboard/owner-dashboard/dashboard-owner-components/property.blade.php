@@ -1,9 +1,9 @@
 
     {{-- A good traveler has no fixed plans and is not intent upon arriving. --}}
 
-<div class="container-fluid text-bg-secondary p-3 pt-2 pb-0" style="border-radius:.375rem;box-shadow:0 0 1px rgba(var(--bs-body-color-rgb),.125),0 1px 3px rgba(var(--bs-body-color-rgb),.2);position:relative;display:block;">
+<div class="container-fluid pt-3 pb-0 rounded-3">
     <div class="inner">
-        <h3>Property</h3>
+        
         <div class="row">
             <div class="col-lg-6">
                 <!--begin::Small Box Widget 1-->
