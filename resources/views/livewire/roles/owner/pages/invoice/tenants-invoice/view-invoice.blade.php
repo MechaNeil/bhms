@@ -53,6 +53,7 @@
                 <!--begin::App Content-->
 
                 <div class="container-fluid">
+
                     <div class="card m-lg-4 m-md-2">
                         <div class="card-body">
                             <div class="row">
@@ -78,13 +79,13 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <h6>To:</h6>
-                                    
+
                                     <address>
                                         <strong>Mak Nel Tevs</strong> <br>
                                         Apartment: MN's BigHouse <br>
                                         Room No: RM-0001 <br>
                                         Bed No: BD-0001 <br>
-                                        
+
                                     </address>
                                 </div>
                                 <div class="col-sm-4">
@@ -103,10 +104,12 @@
                                         <thead class="table-mode">
                                             <tr>
                                                 <th>Invoice Number</th>
-                                                <th>Tenant Name</th>
-                                                <th>Due Date</th>
-                                                <th>Bed Rate</th>
-                                                <th>Sub Total</th>
+                                                <th>Payer Name</th>
+                                                <th>Paid For</th>
+
+
+
+
                                                 <th>Total</th>
                                                 <th>Amount Paid</th> <!-- New Column -->
                                                 <th>Remaining Balance</th>
@@ -118,9 +121,15 @@
                                             <tr>
                                                 <td>IN-1-2024121</td>
                                                 <td>Mark Nel Tevs</td>
-                                                <td>May 5, 2024</td>
-                                                <td>Php 2,000</td>
-                                                <td>Php 2,385</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>John Doe (Php 400)</li>
+                                                        <li>Jane Smith (Php 400)</li>
+                                                        <li>Chris Brown (Php 400)</li>
+                                                        <li>Mark Nel Tevs (Php 585)</li>
+                                                    </ul>
+                                                </td>
+
 
                                                 <td>Php 1,785</td>
                                                 <td>Php 700.00</td> <!-- Amount Paid -->
@@ -213,11 +222,61 @@
                             </div>
                         </div>
                     </div>
-                    <!--end::App Content-->
+                </div>
+                {{-- <div class="row">
+                    <div class="col-12">
+                        <table class="table table-striped">
+                            <thead class="table-mode">
+                                <tr>
+                                    <th>Invoice Number</th>
+                                    <th>Payer Name</th>
+                                    <th>Paid For</th>
+                                    <th>Total Room Charges</th>
+                                    <th>Amount Paid</th>
+                                    <th>Remaining Balance</th>
+                                    <th>Status</th>
+                                    <th>Remarks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>IN-1-2024121</td>
+                                    <td>Mark Nel Tevs</td>
+                                    <td>
+                                        <ul>
+                                            <li>John Doe (Php 400)</li>
+                                            <li>Jane Smith (Php 400)</li>
+                                            <li>Chris Brown (Php 400)</li>
+                                            <li>Mark Nel Tevs (Php 585)</li>
+                                        </ul>
+                                    </td>
+                                    <td>Php 1,785</td>
+                                    <td>Php 1,785</td>
+                                    <td>Php 0.00</td>
+                                    <td>Fully Paid</td>
+                                    <td>Admin approved the proof of payment</td>
+                                </tr>
+                                <tr>
+                                    <td>IN-1-2024122</td>
+                                    <td>Jane Smith</td>
+                                    <td>Self</td>
+                                    <td>Php 1,785</td>
+                                    <td>Php 400.00</td>
+                                    <td>Php 1,385.00</td>
+                                    <td>Partially Paid</td>
+                                    <td>Waiting for payment</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> --}}
+                
+                <!--end::App Content-->
             </main>
             <livewire:roles.owner.components.owner-footer>
                 <!--end::Footer livewire-->
                 <div class="sidebar-overlay"></div>
                 <!--end::App Main-->
                 <!--begin::Footer-->
+
 </div>

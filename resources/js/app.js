@@ -7,6 +7,7 @@ import { OverlayScrollbars } from "overlayscrollbars";
 
 import { Tooltip } from "bootstrap";
 
+
 // Initialize tooltips
 document.addEventListener("livewire:navigated", function () {
     const tooltipTriggerList = [].slice.call(

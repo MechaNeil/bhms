@@ -174,6 +174,24 @@
                                                         <input type="text" class="form-control" id="invoiceNumber"
                                                             value="IN-1-2024121" disabled>
                                                     </div>
+                                                    <div class="mb-3">
+                                                        <label for="payerName" class="form-label">Payer</label>
+                                                        <input type="text" class="form-control" id="payerName" value="Mak Nel Tevs" readonly>
+                                                    </div>
+                                    
+                                                    <!-- Tenant Selection -->
+                                                    <div class="mb-3">
+                                                        <label for="tenantSelection" class="form-label">Select Tenants to Include in Payment</label>
+                                                        <select class="form-select" id="tenantSelection" multiple>
+                                                            <option value="John Doe">John Doe</option>
+                                                            <option value="Jane Smith">Jane Smith</option>
+                                                            <option value="Chris Brown">Chris Brown</option>
+                                                        </select>
+                                                        <small class="form-text text-muted">
+                                                            Hold CTRL (Windows) or CMD (Mac) to select multiple tenants. 
+                                                            Tenants selected will be covered by this payment.
+                                                        </small>
+                                                    </div>
 
                                                     <!-- Bed Rate (Read-Only) -->
                                                     <div class="mb-3">
@@ -362,43 +380,37 @@
                                                                 data-bs-target="#updateInvoiceModal"><i
                                                                     class="bi bi-box-arrow-in-up"></i>
                                                                 &nbsp;Update</button>
-                                                            <button wire:navigate href="view-invoice"
-                                                                class="btn btn-info btn-sm m-1"><i
-                                                                    class="bi bi-eye"></i> &nbsp;View</button>
-                                                            <button class="btn btn-warning btn-sm m-1" type="button"
+                                                            
+                                                            <button class="btn btn-success btn-sm m-1" type="button"
                                                                 data-bs-toggle="modal" data-bs-target="#payForTenant"><i
                                                                     class="bi bi-wallet2"></i> &nbsp;Pay for
                                                                 Tenant</button>
-                                                            <button class="btn btn-success btn-sm m-1" type="button"
+                                                            {{-- <button class="btn btn-success btn-sm m-1" type="button"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#payInvoiceModal"><i
                                                                     class="bi bi-wallet2"></i> &nbsp;Pay the
-                                                                Invoice</button>
+                                                                Invoice</button> --}}
                                                         </td>
                                                         <td>IN-1-2024121</td>
                                                         <td>Mark Nel Tevs</td>
                                                         <td>December 1, 2024</td>
-                                                        <td style="min-width: 220px">
+                                                        <td style="min-width: 220px" class="justify-content-around">
                                                             <div class="row mb-2">
-                                                                <div class="col-6"><strong>Bed Rate:</strong></div>
-                                                                <div class="col-6">Php 2,000</div>
-                                                            </div>
-                                                            <div class="row mb-2">
-                                                                <div class="col-6"><strong>Utility Bills:</strong></div>
-                                                                <div class="col-6">Php 385</div>
-                                                            </div>
-                                                            <div class="row mb-2">
+                                                                <div class="col-6"><strong>Paid For:</strong></div>
+                                                                <div class="col-6">4 Tenants</div>
                                                                 <div class="col-6"><strong>Penalty:</strong></div>
-                                                                <div class="col-6">Php 00.0</div>
-                                                            </div>
-                                                            <div class="row mb-2">
+                                                                <div class="col-6">0.00</div>
                                                                 <div class="col-6"><strong>Discount:</strong></div>
-                                                                <div class="col-6">Php 00.0</div>
+                                                                <div class="col-6">0.00</div>
                                                             </div>
                                                             <div class="row mb-2">
+
+                                                                
                                                                 <div class="col-6"><strong>Total Due:</strong></div>
                                                                 <div class="col-6"><strong>Php 1,785</strong></div>
-                                                            </div>
+                                                            </div><button wire:navigate href="view-invoice"
+                                                            class="btn btn-info btn-sm m-1"><i
+                                                                class="bi bi-eye"></i> &nbsp;View More</button>
                                                         </td>
                                                         <td>Php 700.00</td> <!-- Amount Paid -->
                                                         <td>Php 1,085.00</td> <!-- Remaining Balance -->
