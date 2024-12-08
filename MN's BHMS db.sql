@@ -139,11 +139,15 @@ CREATE TABLE Invoice (
     property_id INT,                         -- Foreign Key to Property
     user_id INT,                             -- Foreign Key to User (processed by)
     room_id INT,                             -- Foreign Key to Room
+    utility_bills INT,
+    constant_utility_bills INT,
     FOREIGN KEY (tenant_id) REFERENCES Tenant(id),
     FOREIGN KEY (property_id) REFERENCES Property(id),
     FOREIGN KEY (user_id) REFERENCES User(id),
     FOREIGN KEY (room_id) REFERENCES Room(id),
-    FOREIGN KEY (status_id) REFERENCES Status(id)
+    FOREIGN KEY (status_id) REFERENCES Status(id),
+    FOREIGN KEY (utility_bills INT,) REFERENCES Utility_Bills(id),
+    FOREIGN KEY (constant_utility_bills INT,) constant_utility_bills(id)
 );
 
 -- Payment_Method Table
@@ -210,6 +214,18 @@ CREATE TABLE Activity_Log (
     FOREIGN KEY (user_id) REFERENCES User(id),
     FOREIGN KEY (property_id) REFERENCES Property(id)
 );
+CREATE TABLE Utility_Bills (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    rate INT,
+    bills_name VARCHAR(100),
+
+)
+CREATE TABLE Constant_Utility_Bills (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    Number_of_Appliances INT,
+    Cost DECIMAL(10, 2),
+
+)
 
 -- SMS Table
 CREATE TABLE SMS (

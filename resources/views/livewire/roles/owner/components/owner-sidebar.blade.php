@@ -270,6 +270,14 @@
                             <p>Visit Home Page</p>
                         </a>
                     </li>
+                    <li class="nav-item"> <a wire:navigate href="/owner-settings"
+                            class="nav-link {{ request()->routeIs('owner-settings*') ? 'active' : '' }}"> <i
+                                class="nav-icon bi bi-gear-fill"></i>
+                            <p>Settings</p>
+                        </a>
+                    </li>
+
+
 
 
 

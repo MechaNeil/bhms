@@ -33,6 +33,7 @@ use App\Livewire\Roles\Owner\Pages\UserManagement\ManageUsers\Users;
 use App\Livewire\Roles\Owner\Pages\UserManagement\UserPermission\Permission;
 use App\Livewire\Roles\Owner\Pages\Invoice\TenantsInvoice\ProofOfTransaction;
 use App\Livewire\Roles\Owner\Pages\Manage\Property\Apartment;
+use App\Livewire\Roles\Owner\Pages\Settings\OwnerSettings;
 
 
 use App\Livewire\Home\Homepage;
@@ -111,5 +112,8 @@ Route::middleware(['auth'])->group(function () {
 
     // Create Backup
     Route::get('/backup-database', BackupDatabase::class)->name('backup-database');
+
+    // Settings
+    Route::get('/owner-settings', OwnerSettings::class)->name('owner-settings');
 
 });

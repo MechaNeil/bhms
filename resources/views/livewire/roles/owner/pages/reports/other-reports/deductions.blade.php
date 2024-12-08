@@ -363,6 +363,109 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+    
+                                            <h3 class="card-title">Constant Electric Bill</h3>
+    
+    
+                                        </div>
+                                        <!-- /.card-header -->
+                                        <div class="card-body">
+    
+                                            <table class="table table-bordered">
+                                                <thead class="table-mode">
+                                                    <tr>
+    
+                                                        <th>Number of Appliances</th>
+                                                        <th>Cost</th>
+                                                        <th style="width: 120px">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="align-middle">
+                                                        <td>
+                                                            1
+                                                        </td>
+                                                        <td>
+                                                            Php100
+                                                        </td>
+    
+                                                        <td class="text-center">
+
+                                                            
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                            data-bs-toggle="modal" data-bs-target="#editBillsModal">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBillsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="align-middle">
+                                                        <td>
+                                                            2
+                                                        </td>
+                                                        <td>
+                                                            Php100
+                                                        </td>
+    
+                                                        <td class="text-center">
+
+                                                            
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                            data-bs-toggle="modal" data-bs-target="#editBillsModal">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBillsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="align-middle">
+                                                        <td>
+                                                            3
+                                                        </td>
+                                                        <td>
+                                                            Php100
+                                                        </td>
+    
+                                                        <td class="text-center">
+
+                                                            
+                                                            <button class="btn btn-primary btn-sm m-1" type="button"
+                                                            data-bs-toggle="modal" data-bs-target="#editBillsModal">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                            </button>
+                                                            <button class="btn btn-danger btn-sm m-1" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#deleteBillsModal">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                   
+    
+    
+    
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- /.card-body -->
+                                        <div class="card-footer clearfix">
+                                            <ul class="pagination pagination-sm m-0 float-end">
+                                                <li class="page-item"> <a class="page-link" href="#">«</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                                <li class="page-item"> <a class="page-link" href="#">»</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div> <!-- /.container-fluid -->
