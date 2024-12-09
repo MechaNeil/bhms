@@ -210,3 +210,7 @@ body {
 .table-container {
     min-width: 800px;
 }
+
+.btn-tool:not(.btn-tool-custom) {
+    transition: 0.3s ease-in-out;
+}

@@ -1,3 +1,6 @@
+-- Drop tables if they already exist (for resetting purposes)
+DROP TABLE IF EXISTS SMS, Activity_Log, Suggestion, Payment_List, Proof_of_Transaction, Payment_Method, Invoice, Bed_Assignment, Bed, Room, Property, Constant_Utility_Bills, Utility_Bills, Company, Role_Permission, Permission, Role, Status, Gender, Tenant, User;
+
 -- User Table
 CREATE TABLE User (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -8,38 +11,18 @@ CREATE TABLE User (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tenant Table
-CREATE TABLE Tenant (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    user_id INT UNIQUE,                      -- Foreign Key to User
-    property_id INT,                         -- Foreign Key to Property
-    phone VARCHAR(15),
-    address TEXT,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
-    middle_name VARCHAR(50),
-    gender_id INT,                           -- Foreign Key to Gender table
-    profile_picture VARCHAR(255),
-    proof_of_identity VARCHAR(255),
-    status_id INT DEFAULT 1,                 -- Foreign Key to Status table
-    FOREIGN KEY (user_id) REFERENCES User(id),
-    FOREIGN KEY (property_id) REFERENCES Property(id),
-    FOREIGN KEY (gender_id) REFERENCES Gender(id),
-    FOREIGN KEY (status_id) REFERENCES Status(id)
-);
-
--- Gender Reference Table
+-- Gender Table
 CREATE TABLE Gender (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(20) UNIQUE NOT NULL         -- Examples: 'Male', 'Female', 'Other'
+    name VARCHAR(20) UNIQUE NOT NULL -- Examples: 'Male', 'Female', 'Other'
 );
 
--- Status Reference Table
+-- Status Table
 CREATE TABLE Status (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) UNIQUE NOT NULL,        -- Examples: 'unpaid', 'partially paid'
+    name VARCHAR(50) UNIQUE NOT NULL, -- Examples: 'unpaid', 'partially paid'
     description TEXT,
-    context VARCHAR(50) NOT NULL             -- Specifies the table/entity the status applies to
+    context VARCHAR(50) NOT NULL -- Specifies the table/entity the status applies to
 );
 
 -- Role Table
@@ -66,7 +49,7 @@ CREATE TABLE Role_Permission (
     UNIQUE (role_id, permission_id)
 );
 
--- Company Table (Represents the Owner of the Properties)
+-- Company Table
 CREATE TABLE Company (
     id INT PRIMARY KEY AUTO_INCREMENT,
     company_name VARCHAR(100) UNIQUE NOT NULL,
@@ -76,46 +59,66 @@ CREATE TABLE Company (
     company_logo VARCHAR(255)
 );
 
--- Property Table (Represents Each Boarding House/Property)
+-- Property Table
 CREATE TABLE Property (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    company_id INT,                          -- Foreign Key to Company
+    company_id INT, -- Foreign Key to Company
     property_name VARCHAR(100) NOT NULL,
     address TEXT,
     contact_no VARCHAR(15),
     FOREIGN KEY (company_id) REFERENCES Company(id)
 );
 
--- Room Table (Rooms within a Specific Property)
+-- Room Table
 CREATE TABLE Room (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    property_id INT,                         -- Foreign Key to Property
+    property_id INT, -- Foreign Key to Property
     room_no VARCHAR(10) UNIQUE NOT NULL,
     room_image VARCHAR(255),
     room_description TEXT,
     FOREIGN KEY (property_id) REFERENCES Property(id)
 );
 
--- Bed Table (Beds within a Specific Room and Property)
+-- Bed Table
 CREATE TABLE Bed (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    property_id INT,                         -- Foreign Key to Property
-    room_id INT,                             -- Foreign Key to Room
+    property_id INT, -- Foreign Key to Property
+    room_id INT, -- Foreign Key to Room
     bed_no VARCHAR(20) UNIQUE NOT NULL,
     monthly_rate DECIMAL(10, 2),
-    status_id INT DEFAULT 1,                 -- Foreign Key to Status table
+    status_id INT DEFAULT 1, -- Foreign Key to Status
     FOREIGN KEY (property_id) REFERENCES Property(id),
     FOREIGN KEY (room_id) REFERENCES Room(id),
     FOREIGN KEY (status_id) REFERENCES Status(id)
 );
 
--- Bed_Assignment Table (Assigning Beds to Tenants)
+-- Tenant Table
+CREATE TABLE Tenant (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT UNIQUE, -- Foreign Key to User
+    property_id INT, -- Foreign Key to Property
+    phone VARCHAR(15),
+    address TEXT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    middle_name VARCHAR(50),
+    gender_id INT, -- Foreign Key to Gender
+    profile_picture VARCHAR(255),
+    proof_of_identity VARCHAR(255),
+    status_id INT DEFAULT 1, -- Foreign Key to Status
+    FOREIGN KEY (user_id) REFERENCES User(id),
+    FOREIGN KEY (property_id) REFERENCES Property(id),
+    FOREIGN KEY (gender_id) REFERENCES Gender(id),
+    FOREIGN KEY (status_id) REFERENCES Status(id)
+);
+
+-- Bed_Assignment Table
 CREATE TABLE Bed_Assignment (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    tenant_id INT,                           -- Foreign Key to Tenant
-    bed_id INT,                              -- Foreign Key to Bed
-    room_id INT,                             -- Foreign Key to Room
-    property_id INT,                         -- Foreign Key to Property
+    tenant_id INT, -- Foreign Key to Tenant
+    bed_id INT, -- Foreign Key to Bed
+    room_id INT, -- Foreign Key to Room
+    property_id INT, -- Foreign Key to Property
     date_started DATE,
     due_date DATE,
     FOREIGN KEY (tenant_id) REFERENCES Tenant(id),
@@ -130,30 +133,41 @@ CREATE TABLE Invoice (
     invoice_no VARCHAR(20) UNIQUE NOT NULL,
     date_issued DATE,
     due_date DATE,
-    status_id INT DEFAULT 1,                 -- Foreign Key to Status table
+    status_id INT DEFAULT 1, -- Foreign Key to Status
     remarks VARCHAR(100),
     amount_paid DECIMAL(10, 2),
     penalty_amount DECIMAL(10, 2),
     discount_amount DECIMAL(10, 2),
-    tenant_id INT,                           -- Foreign Key to Tenant
-    property_id INT,                         -- Foreign Key to Property
-    user_id INT,                             -- Foreign Key to User (processed by)
-    room_id INT,                             -- Foreign Key to Room
+    tenant_id INT, -- Foreign Key to Tenant
+    property_id INT, -- Foreign Key to Property
+    user_id INT, -- Foreign Key to User (processed by)
+    room_id INT, -- Foreign Key to Room
     utility_bills INT,
     constant_utility_bills INT,
     FOREIGN KEY (tenant_id) REFERENCES Tenant(id),
     FOREIGN KEY (property_id) REFERENCES Property(id),
     FOREIGN KEY (user_id) REFERENCES User(id),
-    FOREIGN KEY (room_id) REFERENCES Room(id),
-    FOREIGN KEY (status_id) REFERENCES Status(id),
-    FOREIGN KEY (utility_bills INT,) REFERENCES Utility_Bills(id),
-    FOREIGN KEY (constant_utility_bills INT,) constant_utility_bills(id)
+    FOREIGN KEY (room_id) REFERENCES Room(id)
+);
+
+-- Utility_Bills Table
+CREATE TABLE Utility_Bills (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    rate INT,
+    bills_name VARCHAR(100)
+);
+
+-- Constant_Utility_Bills Table
+CREATE TABLE Constant_Utility_Bills (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    number_of_appliances INT,
+    cost DECIMAL(10, 2)
 );
 
 -- Payment_Method Table
 CREATE TABLE Payment_Method (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) UNIQUE NOT NULL,        -- Example: 'Credit Card'
+    name VARCHAR(50) UNIQUE NOT NULL, -- Example: 'Credit Card'
     payment_logo VARCHAR(255),
     description TEXT
 );
@@ -161,15 +175,15 @@ CREATE TABLE Payment_Method (
 -- Proof_of_Transaction Table
 CREATE TABLE Proof_of_Transaction (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    tenant_id INT,                           -- Foreign Key to Tenant
-    invoice_id INT,                          -- Foreign Key to Invoice
+    tenant_id INT, -- Foreign Key to Tenant
+    invoice_id INT, -- Foreign Key to Invoice
     tenant_amount_paid DECIMAL(10, 2),
     date_of_payment DATE,
     proof_of_payment VARCHAR(255),
-    status_id INT,                           -- Foreign Key to Status table
+    status_id INT, -- Foreign Key to Status
     date_submitted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     reply_from_owner TEXT,
-    payment_method_id INT,                   -- Foreign Key to Payment_Method
+    payment_method_id INT, -- Foreign Key to Payment_Method
     FOREIGN KEY (tenant_id) REFERENCES Tenant(id),
     FOREIGN KEY (invoice_id) REFERENCES Invoice(id),
     FOREIGN KEY (status_id) REFERENCES Status(id),
@@ -179,10 +193,10 @@ CREATE TABLE Proof_of_Transaction (
 -- Payment_List Table
 CREATE TABLE Payment_List (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    invoice_id INT,                          -- Foreign Key to Invoice
-    processed_by_user_id INT,                -- Foreign Key to User
+    invoice_id INT, -- Foreign Key to Invoice
+    processed_by_user_id INT, -- Foreign Key to User
     amount_paid DECIMAL(10, 2),
-    payment_status_id INT,                   -- Foreign Key to Status table
+    payment_status_id INT, -- Foreign Key to Status
     payment_date DATE,
     receipt_number VARCHAR(20) UNIQUE,
     FOREIGN KEY (payment_status_id) REFERENCES Status(id),
@@ -193,9 +207,9 @@ CREATE TABLE Payment_List (
 -- Suggestion Table
 CREATE TABLE Suggestion (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    tenant_id INT,                           -- Foreign Key to Tenant
-    property_id INT,                         -- Foreign Key to Property
-    status_id INT DEFAULT 2,                 -- Foreign Key to Status table
+    tenant_id INT, -- Foreign Key to Tenant
+    property_id INT, -- Foreign Key to Property
+    status_id INT DEFAULT 2, -- Foreign Key to Status
     date_issued TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     request TEXT,
     reply_from_owner TEXT,
@@ -207,25 +221,13 @@ CREATE TABLE Suggestion (
 -- Activity_Log Table
 CREATE TABLE Activity_Log (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    user_id INT,                             -- Foreign Key to User
-    property_id INT,                         -- Foreign Key to Property
+    user_id INT, -- Foreign Key to User
+    property_id INT, -- Foreign Key to Property
     activity TEXT,
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES User(id),
     FOREIGN KEY (property_id) REFERENCES Property(id)
 );
-CREATE TABLE Utility_Bills (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    rate INT,
-    bills_name VARCHAR(100),
-
-)
-CREATE TABLE Constant_Utility_Bills (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    Number_of_Appliances INT,
-    Cost DECIMAL(10, 2),
-
-)
 
 -- SMS Table
 CREATE TABLE SMS (
