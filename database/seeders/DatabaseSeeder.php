@@ -2,11 +2,13 @@
 
 namespace Database\Seeders;
 
-use App\Models\Article;
-use App\Models\Greeting;
-use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
+use App\Models\Gender;
+use App\Models\Status;
+use App\Models\Role;
+use App\Models\Permission;
+use App\Models\Company;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,18 +22,34 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // Create the Admin role
+        Role::factory()->createAdmin();
 
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        // Create the Tenant and Assistant roles
+        Role::factory()->count(2)->create();
 
-        // Greeting::create(['greeting' => 'Hello!']);
-        // Greeting::create(['greeting' => 'Hi!']);
-        // Greeting::create(['greeting' => 'Hey!']);
-        // Greeting::create(['greeting' => 'Howdy!']);
+        Gender::factory()->count(3)->create();
 
+        // Seed Statuses
+        Status::factory()->count(5)->create();
 
+        // Seed Roles
+
+        // Seed Permissions
+        Permission::factory()->count(10)->create();
+
+        // Seed Companies
+        Company::factory()->count(5)->create();
+
+        // Seed Users
+        User::factory()
+            ->count(10)
+            ->create()
+            ->each(function ($user) {
+                // Assign random role or other relationships if needed
+                $user->activityLogs()->createMany(
+                    \App\Models\ActivityLog::factory()->count(3)->make()->toArray()
+                );
+            });
     }
 }

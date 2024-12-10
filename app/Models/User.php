@@ -1,27 +1,34 @@
 <?php
 
 namespace App\Models;
-
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    use HasFactory;
     use Notifiable;
 
-    protected $fillable = ['username', 'email', 'password', 'role', 'phone_number', 'address'];
+    protected $fillable = ['username', 'email', 'password', 'avatar', 'status_id', 'gender_id', 'role_id'];
 
-    // Relationships
-    public function tenancies()
+    public function gender()
     {
-        return $this->hasMany(Tenancy::class);
+        return $this->belongsTo(Gender::class);
     }
 
-    public function boardingHouses()
+    public function status()
     {
-        return $this->hasMany(BoardingHouse::class, 'landlord_id');  // Assuming users with role 'landlord' can manage multiple boarding houses.
+        return $this->belongsTo(Status::class);
     }
-    
-    
+
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
+
+    public function activityLogs()
+    {
+        return $this->hasMany(ActivityLog::class);
+    }
 }
-
