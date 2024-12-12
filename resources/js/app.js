@@ -4,8 +4,10 @@ import "./bootstrap";
 import { OverlayScrollbars } from "overlayscrollbars";
 
 
-
+import { Modal } from 'bootstrap';
 import { Tooltip } from "bootstrap";
+
+
 
 
 // Initialize tooltips

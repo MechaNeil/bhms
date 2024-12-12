@@ -36,19 +36,20 @@
 
         })();
     </script>
-    
+
 
     @livewireStyles
     <!-- Livewire styles -->
 </head>
 
-<body class="@yield('body-class', 'hold-transition sidebar-mini layout-fixed')" x-data x-on:click="$dispatch('search:clear-results')">
+<body class="@yield('body-class', 'hold-transition sidebar-mini layout-fixed')" x-data
+    x-on:click="$dispatch('search:clear-results')">
 
     {{ $slot }}
 
     <script src="{{ asset('admin-lte/js/adminlte.min.js') }}"></script>
-    
-<script>
+
+    <script>
         (() => {
             "use strict";
 
@@ -129,9 +130,9 @@
         })();
     </script>
 
-{{-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    var ctx = document.getElementById('paymentChart').getContext('2d');
+    {{-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('paymentChart').getContext('2d');
     var paymentChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -152,10 +153,11 @@
             }
         }
     });
-</script> --}}
+    </script> --}}
+    @stack('scripts')
     @livewireScripts
     <script data-navigate-once>
-            console.log('page loaded');
+        console.log('page loaded');
     </script>
 
     <!-- Livewire scripts -->
