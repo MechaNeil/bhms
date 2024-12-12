@@ -66,7 +66,7 @@ class CompanyModal extends Component
         $company->save();
         $this->dispatch('companySaved', 'Company information saved successfully!');
         
-        $this->dispatch('closeModal');
+        $this->dispatch('triggerDismiss');
 
         // Optional: Add feedback or redirect
     }

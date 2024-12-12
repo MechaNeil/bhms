@@ -3,10 +3,9 @@ import "./bootstrap";
 
 import { OverlayScrollbars } from "overlayscrollbars";
 
-
 import { Modal } from 'bootstrap';
+import { Toast } from "bootstrap";
 import { Tooltip } from "bootstrap";
-
 
 
 
@@ -17,6 +16,43 @@ document.addEventListener("livewire:navigated", function () {
     );
     const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new Tooltip(tooltipTriggerEl);
+    });
+    const modalTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="modal"]')
+    );
+    
+    const modalList = modalTriggerList.map(function (modalTriggerEl) {
+        return new Modal(modalTriggerEl);
+    });
+    // const toastTriggerList = [].slice.call(
+    //     document.querySelectorAll('[data-bs-toggle="toast"]')
+    // );
+    
+    // const toastList = toastTriggerList.map(function (toastTriggerEl) {
+    //     return new Toast(toastTriggerEl);
+    // });
+    const toastTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="toast"]',
+    );
+    toastTriggerList.forEach((btn) => {
+        btn.addEventListener("click", (event) => {
+            event.preventDefault();
+            const toastEle = document.getElementById(
+                btn.getAttribute("data-bs-target"),
+            );
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastEle);
+            toastBootstrap.show();
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    Livewire.on('triggerDismiss', () => {
+        // Find the close button or any element with `data-bs-dismiss`
+        const closeButton = document.querySelector('[data-bs-dismiss="modal"]');
+        if (closeButton) {
+            closeButton.click(); // Simulate a click to trigger the dismiss
+        }
     });
 });
 

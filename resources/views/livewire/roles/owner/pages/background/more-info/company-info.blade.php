@@ -88,6 +88,7 @@
                             
                         </div>
                     </div>
+                    
                     <!-- /.container-fluid -->
                 </div>
                 <!--end::App Content-->
